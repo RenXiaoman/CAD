@@ -1,0 +1,24 @@
+
+#######################################################################
+Please cite the following paper when using nnU-Net:
+Isensee, F., Jaeger, P. F., Kohl, S. A., Petersen, J., & Maier-Hein, K. H. (2021). nnU-Net: a self-configuring method for deep learning-based biomedical image segmentation. Nature methods, 18(2), 203-211.
+#######################################################################
+ 
+2026-05-01 15:03:23.775642: Using torch.compile... 
+2026-05-01 15:03:24.549711: do_dummy_2d_data_aug: True 
+2026-05-01 15:03:24.550728: Using splits from existing split file: /root/PycharmProjects/CAD/dataset/AHCDU/二分类图像/nnUNet_preprocessed/Dataset130_ProstateAHCDU/splits_final.json 
+2026-05-01 15:03:24.550995: The split file contains 5 splits. 
+2026-05-01 15:03:24.551025: Desired fold for training: 1 
+2026-05-01 15:03:24.551050: This split has 370 training and 93 validation cases. 
+
+This is the configuration used by this training:
+Configuration name: 3d_fullres
+ {'data_identifier': 'nnUNetPlans_3d_fullres', 'preprocessor_name': 'DefaultPreprocessor', 'batch_size': 4, 'patch_size': [16, 256, 256], 'median_image_size_in_voxels': [16.0, 256.0, 256.0], 'spacing': [3.5, 0.5, 0.5], 'normalization_schemes': ['ZScoreNormalization'], 'use_mask_for_norm': [False], 'resampling_fn_data': 'resample_data_or_seg_to_shape', 'resampling_fn_seg': 'resample_data_or_seg_to_shape', 'resampling_fn_data_kwargs': {'is_seg': False, 'order': 3, 'order_z': 0, 'force_separate_z': None}, 'resampling_fn_seg_kwargs': {'is_seg': True, 'order': 1, 'order_z': 0, 'force_separate_z': None}, 'resampling_fn_probabilities': 'resample_data_or_seg_to_shape', 'resampling_fn_probabilities_kwargs': {'is_seg': False, 'order': 1, 'order_z': 0, 'force_separate_z': None}, 'architecture': {'network_class_name': 'dynamic_network_architectures.architectures.unet.PlainConvUNet', 'arch_kwargs': {'n_stages': 7, 'features_per_stage': [32, 64, 128, 256, 320, 320, 320], 'conv_op': 'torch.nn.modules.conv.Conv3d', 'kernel_sizes': [[1, 3, 3], [1, 3, 3], [3, 3, 3], [3, 3, 3], [3, 3, 3], [3, 3, 3], [3, 3, 3]], 'strides': [[1, 1, 1], [1, 2, 2], [1, 2, 2], [2, 2, 2], [2, 2, 2], [1, 2, 2], [1, 2, 2]], 'n_conv_per_stage': [2, 2, 2, 2, 2, 2, 2], 'n_conv_per_stage_decoder': [2, 2, 2, 2, 2, 2], 'conv_bias': True, 'norm_op': 'torch.nn.modules.instancenorm.InstanceNorm3d', 'norm_op_kwargs': {'eps': 1e-05, 'affine': True}, 'dropout_op': None, 'dropout_op_kwargs': None, 'nonlin': 'torch.nn.LeakyReLU', 'nonlin_kwargs': {'inplace': True}}, '_kw_requires_import': ['conv_op', 'norm_op', 'dropout_op', 'nonlin']}, 'batch_dice': False} 
+ 
+These are the global plan.json settings:
+ {'dataset_name': 'Dataset130_ProstateAHCDU', 'plans_name': 'nnUNetPlans', 'original_median_spacing_after_transp': [3.5, 0.5, 0.5], 'original_median_shape_after_transp': [16, 256, 256], 'image_reader_writer': 'SimpleITKIO', 'transpose_forward': [0, 1, 2], 'transpose_backward': [0, 1, 2], 'experiment_planner_used': 'ExperimentPlanner', 'label_manager': 'LabelManager', 'foreground_intensity_properties_per_channel': {'0': {'max': 1116.3011474609375, 'mean': 254.81173706054688, 'median': 243.1951141357422, 'min': -96.0835952758789, 'percentile_00_5': 67.92210388183594, 'percentile_99_5': 560.9171142578125, 'std': 90.39861297607422}}} 
+ 
+2026-05-01 15:03:28.359281: Unable to plot network architecture: nnUNet_compile is enabled! 
+2026-05-01 15:03:28.509370:  
+2026-05-01 15:03:28.509756: Epoch 0 
+2026-05-01 15:03:28.509953: Current learning rate: 0.01 

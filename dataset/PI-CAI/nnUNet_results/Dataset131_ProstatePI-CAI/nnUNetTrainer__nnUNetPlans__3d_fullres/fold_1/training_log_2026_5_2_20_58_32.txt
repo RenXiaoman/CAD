@@ -1,0 +1,172 @@
+
+#######################################################################
+Please cite the following paper when using nnU-Net:
+Isensee, F., Jaeger, P. F., Kohl, S. A., Petersen, J., & Maier-Hein, K. H. (2021). nnU-Net: a self-configuring method for deep learning-based biomedical image segmentation. Nature methods, 18(2), 203-211.
+#######################################################################
+ 
+2026-05-02 20:58:34.816877: Using torch.compile... 
+2026-05-02 20:58:37.726181: do_dummy_2d_data_aug: True 
+2026-05-02 20:58:37.727231: Using splits from existing split file: /home/ikun_server/clib/PycharmProjects/CAD/dataset/PI-CAI/nnUNet_preprocessed/Dataset131_ProstatePI-CAI/splits_final.json 
+2026-05-02 20:58:37.727478: The split file contains 5 splits. 
+2026-05-02 20:58:37.727509: Desired fold for training: 1 
+2026-05-02 20:58:37.727533: This split has 285 training and 72 validation cases. 
+
+This is the configuration used by this training:
+Configuration name: 3d_fullres
+ {'data_identifier': 'nnUNetPlans_3d_fullres', 'preprocessor_name': 'DefaultPreprocessor', 'batch_size': 4, 'patch_size': [16, 256, 256], 'median_image_size_in_voxels': [16.0, 256.0, 256.0], 'spacing': [3.5, 0.5, 0.5], 'normalization_schemes': ['ZScoreNormalization'], 'use_mask_for_norm': [False], 'resampling_fn_data': 'resample_data_or_seg_to_shape', 'resampling_fn_seg': 'resample_data_or_seg_to_shape', 'resampling_fn_data_kwargs': {'is_seg': False, 'order': 3, 'order_z': 0, 'force_separate_z': None}, 'resampling_fn_seg_kwargs': {'is_seg': True, 'order': 1, 'order_z': 0, 'force_separate_z': None}, 'resampling_fn_probabilities': 'resample_data_or_seg_to_shape', 'resampling_fn_probabilities_kwargs': {'is_seg': False, 'order': 1, 'order_z': 0, 'force_separate_z': None}, 'architecture': {'network_class_name': 'dynamic_network_architectures.architectures.unet.PlainConvUNet', 'arch_kwargs': {'n_stages': 7, 'features_per_stage': [32, 64, 128, 256, 320, 320, 320], 'conv_op': 'torch.nn.modules.conv.Conv3d', 'kernel_sizes': [[1, 3, 3], [1, 3, 3], [3, 3, 3], [3, 3, 3], [3, 3, 3], [3, 3, 3], [3, 3, 3]], 'strides': [[1, 1, 1], [1, 2, 2], [1, 2, 2], [2, 2, 2], [2, 2, 2], [1, 2, 2], [1, 2, 2]], 'n_conv_per_stage': [2, 2, 2, 2, 2, 2, 2], 'n_conv_per_stage_decoder': [2, 2, 2, 2, 2, 2], 'conv_bias': True, 'norm_op': 'torch.nn.modules.instancenorm.InstanceNorm3d', 'norm_op_kwargs': {'eps': 1e-05, 'affine': True}, 'dropout_op': None, 'dropout_op_kwargs': None, 'nonlin': 'torch.nn.LeakyReLU', 'nonlin_kwargs': {'inplace': True}}, '_kw_requires_import': ['conv_op', 'norm_op', 'dropout_op', 'nonlin']}, 'batch_dice': False} 
+ 
+These are the global plan.json settings:
+ {'dataset_name': 'Dataset131_ProstatePI-CAI', 'plans_name': 'nnUNetPlans', 'original_median_spacing_after_transp': [3.5, 0.5, 0.5], 'original_median_shape_after_transp': [16, 256, 256], 'image_reader_writer': 'SimpleITKIO', 'transpose_forward': [0, 1, 2], 'transpose_backward': [0, 1, 2], 'experiment_planner_used': 'ExperimentPlanner', 'label_manager': 'LabelManager', 'foreground_intensity_properties_per_channel': {'0': {'max': 1469.0, 'mean': 209.3621368408203, 'median': 189.0, 'min': -0.6324975490570068, 'percentile_00_5': 21.0, 'percentile_99_5': 658.0, 'std': 123.18258666992188}}} 
+ 
+2026-05-02 20:58:39.367136: Unable to plot network architecture: nnUNet_compile is enabled! 
+2026-05-02 20:58:41.704972: Training done. 
+2026-05-02 20:58:41.735378: Using splits from existing split file: /home/ikun_server/clib/PycharmProjects/CAD/dataset/PI-CAI/nnUNet_preprocessed/Dataset131_ProstatePI-CAI/splits_final.json 
+2026-05-02 20:58:41.735920: The split file contains 5 splits. 
+2026-05-02 20:58:41.735981: Desired fold for training: 1 
+2026-05-02 20:58:41.736033: This split has 285 training and 72 validation cases. 
+2026-05-02 20:58:41.736536: predicting 10029_1000029 
+2026-05-02 20:58:41.759983: 10029_1000029, shape torch.Size([1, 16, 256, 256]), rank 0 
+2026-05-02 20:58:54.778697: predicting 10048_1000048 
+2026-05-02 20:58:54.790025: 10048_1000048, shape torch.Size([1, 16, 256, 256]), rank 0 
+2026-05-02 20:58:54.950801: predicting 10097_1000097 
+2026-05-02 20:58:54.959944: 10097_1000097, shape torch.Size([1, 16, 256, 256]), rank 0 
+2026-05-02 20:58:55.124882: predicting 10103_1000103 
+2026-05-02 20:58:55.134872: 10103_1000103, shape torch.Size([1, 16, 256, 256]), rank 0 
+2026-05-02 20:58:56.549464: predicting 10117_1000117 
+2026-05-02 20:58:56.562198: 10117_1000117, shape torch.Size([1, 16, 256, 256]), rank 0 
+2026-05-02 20:58:56.719692: predicting 10164_1000167 
+2026-05-02 20:58:56.728427: 10164_1000167, shape torch.Size([1, 16, 256, 256]), rank 0 
+2026-05-02 20:58:56.886629: predicting 10182_1000185 
+2026-05-02 20:58:56.892812: 10182_1000185, shape torch.Size([1, 16, 256, 256]), rank 0 
+2026-05-02 20:58:57.050870: predicting 10232_1000236 
+2026-05-02 20:58:57.057948: 10232_1000236, shape torch.Size([1, 16, 256, 256]), rank 0 
+2026-05-02 20:58:57.216961: predicting 10235_1000239 
+2026-05-02 20:58:57.226353: 10235_1000239, shape torch.Size([1, 16, 256, 256]), rank 0 
+2026-05-02 20:58:57.384528: predicting 10236_1000240 
+2026-05-02 20:58:57.392749: 10236_1000240, shape torch.Size([1, 16, 256, 256]), rank 0 
+2026-05-02 20:58:57.561144: predicting 10241_1000245 
+2026-05-02 20:58:57.565898: 10241_1000245, shape torch.Size([1, 16, 256, 256]), rank 0 
+2026-05-02 20:58:58.980303: predicting 10282_1000288 
+2026-05-02 20:58:58.993098: 10282_1000288, shape torch.Size([1, 16, 256, 256]), rank 0 
+2026-05-02 20:58:59.151015: predicting 10283_1000289 
+2026-05-02 20:58:59.160561: 10283_1000289, shape torch.Size([1, 16, 256, 256]), rank 0 
+2026-05-02 20:58:59.317721: predicting 10294_1000300 
+2026-05-02 20:58:59.325261: 10294_1000300, shape torch.Size([1, 16, 256, 256]), rank 0 
+2026-05-02 20:58:59.484752: predicting 10342_1000348 
+2026-05-02 20:58:59.495068: 10342_1000348, shape torch.Size([1, 16, 256, 256]), rank 0 
+2026-05-02 20:58:59.651639: predicting 10365_1000371 
+2026-05-02 20:58:59.660016: 10365_1000371, shape torch.Size([1, 16, 256, 256]), rank 0 
+2026-05-02 20:58:59.818189: predicting 10375_1000381 
+2026-05-02 20:58:59.827406: 10375_1000381, shape torch.Size([1, 16, 256, 256]), rank 0 
+2026-05-02 20:59:01.216633: predicting 10442_1000450 
+2026-05-02 20:59:01.246937: 10442_1000450, shape torch.Size([1, 16, 256, 256]), rank 0 
+2026-05-02 20:59:01.417429: predicting 10490_1000499 
+2026-05-02 20:59:01.430470: 10490_1000499, shape torch.Size([1, 16, 256, 256]), rank 0 
+2026-05-02 20:59:01.589750: predicting 10523_1000533 
+2026-05-02 20:59:01.597209: 10523_1000533, shape torch.Size([1, 16, 256, 256]), rank 0 
+2026-05-02 20:59:01.756443: predicting 10540_1000551 
+2026-05-02 20:59:01.764996: 10540_1000551, shape torch.Size([1, 16, 256, 256]), rank 0 
+2026-05-02 20:59:01.922523: predicting 10568_1000580 
+2026-05-02 20:59:01.929895: 10568_1000580, shape torch.Size([1, 16, 256, 256]), rank 0 
+2026-05-02 20:59:02.090199: predicting 10584_1000598 
+2026-05-02 20:59:02.098359: 10584_1000598, shape torch.Size([1, 16, 256, 256]), rank 0 
+2026-05-02 20:59:02.256614: predicting 10631_1000646 
+2026-05-02 20:59:02.262450: 10631_1000646, shape torch.Size([1, 16, 256, 256]), rank 0 
+2026-05-02 20:59:03.621029: predicting 10651_1000667 
+2026-05-02 20:59:03.647919: 10651_1000667, shape torch.Size([1, 16, 256, 256]), rank 0 
+2026-05-02 20:59:03.813562: predicting 10652_1000668 
+2026-05-02 20:59:03.825984: 10652_1000668, shape torch.Size([1, 16, 256, 256]), rank 0 
+2026-05-02 20:59:03.984263: predicting 10668_1000684 
+2026-05-02 20:59:03.993147: 10668_1000684, shape torch.Size([1, 16, 256, 256]), rank 0 
+2026-05-02 20:59:04.152578: predicting 10679_1000695 
+2026-05-02 20:59:04.160660: 10679_1000695, shape torch.Size([1, 16, 256, 256]), rank 0 
+2026-05-02 20:59:04.319910: predicting 10686_1000702 
+2026-05-02 20:59:04.327173: 10686_1000702, shape torch.Size([1, 16, 256, 256]), rank 0 
+2026-05-02 20:59:04.487113: predicting 10690_1000706 
+2026-05-02 20:59:04.493704: 10690_1000706, shape torch.Size([1, 16, 256, 256]), rank 0 
+2026-05-02 20:59:04.651471: predicting 10701_1000717 
+2026-05-02 20:59:04.659276: 10701_1000717, shape torch.Size([1, 16, 256, 256]), rank 0 
+2026-05-02 20:59:06.063872: predicting 10717_1000733 
+2026-05-02 20:59:06.091751: 10717_1000733, shape torch.Size([1, 16, 256, 256]), rank 0 
+2026-05-02 20:59:06.258462: predicting 10726_1000742 
+2026-05-02 20:59:06.267699: 10726_1000742, shape torch.Size([1, 16, 256, 256]), rank 0 
+2026-05-02 20:59:06.427678: predicting 10743_1000759 
+2026-05-02 20:59:06.437419: 10743_1000759, shape torch.Size([1, 16, 256, 256]), rank 0 
+2026-05-02 20:59:06.594481: predicting 10753_1000769 
+2026-05-02 20:59:06.602342: 10753_1000769, shape torch.Size([1, 16, 256, 256]), rank 0 
+2026-05-02 20:59:06.761330: predicting 10754_1000770 
+2026-05-02 20:59:06.769584: 10754_1000770, shape torch.Size([1, 16, 256, 256]), rank 0 
+2026-05-02 20:59:06.927194: predicting 10777_1000793 
+2026-05-02 20:59:06.936034: 10777_1000793, shape torch.Size([1, 16, 256, 256]), rank 0 
+2026-05-02 20:59:07.095615: predicting 10827_1000843 
+2026-05-02 20:59:07.104307: 10827_1000843, shape torch.Size([1, 16, 256, 256]), rank 0 
+2026-05-02 20:59:08.481428: predicting 10839_1000855 
+2026-05-02 20:59:08.508405: 10839_1000855, shape torch.Size([1, 16, 256, 256]), rank 0 
+2026-05-02 20:59:08.674985: predicting 10865_1000881 
+2026-05-02 20:59:08.682379: 10865_1000881, shape torch.Size([1, 16, 256, 256]), rank 0 
+2026-05-02 20:59:08.841796: predicting 10883_1000899 
+2026-05-02 20:59:08.848671: 10883_1000899, shape torch.Size([1, 16, 256, 256]), rank 0 
+2026-05-02 20:59:09.010758: predicting 10904_1000920 
+2026-05-02 20:59:09.020354: 10904_1000920, shape torch.Size([1, 16, 256, 256]), rank 0 
+2026-05-02 20:59:09.177665: predicting 10910_1000927 
+2026-05-02 20:59:09.189497: 10910_1000927, shape torch.Size([1, 16, 256, 256]), rank 0 
+2026-05-02 20:59:09.348241: predicting 10915_1000932 
+2026-05-02 20:59:09.358613: 10915_1000932, shape torch.Size([1, 16, 256, 256]), rank 0 
+2026-05-02 20:59:09.515667: predicting 10942_1000961 
+2026-05-02 20:59:09.524081: 10942_1000961, shape torch.Size([1, 16, 256, 256]), rank 0 
+2026-05-02 20:59:10.939876: predicting 10956_1000975 
+2026-05-02 20:59:10.969923: 10956_1000975, shape torch.Size([1, 16, 256, 256]), rank 0 
+2026-05-02 20:59:11.138320: predicting 10993_1001012 
+2026-05-02 20:59:11.148283: 10993_1001012, shape torch.Size([1, 16, 256, 256]), rank 0 
+2026-05-02 20:59:11.307118: predicting 11002_1001021 
+2026-05-02 20:59:11.316128: 11002_1001021, shape torch.Size([1, 16, 256, 256]), rank 0 
+2026-05-02 20:59:11.473989: predicting 11009_1001029 
+2026-05-02 20:59:11.483634: 11009_1001029, shape torch.Size([1, 16, 256, 256]), rank 0 
+2026-05-02 20:59:11.642125: predicting 11032_1001052 
+2026-05-02 20:59:11.649494: 11032_1001052, shape torch.Size([1, 16, 256, 256]), rank 0 
+2026-05-02 20:59:11.811953: predicting 11039_1001059 
+2026-05-02 20:59:11.824664: 11039_1001059, shape torch.Size([1, 16, 256, 256]), rank 0 
+2026-05-02 20:59:11.982515: predicting 11043_1001063 
+2026-05-02 20:59:11.991236: 11043_1001063, shape torch.Size([1, 16, 256, 256]), rank 0 
+2026-05-02 20:59:13.399154: predicting 11045_1001065 
+2026-05-02 20:59:13.420952: 11045_1001065, shape torch.Size([1, 16, 256, 256]), rank 0 
+2026-05-02 20:59:13.593131: predicting 11055_1001076 
+2026-05-02 20:59:13.602389: 11055_1001076, shape torch.Size([1, 16, 256, 256]), rank 0 
+2026-05-02 20:59:13.762395: predicting 11074_1001096 
+2026-05-02 20:59:13.770670: 11074_1001096, shape torch.Size([1, 16, 256, 256]), rank 0 
+2026-05-02 20:59:13.929247: predicting 11100_1001123 
+2026-05-02 20:59:13.938421: 11100_1001123, shape torch.Size([1, 16, 256, 256]), rank 0 
+2026-05-02 20:59:14.095937: predicting 11177_1001200 
+2026-05-02 20:59:14.105286: 11177_1001200, shape torch.Size([1, 16, 256, 256]), rank 0 
+2026-05-02 20:59:14.262301: predicting 11208_1001231 
+2026-05-02 20:59:14.271489: 11208_1001231, shape torch.Size([1, 16, 256, 256]), rank 0 
+2026-05-02 20:59:14.429054: predicting 11231_1001254 
+2026-05-02 20:59:14.436957: 11231_1001254, shape torch.Size([1, 16, 256, 256]), rank 0 
+2026-05-02 20:59:15.871806: predicting 11253_1001276 
+2026-05-02 20:59:15.885681: 11253_1001276, shape torch.Size([1, 16, 256, 256]), rank 0 
+2026-05-02 20:59:16.053969: predicting 11257_1001280 
+2026-05-02 20:59:16.060720: 11257_1001280, shape torch.Size([1, 16, 256, 256]), rank 0 
+2026-05-02 20:59:16.220520: predicting 11333_1001356 
+2026-05-02 20:59:16.228414: 11333_1001356, shape torch.Size([1, 16, 256, 256]), rank 0 
+2026-05-02 20:59:16.386775: predicting 11336_1001359 
+2026-05-02 20:59:16.393709: 11336_1001359, shape torch.Size([1, 16, 256, 256]), rank 0 
+2026-05-02 20:59:16.553209: predicting 11346_1001369 
+2026-05-02 20:59:16.560555: 11346_1001369, shape torch.Size([1, 16, 256, 256]), rank 0 
+2026-05-02 20:59:16.720221: predicting 11352_1001375 
+2026-05-02 20:59:16.728076: 11352_1001375, shape torch.Size([1, 16, 256, 256]), rank 0 
+2026-05-02 20:59:16.887635: predicting 11373_1001396 
+2026-05-02 20:59:16.895828: 11373_1001396, shape torch.Size([1, 16, 256, 256]), rank 0 
+2026-05-02 20:59:18.284420: predicting 11375_1001398 
+2026-05-02 20:59:18.298567: 11375_1001398, shape torch.Size([1, 16, 256, 256]), rank 0 
+2026-05-02 20:59:18.465824: predicting 11384_1001408 
+2026-05-02 20:59:18.477553: 11384_1001408, shape torch.Size([1, 16, 256, 256]), rank 0 
+2026-05-02 20:59:18.634828: predicting 11423_1001447 
+2026-05-02 20:59:18.643711: 11423_1001447, shape torch.Size([1, 16, 256, 256]), rank 0 
+2026-05-02 20:59:18.801373: predicting 11426_1001450 
+2026-05-02 20:59:18.808931: 11426_1001450, shape torch.Size([1, 16, 256, 256]), rank 0 
+2026-05-02 20:59:18.968106: predicting 11447_1001471 
+2026-05-02 20:59:18.974878: 11447_1001471, shape torch.Size([1, 16, 256, 256]), rank 0 
+2026-05-02 20:59:19.132681: predicting 11475_1001499 
+2026-05-02 20:59:19.136963: 11475_1001499, shape torch.Size([1, 16, 256, 256]), rank 0 
+2026-05-02 20:59:24.163565: Validation complete 
+2026-05-02 20:59:24.163779: Mean Validation Dice:  0.9472365650573497 

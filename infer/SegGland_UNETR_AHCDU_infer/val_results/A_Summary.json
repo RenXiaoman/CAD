@@ -1,0 +1,648 @@
+{
+    "model_path": "checkpoints/SegGland_UNETR_AHCDU/best_dice_model.pth",
+    "data_path": "dataset/AHCDU/\u4e8c\u5206\u7c7b\u56fe\u50cf/nnUNet_raw/Dataset130_ProstateAHCDU",
+    "keep_largest_cc": true,
+    "num_cases": 104,
+    "cases": [
+        {
+            "patient_name": "ChenErHua",
+            "dice_score": 0.9163,
+            "miou_score": 0.8455,
+            "hd95_score": 2.4495
+        },
+        {
+            "patient_name": "ChenErLin",
+            "dice_score": 0.7618,
+            "miou_score": 0.6152,
+            "hd95_score": 8.0623
+        },
+        {
+            "patient_name": "ChenHuiFu",
+            "dice_score": 0.8809,
+            "miou_score": 0.7872,
+            "hd95_score": 2.2361
+        },
+        {
+            "patient_name": "ChenShiLu",
+            "dice_score": 0.9199,
+            "miou_score": 0.8517,
+            "hd95_score": 3.1623
+        },
+        {
+            "patient_name": "ChenZhaoWen",
+            "dice_score": 0.9109,
+            "miou_score": 0.8364,
+            "hd95_score": 2.2361
+        },
+        {
+            "patient_name": "ChengBaoLin",
+            "dice_score": 0.8972,
+            "miou_score": 0.8135,
+            "hd95_score": 2.2361
+        },
+        {
+            "patient_name": "DaiQiRong",
+            "dice_score": 0.8947,
+            "miou_score": 0.8095,
+            "hd95_score": 4.0
+        },
+        {
+            "patient_name": "DengHaiQuan",
+            "dice_score": 0.8239,
+            "miou_score": 0.7006,
+            "hd95_score": 4.1231
+        },
+        {
+            "patient_name": "DingDeChang",
+            "dice_score": 0.8534,
+            "miou_score": 0.7444,
+            "hd95_score": 3.324
+        },
+        {
+            "patient_name": "DingYongZhong",
+            "dice_score": 0.873,
+            "miou_score": 0.7746,
+            "hd95_score": 2.2361
+        },
+        {
+            "patient_name": "DuanPeiGen",
+            "dice_score": 0.8295,
+            "miou_score": 0.7086,
+            "hd95_score": 3.0
+        },
+        {
+            "patient_name": "FanShaoQing",
+            "dice_score": 0.8305,
+            "miou_score": 0.7101,
+            "hd95_score": 3.0
+        },
+        {
+            "patient_name": "FanYingMeng",
+            "dice_score": 0.7354,
+            "miou_score": 0.5815,
+            "hd95_score": 6.0828
+        },
+        {
+            "patient_name": "GaoLianDe",
+            "dice_score": 0.8714,
+            "miou_score": 0.7721,
+            "hd95_score": 2.0
+        },
+        {
+            "patient_name": "GongShiXing",
+            "dice_score": 0.8922,
+            "miou_score": 0.8053,
+            "hd95_score": 2.2361
+        },
+        {
+            "patient_name": "GongWenZheng",
+            "dice_score": 0.6806,
+            "miou_score": 0.5158,
+            "hd95_score": 5.099
+        },
+        {
+            "patient_name": "HeKaiWen",
+            "dice_score": 0.8927,
+            "miou_score": 0.8062,
+            "hd95_score": 3.0
+        },
+        {
+            "patient_name": "HeLiZhi",
+            "dice_score": 0.873,
+            "miou_score": 0.7747,
+            "hd95_score": 2.0
+        },
+        {
+            "patient_name": "HeMaoLiang",
+            "dice_score": 0.7729,
+            "miou_score": 0.6299,
+            "hd95_score": 7.5498
+        },
+        {
+            "patient_name": "HeXiangYu",
+            "dice_score": 0.8482,
+            "miou_score": 0.7364,
+            "hd95_score": 3.0
+        },
+        {
+            "patient_name": "HeYuLun",
+            "dice_score": 0.8654,
+            "miou_score": 0.7628,
+            "hd95_score": 5.099
+        },
+        {
+            "patient_name": "HeYuanKai",
+            "dice_score": 0.8926,
+            "miou_score": 0.806,
+            "hd95_score": 3.3166
+        },
+        {
+            "patient_name": "HuangJianXin",
+            "dice_score": 0.7601,
+            "miou_score": 0.6131,
+            "hd95_score": 5.831
+        },
+        {
+            "patient_name": "HuangShuCheng",
+            "dice_score": 0.9247,
+            "miou_score": 0.8599,
+            "hd95_score": 2.0
+        },
+        {
+            "patient_name": "JiaYingLiang",
+            "dice_score": 0.7772,
+            "miou_score": 0.6356,
+            "hd95_score": 4.6904
+        },
+        {
+            "patient_name": "JinXinWu",
+            "dice_score": 0.8576,
+            "miou_score": 0.7507,
+            "hd95_score": 5.3852
+        },
+        {
+            "patient_name": "LeiDaHong",
+            "dice_score": 0.8906,
+            "miou_score": 0.8027,
+            "hd95_score": 5.099
+        },
+        {
+            "patient_name": "LengDingWu",
+            "dice_score": 0.9191,
+            "miou_score": 0.8503,
+            "hd95_score": 1.7321
+        },
+        {
+            "patient_name": "LiBuZe",
+            "dice_score": 0.8945,
+            "miou_score": 0.8091,
+            "hd95_score": 2.8284
+        },
+        {
+            "patient_name": "LiDengXu",
+            "dice_score": 0.8558,
+            "miou_score": 0.7479,
+            "hd95_score": 2.8284
+        },
+        {
+            "patient_name": "LiShouTong",
+            "dice_score": 0.8851,
+            "miou_score": 0.7938,
+            "hd95_score": 5.0
+        },
+        {
+            "patient_name": "LiTianGuang",
+            "dice_score": 0.8151,
+            "miou_score": 0.688,
+            "hd95_score": 3.1623
+        },
+        {
+            "patient_name": "LiXinMin",
+            "dice_score": 0.8419,
+            "miou_score": 0.727,
+            "hd95_score": 6.0828
+        },
+        {
+            "patient_name": "LiZhongQuan",
+            "dice_score": 0.8402,
+            "miou_score": 0.7245,
+            "hd95_score": 3.0
+        },
+        {
+            "patient_name": "LiangJiZhou",
+            "dice_score": 0.8787,
+            "miou_score": 0.7837,
+            "hd95_score": 2.0
+        },
+        {
+            "patient_name": "LiuHuaiBo",
+            "dice_score": 0.8933,
+            "miou_score": 0.8072,
+            "hd95_score": 2.2361
+        },
+        {
+            "patient_name": "LiuJingXing",
+            "dice_score": 0.8027,
+            "miou_score": 0.6704,
+            "hd95_score": 3.3166
+        },
+        {
+            "patient_name": "LiuRongGang",
+            "dice_score": 0.8619,
+            "miou_score": 0.7573,
+            "hd95_score": 8.8318
+        },
+        {
+            "patient_name": "LiuXianFu",
+            "dice_score": 0.8579,
+            "miou_score": 0.7511,
+            "hd95_score": 3.6056
+        },
+        {
+            "patient_name": "LiuZhanKun",
+            "dice_score": 0.9141,
+            "miou_score": 0.8418,
+            "hd95_score": 3.1623
+        },
+        {
+            "patient_name": "LuRenZuo",
+            "dice_score": 0.8346,
+            "miou_score": 0.7161,
+            "hd95_score": 7.8102
+        },
+        {
+            "patient_name": "LuoKaiFu",
+            "dice_score": 0.7119,
+            "miou_score": 0.5527,
+            "hd95_score": 6.4031
+        },
+        {
+            "patient_name": "LuoWenSen",
+            "dice_score": 0.8689,
+            "miou_score": 0.7682,
+            "hd95_score": 4.0
+        },
+        {
+            "patient_name": "LuoXingLong",
+            "dice_score": 0.8177,
+            "miou_score": 0.6916,
+            "hd95_score": 3.3166
+        },
+        {
+            "patient_name": "MaoZhongDong",
+            "dice_score": 0.7639,
+            "miou_score": 0.618,
+            "hd95_score": 4.1231
+        },
+        {
+            "patient_name": "NiTianShu",
+            "dice_score": 0.8734,
+            "miou_score": 0.7753,
+            "hd95_score": 3.0
+        },
+        {
+            "patient_name": "NieGuiSheng",
+            "dice_score": 0.91,
+            "miou_score": 0.8349,
+            "hd95_score": 2.0
+        },
+        {
+            "patient_name": "PengCaiHe",
+            "dice_score": 0.8865,
+            "miou_score": 0.7961,
+            "hd95_score": 3.0
+        },
+        {
+            "patient_name": "PengChaoRong",
+            "dice_score": 0.8223,
+            "miou_score": 0.6983,
+            "hd95_score": 3.0
+        },
+        {
+            "patient_name": "QinDengHua",
+            "dice_score": 0.7344,
+            "miou_score": 0.5803,
+            "hd95_score": 6.0
+        },
+        {
+            "patient_name": "RenHongBin",
+            "dice_score": 0.822,
+            "miou_score": 0.6978,
+            "hd95_score": 4.0
+        },
+        {
+            "patient_name": "ShenYuanZhou",
+            "dice_score": 0.9529,
+            "miou_score": 0.9099,
+            "hd95_score": 2.0
+        },
+        {
+            "patient_name": "ShiMingQing",
+            "dice_score": 0.2645,
+            "miou_score": 0.1524,
+            "hd95_score": 24.2899
+        },
+        {
+            "patient_name": "ShiRenSen",
+            "dice_score": 0.7492,
+            "miou_score": 0.599,
+            "hd95_score": 5.7446
+        },
+        {
+            "patient_name": "TangChaoJie",
+            "dice_score": 0.9176,
+            "miou_score": 0.8478,
+            "hd95_score": 2.2361
+        },
+        {
+            "patient_name": "TangGuoYuan",
+            "dice_score": 0.8753,
+            "miou_score": 0.7783,
+            "hd95_score": 2.8284
+        },
+        {
+            "patient_name": "TangXiaoMing",
+            "dice_score": 0.8899,
+            "miou_score": 0.8016,
+            "hd95_score": 2.0
+        },
+        {
+            "patient_name": "TianGuiLong",
+            "dice_score": 0.4764,
+            "miou_score": 0.3127,
+            "hd95_score": 14.3178
+        },
+        {
+            "patient_name": "TianGuoHong",
+            "dice_score": 0.8255,
+            "miou_score": 0.7029,
+            "hd95_score": 3.1623
+        },
+        {
+            "patient_name": "WangDeCheng",
+            "dice_score": 0.8592,
+            "miou_score": 0.7531,
+            "hd95_score": 3.0
+        },
+        {
+            "patient_name": "WangHuiYuan",
+            "dice_score": 0.878,
+            "miou_score": 0.7825,
+            "hd95_score": 5.0
+        },
+        {
+            "patient_name": "WangJinShu",
+            "dice_score": 0.8957,
+            "miou_score": 0.8111,
+            "hd95_score": 2.8284
+        },
+        {
+            "patient_name": "WangKaiMing",
+            "dice_score": 0.9036,
+            "miou_score": 0.8241,
+            "hd95_score": 3.0
+        },
+        {
+            "patient_name": "WangLiangCheng",
+            "dice_score": 0.8529,
+            "miou_score": 0.7435,
+            "hd95_score": 2.8284
+        },
+        {
+            "patient_name": "WangMingYi",
+            "dice_score": 0.0,
+            "miou_score": 0.0,
+            "hd95_score": 35.2278
+        },
+        {
+            "patient_name": "WangXingLiang",
+            "dice_score": 0.8805,
+            "miou_score": 0.7865,
+            "hd95_score": 2.0
+        },
+        {
+            "patient_name": "WangZhuLin",
+            "dice_score": 0.9105,
+            "miou_score": 0.8357,
+            "hd95_score": 2.4495
+        },
+        {
+            "patient_name": "WeiLiFu",
+            "dice_score": 0.9338,
+            "miou_score": 0.8758,
+            "hd95_score": 2.0
+        },
+        {
+            "patient_name": "WuTaiLiang",
+            "dice_score": 0.8579,
+            "miou_score": 0.7511,
+            "hd95_score": 2.8284
+        },
+        {
+            "patient_name": "WuWanXing",
+            "dice_score": 0.7166,
+            "miou_score": 0.5584,
+            "hd95_score": 7.6158
+        },
+        {
+            "patient_name": "WuZuoGui",
+            "dice_score": 0.8033,
+            "miou_score": 0.6712,
+            "hd95_score": 3.6056
+        },
+        {
+            "patient_name": "XiaoGuoMin",
+            "dice_score": 0.8229,
+            "miou_score": 0.6991,
+            "hd95_score": 13.3417
+        },
+        {
+            "patient_name": "XieDaCheng",
+            "dice_score": 0.9093,
+            "miou_score": 0.8336,
+            "hd95_score": 3.0
+        },
+        {
+            "patient_name": "XuShengBing",
+            "dice_score": 0.8391,
+            "miou_score": 0.7228,
+            "hd95_score": 3.0
+        },
+        {
+            "patient_name": "XuTaiJin",
+            "dice_score": 0.8736,
+            "miou_score": 0.7756,
+            "hd95_score": 4.1231
+        },
+        {
+            "patient_name": "XuYue",
+            "dice_score": 0.8417,
+            "miou_score": 0.7267,
+            "hd95_score": 10.247
+        },
+        {
+            "patient_name": "XueYueQing",
+            "dice_score": 0.9456,
+            "miou_score": 0.8968,
+            "hd95_score": 2.2361
+        },
+        {
+            "patient_name": "YangChangZhu",
+            "dice_score": 0.8647,
+            "miou_score": 0.7616,
+            "hd95_score": 7.0781
+        },
+        {
+            "patient_name": "YangChaoJie",
+            "dice_score": 0.8524,
+            "miou_score": 0.7427,
+            "hd95_score": 3.7417
+        },
+        {
+            "patient_name": "YangChunTing",
+            "dice_score": 0.9026,
+            "miou_score": 0.8225,
+            "hd95_score": 3.0
+        },
+        {
+            "patient_name": "YangDeHua",
+            "dice_score": 0.8466,
+            "miou_score": 0.734,
+            "hd95_score": 3.0
+        },
+        {
+            "patient_name": "YangHua",
+            "dice_score": 0.8608,
+            "miou_score": 0.7556,
+            "hd95_score": 4.5826
+        },
+        {
+            "patient_name": "YangYaBin",
+            "dice_score": 0.7611,
+            "miou_score": 0.6143,
+            "hd95_score": 4.5826
+        },
+        {
+            "patient_name": "YangYingMing",
+            "dice_score": 0.8671,
+            "miou_score": 0.7653,
+            "hd95_score": 2.0
+        },
+        {
+            "patient_name": "YangZongQian",
+            "dice_score": 0.8115,
+            "miou_score": 0.6828,
+            "hd95_score": 46.9681
+        },
+        {
+            "patient_name": "YaoGuangJin",
+            "dice_score": 0.864,
+            "miou_score": 0.7605,
+            "hd95_score": 5.0
+        },
+        {
+            "patient_name": "YuGuoQing",
+            "dice_score": 0.8886,
+            "miou_score": 0.7996,
+            "hd95_score": 2.0
+        },
+        {
+            "patient_name": "YuShaoYuan",
+            "dice_score": 0.6549,
+            "miou_score": 0.4869,
+            "hd95_score": 5.6569
+        },
+        {
+            "patient_name": "YuanMing",
+            "dice_score": 0.8853,
+            "miou_score": 0.7942,
+            "hd95_score": 3.0
+        },
+        {
+            "patient_name": "YuanYuGuang",
+            "dice_score": 0.8764,
+            "miou_score": 0.78,
+            "hd95_score": 3.1623
+        },
+        {
+            "patient_name": "ZhangQiBin",
+            "dice_score": 0.8426,
+            "miou_score": 0.728,
+            "hd95_score": 12.083
+        },
+        {
+            "patient_name": "ZhangXiaoLin",
+            "dice_score": 0.7962,
+            "miou_score": 0.6615,
+            "hd95_score": 3.0
+        },
+        {
+            "patient_name": "ZhangXiaoXue",
+            "dice_score": 0.8261,
+            "miou_score": 0.7037,
+            "hd95_score": 4.0
+        },
+        {
+            "patient_name": "ZhangXinJing",
+            "dice_score": 0.9196,
+            "miou_score": 0.8512,
+            "hd95_score": 2.2361
+        },
+        {
+            "patient_name": "ZhangZiXiang",
+            "dice_score": 0.8131,
+            "miou_score": 0.6851,
+            "hd95_score": 3.7417
+        },
+        {
+            "patient_name": "ZhaoBin",
+            "dice_score": 0.9162,
+            "miou_score": 0.8453,
+            "hd95_score": 2.0
+        },
+        {
+            "patient_name": "ZhaoJianYue",
+            "dice_score": 0.8997,
+            "miou_score": 0.8177,
+            "hd95_score": 2.0
+        },
+        {
+            "patient_name": "ZhaoYuFu",
+            "dice_score": 0.6031,
+            "miou_score": 0.4317,
+            "hd95_score": 4.899
+        },
+        {
+            "patient_name": "ZhongChiHua",
+            "dice_score": 0.8969,
+            "miou_score": 0.8131,
+            "hd95_score": 5.099
+        },
+        {
+            "patient_name": "ZhongGuiQuan",
+            "dice_score": 0.9173,
+            "miou_score": 0.8472,
+            "hd95_score": 3.1623
+        },
+        {
+            "patient_name": "ZhongYueXian",
+            "dice_score": 0.8706,
+            "miou_score": 0.7709,
+            "hd95_score": 2.0
+        },
+        {
+            "patient_name": "ZhouDingJun",
+            "dice_score": 0.9289,
+            "miou_score": 0.8672,
+            "hd95_score": 2.2361
+        },
+        {
+            "patient_name": "ZhouGuangRong",
+            "dice_score": 0.7997,
+            "miou_score": 0.6663,
+            "hd95_score": 4.2426
+        },
+        {
+            "patient_name": "ZouPeiFang",
+            "dice_score": 0.8723,
+            "miou_score": 0.7735,
+            "hd95_score": 3.0
+        }
+    ],
+    "overall_metrics": {
+        "average_dice": 0.8341,
+        "average_miou": 0.7293,
+        "average_hd95": 4.8969,
+        "std_dice": 0.1231,
+        "std_miou": 0.1344,
+        "std_hd95": 5.9689
+    },
+    "dice_interval_statistics": {
+        "0.0-0.1": 1,
+        "0.1-0.2": 0,
+        "0.2-0.3": 1,
+        "0.3-0.4": 0,
+        "0.4-0.5": 1,
+        "0.5-1.0": 101
+    }
+}

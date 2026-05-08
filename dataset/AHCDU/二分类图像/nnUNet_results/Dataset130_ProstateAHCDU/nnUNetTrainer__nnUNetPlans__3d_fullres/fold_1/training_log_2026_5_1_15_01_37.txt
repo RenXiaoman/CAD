@@ -1,0 +1,12 @@
+
+#######################################################################
+Please cite the following paper when using nnU-Net:
+Isensee, F., Jaeger, P. F., Kohl, S. A., Petersen, J., & Maier-Hein, K. H. (2021). nnU-Net: a self-configuring method for deep learning-based biomedical image segmentation. Nature methods, 18(2), 203-211.
+#######################################################################
+ 
+2026-05-01 15:01:40.458138: Using torch.compile... 
+2026-05-01 15:01:41.207046: do_dummy_2d_data_aug: True 
+2026-05-01 15:01:41.208061: Using splits from existing split file: /root/PycharmProjects/CAD/dataset/AHCDU/二分类图像/nnUNet_preprocessed/Dataset130_ProstateAHCDU/splits_final.json 
+2026-05-01 15:01:41.208321: The split file contains 5 splits. 
+2026-05-01 15:01:41.208361: Desired fold for training: 1 
+2026-05-01 15:01:41.208392: This split has 370 training and 93 validation cases. 

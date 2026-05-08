@@ -1,0 +1,1178 @@
+{
+    "foreground_mean": {
+        "Dice": 0.9568838265367816,
+        "FN": 2412.4583333333335,
+        "FP": 1919.6805555555557,
+        "IoU": 0.9179060785916041,
+        "TN": 991597.75,
+        "TP": 52646.11111111111,
+        "n_pred": 54565.791666666664,
+        "n_ref": 55058.569444444445
+    },
+    "mean": {
+        "1": {
+            "Dice": 0.9568838265367816,
+            "FN": 2412.4583333333335,
+            "FP": 1919.6805555555557,
+            "IoU": 0.9179060785916041,
+            "TN": 991597.75,
+            "TP": 52646.11111111111,
+            "n_pred": 54565.791666666664,
+            "n_ref": 55058.569444444445
+        }
+    },
+    "metric_per_case": [
+        {
+            "metrics": {
+                "1": {
+                    "Dice": 0.95439888607966,
+                    "FN": 2601,
+                    "FP": 2377,
+                    "IoU": 0.9127753149585603,
+                    "TN": 991505,
+                    "TP": 52093,
+                    "n_pred": 54470,
+                    "n_ref": 54694
+                }
+            },
+            "prediction_file": "/root/PycharmProjects/CAD/dataset/PI-CAI/nnUNet_results/Dataset131_ProstatePI-CAI/nnUNetTrainer__nnUNetPlans__3d_fullres/fold_0/validation/10053_1000053.nii.gz",
+            "reference_file": "/root/PycharmProjects/CAD/dataset/PI-CAI/nnUNet_preprocessed/Dataset131_ProstatePI-CAI/gt_segmentations/10053_1000053.nii.gz"
+        },
+        {
+            "metrics": {
+                "1": {
+                    "Dice": 0.9509910868697619,
+                    "FN": 1332,
+                    "FP": 2352,
+                    "IoU": 0.9065614933928526,
+                    "TN": 1009149,
+                    "TP": 35743,
+                    "n_pred": 38095,
+                    "n_ref": 37075
+                }
+            },
+            "prediction_file": "/root/PycharmProjects/CAD/dataset/PI-CAI/nnUNet_results/Dataset131_ProstatePI-CAI/nnUNetTrainer__nnUNetPlans__3d_fullres/fold_0/validation/10074_1000074.nii.gz",
+            "reference_file": "/root/PycharmProjects/CAD/dataset/PI-CAI/nnUNet_preprocessed/Dataset131_ProstatePI-CAI/gt_segmentations/10074_1000074.nii.gz"
+        },
+        {
+            "metrics": {
+                "1": {
+                    "Dice": 0.9479210106709187,
+                    "FN": 2805,
+                    "FP": 1441,
+                    "IoU": 0.900997948144003,
+                    "TN": 1005688,
+                    "TP": 38642,
+                    "n_pred": 40083,
+                    "n_ref": 41447
+                }
+            },
+            "prediction_file": "/root/PycharmProjects/CAD/dataset/PI-CAI/nnUNet_results/Dataset131_ProstatePI-CAI/nnUNetTrainer__nnUNetPlans__3d_fullres/fold_0/validation/10107_1000107.nii.gz",
+            "reference_file": "/root/PycharmProjects/CAD/dataset/PI-CAI/nnUNet_preprocessed/Dataset131_ProstatePI-CAI/gt_segmentations/10107_1000107.nii.gz"
+        },
+        {
+            "metrics": {
+                "1": {
+                    "Dice": 0.9577845046224331,
+                    "FN": 2933,
+                    "FP": 1195,
+                    "IoU": 0.9189889316272862,
+                    "TN": 997620,
+                    "TP": 46828,
+                    "n_pred": 48023,
+                    "n_ref": 49761
+                }
+            },
+            "prediction_file": "/root/PycharmProjects/CAD/dataset/PI-CAI/nnUNet_results/Dataset131_ProstatePI-CAI/nnUNetTrainer__nnUNetPlans__3d_fullres/fold_0/validation/10110_1000110.nii.gz",
+            "reference_file": "/root/PycharmProjects/CAD/dataset/PI-CAI/nnUNet_preprocessed/Dataset131_ProstatePI-CAI/gt_segmentations/10110_1000110.nii.gz"
+        },
+        {
+            "metrics": {
+                "1": {
+                    "Dice": 0.9660453017379206,
+                    "FN": 3137,
+                    "FP": 792,
+                    "IoU": 0.9343207234917504,
+                    "TN": 988755,
+                    "TP": 55892,
+                    "n_pred": 56684,
+                    "n_ref": 59029
+                }
+            },
+            "prediction_file": "/root/PycharmProjects/CAD/dataset/PI-CAI/nnUNet_results/Dataset131_ProstatePI-CAI/nnUNetTrainer__nnUNetPlans__3d_fullres/fold_0/validation/10112_1000112.nii.gz",
+            "reference_file": "/root/PycharmProjects/CAD/dataset/PI-CAI/nnUNet_preprocessed/Dataset131_ProstatePI-CAI/gt_segmentations/10112_1000112.nii.gz"
+        },
+        {
+            "metrics": {
+                "1": {
+                    "Dice": 0.9593002596692634,
+                    "FN": 1869,
+                    "FP": 1109,
+                    "IoU": 0.9217838945211956,
+                    "TN": 1010502,
+                    "TP": 35096,
+                    "n_pred": 36205,
+                    "n_ref": 36965
+                }
+            },
+            "prediction_file": "/root/PycharmProjects/CAD/dataset/PI-CAI/nnUNet_results/Dataset131_ProstatePI-CAI/nnUNetTrainer__nnUNetPlans__3d_fullres/fold_0/validation/10118_1000118.nii.gz",
+            "reference_file": "/root/PycharmProjects/CAD/dataset/PI-CAI/nnUNet_preprocessed/Dataset131_ProstatePI-CAI/gt_segmentations/10118_1000118.nii.gz"
+        },
+        {
+            "metrics": {
+                "1": {
+                    "Dice": 0.9754040003761267,
+                    "FN": 524,
+                    "FP": 1307,
+                    "IoU": 0.9519888821879016,
+                    "TN": 1010439,
+                    "TP": 36306,
+                    "n_pred": 37613,
+                    "n_ref": 36830
+                }
+            },
+            "prediction_file": "/root/PycharmProjects/CAD/dataset/PI-CAI/nnUNet_results/Dataset131_ProstatePI-CAI/nnUNetTrainer__nnUNetPlans__3d_fullres/fold_0/validation/10140_1000142.nii.gz",
+            "reference_file": "/root/PycharmProjects/CAD/dataset/PI-CAI/nnUNet_preprocessed/Dataset131_ProstatePI-CAI/gt_segmentations/10140_1000142.nii.gz"
+        },
+        {
+            "metrics": {
+                "1": {
+                    "Dice": 0.9523709256295797,
+                    "FN": 2167,
+                    "FP": 2357,
+                    "IoU": 0.9090726373758894,
+                    "TN": 998822,
+                    "TP": 45230,
+                    "n_pred": 47587,
+                    "n_ref": 47397
+                }
+            },
+            "prediction_file": "/root/PycharmProjects/CAD/dataset/PI-CAI/nnUNet_results/Dataset131_ProstatePI-CAI/nnUNetTrainer__nnUNetPlans__3d_fullres/fold_0/validation/10168_1000171.nii.gz",
+            "reference_file": "/root/PycharmProjects/CAD/dataset/PI-CAI/nnUNet_preprocessed/Dataset131_ProstatePI-CAI/gt_segmentations/10168_1000171.nii.gz"
+        },
+        {
+            "metrics": {
+                "1": {
+                    "Dice": 0.9484451460142068,
+                    "FN": 1113,
+                    "FP": 2153,
+                    "IoU": 0.9019454785637084,
+                    "TN": 1015268,
+                    "TP": 30042,
+                    "n_pred": 32195,
+                    "n_ref": 31155
+                }
+            },
+            "prediction_file": "/root/PycharmProjects/CAD/dataset/PI-CAI/nnUNet_results/Dataset131_ProstatePI-CAI/nnUNetTrainer__nnUNetPlans__3d_fullres/fold_0/validation/10209_1000213.nii.gz",
+            "reference_file": "/root/PycharmProjects/CAD/dataset/PI-CAI/nnUNet_preprocessed/Dataset131_ProstatePI-CAI/gt_segmentations/10209_1000213.nii.gz"
+        },
+        {
+            "metrics": {
+                "1": {
+                    "Dice": 0.9750617518525556,
+                    "FN": 2220,
+                    "FP": 4080,
+                    "IoU": 0.9513370718820967,
+                    "TN": 919114,
+                    "TP": 123162,
+                    "n_pred": 127242,
+                    "n_ref": 125382
+                }
+            },
+            "prediction_file": "/root/PycharmProjects/CAD/dataset/PI-CAI/nnUNet_results/Dataset131_ProstatePI-CAI/nnUNetTrainer__nnUNetPlans__3d_fullres/fold_0/validation/10214_1000218.nii.gz",
+            "reference_file": "/root/PycharmProjects/CAD/dataset/PI-CAI/nnUNet_preprocessed/Dataset131_ProstatePI-CAI/gt_segmentations/10214_1000218.nii.gz"
+        },
+        {
+            "metrics": {
+                "1": {
+                    "Dice": 0.9766423786578916,
+                    "FN": 883,
+                    "FP": 707,
+                    "IoU": 0.9543510091585082,
+                    "TN": 1013745,
+                    "TP": 33241,
+                    "n_pred": 33948,
+                    "n_ref": 34124
+                }
+            },
+            "prediction_file": "/root/PycharmProjects/CAD/dataset/PI-CAI/nnUNet_results/Dataset131_ProstatePI-CAI/nnUNetTrainer__nnUNetPlans__3d_fullres/fold_0/validation/10225_1000229.nii.gz",
+            "reference_file": "/root/PycharmProjects/CAD/dataset/PI-CAI/nnUNet_preprocessed/Dataset131_ProstatePI-CAI/gt_segmentations/10225_1000229.nii.gz"
+        },
+        {
+            "metrics": {
+                "1": {
+                    "Dice": 0.9696102530236881,
+                    "FN": 6602,
+                    "FP": 853,
+                    "IoU": 0.9410131029244209,
+                    "TN": 922192,
+                    "TP": 118929,
+                    "n_pred": 119782,
+                    "n_ref": 125531
+                }
+            },
+            "prediction_file": "/root/PycharmProjects/CAD/dataset/PI-CAI/nnUNet_results/Dataset131_ProstatePI-CAI/nnUNetTrainer__nnUNetPlans__3d_fullres/fold_0/validation/10229_1000233.nii.gz",
+            "reference_file": "/root/PycharmProjects/CAD/dataset/PI-CAI/nnUNet_preprocessed/Dataset131_ProstatePI-CAI/gt_segmentations/10229_1000233.nii.gz"
+        },
+        {
+            "metrics": {
+                "1": {
+                    "Dice": 0.96192087232722,
+                    "FN": 970,
+                    "FP": 2159,
+                    "IoU": 0.9266354044548651,
+                    "TN": 1005926,
+                    "TP": 39521,
+                    "n_pred": 41680,
+                    "n_ref": 40491
+                }
+            },
+            "prediction_file": "/root/PycharmProjects/CAD/dataset/PI-CAI/nnUNet_results/Dataset131_ProstatePI-CAI/nnUNetTrainer__nnUNetPlans__3d_fullres/fold_0/validation/10252_1000256.nii.gz",
+            "reference_file": "/root/PycharmProjects/CAD/dataset/PI-CAI/nnUNet_preprocessed/Dataset131_ProstatePI-CAI/gt_segmentations/10252_1000256.nii.gz"
+        },
+        {
+            "metrics": {
+                "1": {
+                    "Dice": 0.9554348248901106,
+                    "FN": 2068,
+                    "FP": 4806,
+                    "IoU": 0.9146722939424031,
+                    "TN": 968016,
+                    "TP": 73686,
+                    "n_pred": 78492,
+                    "n_ref": 75754
+                }
+            },
+            "prediction_file": "/root/PycharmProjects/CAD/dataset/PI-CAI/nnUNet_results/Dataset131_ProstatePI-CAI/nnUNetTrainer__nnUNetPlans__3d_fullres/fold_0/validation/10268_1000272.nii.gz",
+            "reference_file": "/root/PycharmProjects/CAD/dataset/PI-CAI/nnUNet_preprocessed/Dataset131_ProstatePI-CAI/gt_segmentations/10268_1000272.nii.gz"
+        },
+        {
+            "metrics": {
+                "1": {
+                    "Dice": 0.9435041214833515,
+                    "FN": 4,
+                    "FP": 5904,
+                    "IoU": 0.8930504516572836,
+                    "TN": 993335,
+                    "TP": 49333,
+                    "n_pred": 55237,
+                    "n_ref": 49337
+                }
+            },
+            "prediction_file": "/root/PycharmProjects/CAD/dataset/PI-CAI/nnUNet_results/Dataset131_ProstatePI-CAI/nnUNetTrainer__nnUNetPlans__3d_fullres/fold_0/validation/10280_1000285.nii.gz",
+            "reference_file": "/root/PycharmProjects/CAD/dataset/PI-CAI/nnUNet_preprocessed/Dataset131_ProstatePI-CAI/gt_segmentations/10280_1000285.nii.gz"
+        },
+        {
+            "metrics": {
+                "1": {
+                    "Dice": 0.9704914517026224,
+                    "FN": 864,
+                    "FP": 3539,
+                    "IoU": 0.9426744958141836,
+                    "TN": 971769,
+                    "TP": 72404,
+                    "n_pred": 75943,
+                    "n_ref": 73268
+                }
+            },
+            "prediction_file": "/root/PycharmProjects/CAD/dataset/PI-CAI/nnUNet_results/Dataset131_ProstatePI-CAI/nnUNetTrainer__nnUNetPlans__3d_fullres/fold_0/validation/10289_1000295.nii.gz",
+            "reference_file": "/root/PycharmProjects/CAD/dataset/PI-CAI/nnUNet_preprocessed/Dataset131_ProstatePI-CAI/gt_segmentations/10289_1000295.nii.gz"
+        },
+        {
+            "metrics": {
+                "1": {
+                    "Dice": 0.9108739331600583,
+                    "FN": 4014,
+                    "FP": 821,
+                    "IoU": 0.8363347099045427,
+                    "TN": 1019034,
+                    "TP": 24707,
+                    "n_pred": 25528,
+                    "n_ref": 28721
+                }
+            },
+            "prediction_file": "/root/PycharmProjects/CAD/dataset/PI-CAI/nnUNet_results/Dataset131_ProstatePI-CAI/nnUNetTrainer__nnUNetPlans__3d_fullres/fold_0/validation/10350_1000356.nii.gz",
+            "reference_file": "/root/PycharmProjects/CAD/dataset/PI-CAI/nnUNet_preprocessed/Dataset131_ProstatePI-CAI/gt_segmentations/10350_1000356.nii.gz"
+        },
+        {
+            "metrics": {
+                "1": {
+                    "Dice": 0.9677146183973748,
+                    "FN": 1617,
+                    "FP": 2653,
+                    "IoU": 0.9374487284659557,
+                    "TN": 980312,
+                    "TP": 63994,
+                    "n_pred": 66647,
+                    "n_ref": 65611
+                }
+            },
+            "prediction_file": "/root/PycharmProjects/CAD/dataset/PI-CAI/nnUNet_results/Dataset131_ProstatePI-CAI/nnUNetTrainer__nnUNetPlans__3d_fullres/fold_0/validation/10369_1000375.nii.gz",
+            "reference_file": "/root/PycharmProjects/CAD/dataset/PI-CAI/nnUNet_preprocessed/Dataset131_ProstatePI-CAI/gt_segmentations/10369_1000375.nii.gz"
+        },
+        {
+            "metrics": {
+                "1": {
+                    "Dice": 0.9793283351005433,
+                    "FN": 3407,
+                    "FP": 999,
+                    "IoU": 0.9594939967271591,
+                    "TN": 939802,
+                    "TP": 104368,
+                    "n_pred": 105367,
+                    "n_ref": 107775
+                }
+            },
+            "prediction_file": "/root/PycharmProjects/CAD/dataset/PI-CAI/nnUNet_results/Dataset131_ProstatePI-CAI/nnUNetTrainer__nnUNetPlans__3d_fullres/fold_0/validation/10418_1000426.nii.gz",
+            "reference_file": "/root/PycharmProjects/CAD/dataset/PI-CAI/nnUNet_preprocessed/Dataset131_ProstatePI-CAI/gt_segmentations/10418_1000426.nii.gz"
+        },
+        {
+            "metrics": {
+                "1": {
+                    "Dice": 0.9775819340481489,
+                    "FN": 2240,
+                    "FP": 1306,
+                    "IoU": 0.9561469682541646,
+                    "TN": 967715,
+                    "TP": 77315,
+                    "n_pred": 78621,
+                    "n_ref": 79555
+                }
+            },
+            "prediction_file": "/root/PycharmProjects/CAD/dataset/PI-CAI/nnUNet_results/Dataset131_ProstatePI-CAI/nnUNetTrainer__nnUNetPlans__3d_fullres/fold_0/validation/10426_1000434.nii.gz",
+            "reference_file": "/root/PycharmProjects/CAD/dataset/PI-CAI/nnUNet_preprocessed/Dataset131_ProstatePI-CAI/gt_segmentations/10426_1000434.nii.gz"
+        },
+        {
+            "metrics": {
+                "1": {
+                    "Dice": 0.9736182634318288,
+                    "FN": 2992,
+                    "FP": 840,
+                    "IoU": 0.9485927396635454,
+                    "TN": 974034,
+                    "TP": 70710,
+                    "n_pred": 71550,
+                    "n_ref": 73702
+                }
+            },
+            "prediction_file": "/root/PycharmProjects/CAD/dataset/PI-CAI/nnUNet_results/Dataset131_ProstatePI-CAI/nnUNetTrainer__nnUNetPlans__3d_fullres/fold_0/validation/10431_1000439.nii.gz",
+            "reference_file": "/root/PycharmProjects/CAD/dataset/PI-CAI/nnUNet_preprocessed/Dataset131_ProstatePI-CAI/gt_segmentations/10431_1000439.nii.gz"
+        },
+        {
+            "metrics": {
+                "1": {
+                    "Dice": 0.9619072369410896,
+                    "FN": 1994,
+                    "FP": 791,
+                    "IoU": 0.9266100980288816,
+                    "TN": 1010628,
+                    "TP": 35163,
+                    "n_pred": 35954,
+                    "n_ref": 37157
+                }
+            },
+            "prediction_file": "/root/PycharmProjects/CAD/dataset/PI-CAI/nnUNet_results/Dataset131_ProstatePI-CAI/nnUNetTrainer__nnUNetPlans__3d_fullres/fold_0/validation/10473_1000481.nii.gz",
+            "reference_file": "/root/PycharmProjects/CAD/dataset/PI-CAI/nnUNet_preprocessed/Dataset131_ProstatePI-CAI/gt_segmentations/10473_1000481.nii.gz"
+        },
+        {
+            "metrics": {
+                "1": {
+                    "Dice": 0.9619590760187153,
+                    "FN": 3254,
+                    "FP": 2169,
+                    "IoU": 0.9267063116637383,
+                    "TN": 974586,
+                    "TP": 68567,
+                    "n_pred": 70736,
+                    "n_ref": 71821
+                }
+            },
+            "prediction_file": "/root/PycharmProjects/CAD/dataset/PI-CAI/nnUNet_results/Dataset131_ProstatePI-CAI/nnUNetTrainer__nnUNetPlans__3d_fullres/fold_0/validation/10482_1000490.nii.gz",
+            "reference_file": "/root/PycharmProjects/CAD/dataset/PI-CAI/nnUNet_preprocessed/Dataset131_ProstatePI-CAI/gt_segmentations/10482_1000490.nii.gz"
+        },
+        {
+            "metrics": {
+                "1": {
+                    "Dice": 0.9674585290364619,
+                    "FN": 2259,
+                    "FP": 3734,
+                    "IoU": 0.9369682053870991,
+                    "TN": 953497,
+                    "TP": 89086,
+                    "n_pred": 92820,
+                    "n_ref": 91345
+                }
+            },
+            "prediction_file": "/root/PycharmProjects/CAD/dataset/PI-CAI/nnUNet_results/Dataset131_ProstatePI-CAI/nnUNetTrainer__nnUNetPlans__3d_fullres/fold_0/validation/10486_1000494.nii.gz",
+            "reference_file": "/root/PycharmProjects/CAD/dataset/PI-CAI/nnUNet_preprocessed/Dataset131_ProstatePI-CAI/gt_segmentations/10486_1000494.nii.gz"
+        },
+        {
+            "metrics": {
+                "1": {
+                    "Dice": 0.9506228079038148,
+                    "FN": 4577,
+                    "FP": 2265,
+                    "IoU": 0.9058923855633803,
+                    "TN": 975872,
+                    "TP": 65862,
+                    "n_pred": 68127,
+                    "n_ref": 70439
+                }
+            },
+            "prediction_file": "/root/PycharmProjects/CAD/dataset/PI-CAI/nnUNet_results/Dataset131_ProstatePI-CAI/nnUNetTrainer__nnUNetPlans__3d_fullres/fold_0/validation/10496_1000505.nii.gz",
+            "reference_file": "/root/PycharmProjects/CAD/dataset/PI-CAI/nnUNet_preprocessed/Dataset131_ProstatePI-CAI/gt_segmentations/10496_1000505.nii.gz"
+        },
+        {
+            "metrics": {
+                "1": {
+                    "Dice": 0.9538897128218956,
+                    "FN": 726,
+                    "FP": 1326,
+                    "IoU": 0.9118443098337414,
+                    "TN": 1025299,
+                    "TP": 21225,
+                    "n_pred": 22551,
+                    "n_ref": 21951
+                }
+            },
+            "prediction_file": "/root/PycharmProjects/CAD/dataset/PI-CAI/nnUNet_results/Dataset131_ProstatePI-CAI/nnUNetTrainer__nnUNetPlans__3d_fullres/fold_0/validation/10499_1000508.nii.gz",
+            "reference_file": "/root/PycharmProjects/CAD/dataset/PI-CAI/nnUNet_preprocessed/Dataset131_ProstatePI-CAI/gt_segmentations/10499_1000508.nii.gz"
+        },
+        {
+            "metrics": {
+                "1": {
+                    "Dice": 0.9645649676153291,
+                    "FN": 2373,
+                    "FP": 1112,
+                    "IoU": 0.9315552762338708,
+                    "TN": 997659,
+                    "TP": 47432,
+                    "n_pred": 48544,
+                    "n_ref": 49805
+                }
+            },
+            "prediction_file": "/root/PycharmProjects/CAD/dataset/PI-CAI/nnUNet_results/Dataset131_ProstatePI-CAI/nnUNetTrainer__nnUNetPlans__3d_fullres/fold_0/validation/10515_1000525.nii.gz",
+            "reference_file": "/root/PycharmProjects/CAD/dataset/PI-CAI/nnUNet_preprocessed/Dataset131_ProstatePI-CAI/gt_segmentations/10515_1000525.nii.gz"
+        },
+        {
+            "metrics": {
+                "1": {
+                    "Dice": 0.963679213520975,
+                    "FN": 1247,
+                    "FP": 1450,
+                    "IoU": 0.9299043559621583,
+                    "TN": 1010100,
+                    "TP": 35779,
+                    "n_pred": 37229,
+                    "n_ref": 37026
+                }
+            },
+            "prediction_file": "/root/PycharmProjects/CAD/dataset/PI-CAI/nnUNet_results/Dataset131_ProstatePI-CAI/nnUNetTrainer__nnUNetPlans__3d_fullres/fold_0/validation/10519_1000529.nii.gz",
+            "reference_file": "/root/PycharmProjects/CAD/dataset/PI-CAI/nnUNet_preprocessed/Dataset131_ProstatePI-CAI/gt_segmentations/10519_1000529.nii.gz"
+        },
+        {
+            "metrics": {
+                "1": {
+                    "Dice": 0.954730159554442,
+                    "FN": 4504,
+                    "FP": 2470,
+                    "IoU": 0.9133815237101622,
+                    "TN": 968062,
+                    "TP": 73540,
+                    "n_pred": 76010,
+                    "n_ref": 78044
+                }
+            },
+            "prediction_file": "/root/PycharmProjects/CAD/dataset/PI-CAI/nnUNet_results/Dataset131_ProstatePI-CAI/nnUNetTrainer__nnUNetPlans__3d_fullres/fold_0/validation/10520_1000530.nii.gz",
+            "reference_file": "/root/PycharmProjects/CAD/dataset/PI-CAI/nnUNet_preprocessed/Dataset131_ProstatePI-CAI/gt_segmentations/10520_1000530.nii.gz"
+        },
+        {
+            "metrics": {
+                "1": {
+                    "Dice": 0.9597533686430446,
+                    "FN": 2752,
+                    "FP": 2248,
+                    "IoU": 0.9226209820944953,
+                    "TN": 983959,
+                    "TP": 59617,
+                    "n_pred": 61865,
+                    "n_ref": 62369
+                }
+            },
+            "prediction_file": "/root/PycharmProjects/CAD/dataset/PI-CAI/nnUNet_results/Dataset131_ProstatePI-CAI/nnUNetTrainer__nnUNetPlans__3d_fullres/fold_0/validation/10522_1000532.nii.gz",
+            "reference_file": "/root/PycharmProjects/CAD/dataset/PI-CAI/nnUNet_preprocessed/Dataset131_ProstatePI-CAI/gt_segmentations/10522_1000532.nii.gz"
+        },
+        {
+            "metrics": {
+                "1": {
+                    "Dice": 0.9611603507488228,
+                    "FN": 1189,
+                    "FP": 2102,
+                    "IoU": 0.9252249386530946,
+                    "TN": 1004564,
+                    "TP": 40721,
+                    "n_pred": 42823,
+                    "n_ref": 41910
+                }
+            },
+            "prediction_file": "/root/PycharmProjects/CAD/dataset/PI-CAI/nnUNet_results/Dataset131_ProstatePI-CAI/nnUNetTrainer__nnUNetPlans__3d_fullres/fold_0/validation/10565_1000577.nii.gz",
+            "reference_file": "/root/PycharmProjects/CAD/dataset/PI-CAI/nnUNet_preprocessed/Dataset131_ProstatePI-CAI/gt_segmentations/10565_1000577.nii.gz"
+        },
+        {
+            "metrics": {
+                "1": {
+                    "Dice": 0.9582824918378788,
+                    "FN": 850,
+                    "FP": 1680,
+                    "IoU": 0.9199062935291883,
+                    "TN": 1016988,
+                    "TP": 29058,
+                    "n_pred": 30738,
+                    "n_ref": 29908
+                }
+            },
+            "prediction_file": "/root/PycharmProjects/CAD/dataset/PI-CAI/nnUNet_results/Dataset131_ProstatePI-CAI/nnUNetTrainer__nnUNetPlans__3d_fullres/fold_0/validation/10604_1000618.nii.gz",
+            "reference_file": "/root/PycharmProjects/CAD/dataset/PI-CAI/nnUNet_preprocessed/Dataset131_ProstatePI-CAI/gt_segmentations/10604_1000618.nii.gz"
+        },
+        {
+            "metrics": {
+                "1": {
+                    "Dice": 0.9292129985561327,
+                    "FN": 4362,
+                    "FP": 3188,
+                    "IoU": 0.8677850938638274,
+                    "TN": 991472,
+                    "TP": 49554,
+                    "n_pred": 52742,
+                    "n_ref": 53916
+                }
+            },
+            "prediction_file": "/root/PycharmProjects/CAD/dataset/PI-CAI/nnUNet_results/Dataset131_ProstatePI-CAI/nnUNetTrainer__nnUNetPlans__3d_fullres/fold_0/validation/10611_1000625.nii.gz",
+            "reference_file": "/root/PycharmProjects/CAD/dataset/PI-CAI/nnUNet_preprocessed/Dataset131_ProstatePI-CAI/gt_segmentations/10611_1000625.nii.gz"
+        },
+        {
+            "metrics": {
+                "1": {
+                    "Dice": 0.9596690485144791,
+                    "FN": 4026,
+                    "FP": 1336,
+                    "IoU": 0.9224651512522413,
+                    "TN": 979420,
+                    "TP": 63794,
+                    "n_pred": 65130,
+                    "n_ref": 67820
+                }
+            },
+            "prediction_file": "/root/PycharmProjects/CAD/dataset/PI-CAI/nnUNet_results/Dataset131_ProstatePI-CAI/nnUNetTrainer__nnUNetPlans__3d_fullres/fold_0/validation/10620_1000634.nii.gz",
+            "reference_file": "/root/PycharmProjects/CAD/dataset/PI-CAI/nnUNet_preprocessed/Dataset131_ProstatePI-CAI/gt_segmentations/10620_1000634.nii.gz"
+        },
+        {
+            "metrics": {
+                "1": {
+                    "Dice": 0.9513828581521659,
+                    "FN": 2383,
+                    "FP": 920,
+                    "IoU": 0.9072737991634149,
+                    "TN": 1012955,
+                    "TP": 32318,
+                    "n_pred": 33238,
+                    "n_ref": 34701
+                }
+            },
+            "prediction_file": "/root/PycharmProjects/CAD/dataset/PI-CAI/nnUNet_results/Dataset131_ProstatePI-CAI/nnUNetTrainer__nnUNetPlans__3d_fullres/fold_0/validation/10637_1000653.nii.gz",
+            "reference_file": "/root/PycharmProjects/CAD/dataset/PI-CAI/nnUNet_preprocessed/Dataset131_ProstatePI-CAI/gt_segmentations/10637_1000653.nii.gz"
+        },
+        {
+            "metrics": {
+                "1": {
+                    "Dice": 0.9057962318492739,
+                    "FN": 1045,
+                    "FP": 2880,
+                    "IoU": 0.8278131169116034,
+                    "TN": 1025781,
+                    "TP": 18870,
+                    "n_pred": 21750,
+                    "n_ref": 19915
+                }
+            },
+            "prediction_file": "/root/PycharmProjects/CAD/dataset/PI-CAI/nnUNet_results/Dataset131_ProstatePI-CAI/nnUNetTrainer__nnUNetPlans__3d_fullres/fold_0/validation/10684_1000700.nii.gz",
+            "reference_file": "/root/PycharmProjects/CAD/dataset/PI-CAI/nnUNet_preprocessed/Dataset131_ProstatePI-CAI/gt_segmentations/10684_1000700.nii.gz"
+        },
+        {
+            "metrics": {
+                "1": {
+                    "Dice": 0.984426997942853,
+                    "FN": 2028,
+                    "FP": 1477,
+                    "IoU": 0.969331595019556,
+                    "TN": 934289,
+                    "TP": 110782,
+                    "n_pred": 112259,
+                    "n_ref": 112810
+                }
+            },
+            "prediction_file": "/root/PycharmProjects/CAD/dataset/PI-CAI/nnUNet_results/Dataset131_ProstatePI-CAI/nnUNetTrainer__nnUNetPlans__3d_fullres/fold_0/validation/10687_1000703.nii.gz",
+            "reference_file": "/root/PycharmProjects/CAD/dataset/PI-CAI/nnUNet_preprocessed/Dataset131_ProstatePI-CAI/gt_segmentations/10687_1000703.nii.gz"
+        },
+        {
+            "metrics": {
+                "1": {
+                    "Dice": 0.9434663100809747,
+                    "FN": 2379,
+                    "FP": 2187,
+                    "IoU": 0.8929827028547321,
+                    "TN": 1005910,
+                    "TP": 38100,
+                    "n_pred": 40287,
+                    "n_ref": 40479
+                }
+            },
+            "prediction_file": "/root/PycharmProjects/CAD/dataset/PI-CAI/nnUNet_results/Dataset131_ProstatePI-CAI/nnUNetTrainer__nnUNetPlans__3d_fullres/fold_0/validation/10763_1000779.nii.gz",
+            "reference_file": "/root/PycharmProjects/CAD/dataset/PI-CAI/nnUNet_preprocessed/Dataset131_ProstatePI-CAI/gt_segmentations/10763_1000779.nii.gz"
+        },
+        {
+            "metrics": {
+                "1": {
+                    "Dice": 0.9558500971360532,
+                    "FN": 872,
+                    "FP": 1946,
+                    "IoU": 0.9154337844731867,
+                    "TN": 1015253,
+                    "TP": 30505,
+                    "n_pred": 32451,
+                    "n_ref": 31377
+                }
+            },
+            "prediction_file": "/root/PycharmProjects/CAD/dataset/PI-CAI/nnUNet_results/Dataset131_ProstatePI-CAI/nnUNetTrainer__nnUNetPlans__3d_fullres/fold_0/validation/10773_1000789.nii.gz",
+            "reference_file": "/root/PycharmProjects/CAD/dataset/PI-CAI/nnUNet_preprocessed/Dataset131_ProstatePI-CAI/gt_segmentations/10773_1000789.nii.gz"
+        },
+        {
+            "metrics": {
+                "1": {
+                    "Dice": 0.9661705371962163,
+                    "FN": 2202,
+                    "FP": 305,
+                    "IoU": 0.9345550421593964,
+                    "TN": 1010269,
+                    "TP": 35800,
+                    "n_pred": 36105,
+                    "n_ref": 38002
+                }
+            },
+            "prediction_file": "/root/PycharmProjects/CAD/dataset/PI-CAI/nnUNet_results/Dataset131_ProstatePI-CAI/nnUNetTrainer__nnUNetPlans__3d_fullres/fold_0/validation/10797_1000813.nii.gz",
+            "reference_file": "/root/PycharmProjects/CAD/dataset/PI-CAI/nnUNet_preprocessed/Dataset131_ProstatePI-CAI/gt_segmentations/10797_1000813.nii.gz"
+        },
+        {
+            "metrics": {
+                "1": {
+                    "Dice": 0.9589692176302402,
+                    "FN": 684,
+                    "FP": 1526,
+                    "IoU": 0.921172777857041,
+                    "TN": 1020540,
+                    "TP": 25826,
+                    "n_pred": 27352,
+                    "n_ref": 26510
+                }
+            },
+            "prediction_file": "/root/PycharmProjects/CAD/dataset/PI-CAI/nnUNet_results/Dataset131_ProstatePI-CAI/nnUNetTrainer__nnUNetPlans__3d_fullres/fold_0/validation/10799_1000815.nii.gz",
+            "reference_file": "/root/PycharmProjects/CAD/dataset/PI-CAI/nnUNet_preprocessed/Dataset131_ProstatePI-CAI/gt_segmentations/10799_1000815.nii.gz"
+        },
+        {
+            "metrics": {
+                "1": {
+                    "Dice": 0.9553827789786108,
+                    "FN": 4737,
+                    "FP": 2178,
+                    "IoU": 0.9145768993205683,
+                    "TN": 967626,
+                    "TP": 74035,
+                    "n_pred": 76213,
+                    "n_ref": 78772
+                }
+            },
+            "prediction_file": "/root/PycharmProjects/CAD/dataset/PI-CAI/nnUNet_results/Dataset131_ProstatePI-CAI/nnUNetTrainer__nnUNetPlans__3d_fullres/fold_0/validation/10825_1000841.nii.gz",
+            "reference_file": "/root/PycharmProjects/CAD/dataset/PI-CAI/nnUNet_preprocessed/Dataset131_ProstatePI-CAI/gt_segmentations/10825_1000841.nii.gz"
+        },
+        {
+            "metrics": {
+                "1": {
+                    "Dice": 0.9466189468088136,
+                    "FN": 2409,
+                    "FP": 3214,
+                    "IoU": 0.8986481614996396,
+                    "TN": 993096,
+                    "TP": 49857,
+                    "n_pred": 53071,
+                    "n_ref": 52266
+                }
+            },
+            "prediction_file": "/root/PycharmProjects/CAD/dataset/PI-CAI/nnUNet_results/Dataset131_ProstatePI-CAI/nnUNetTrainer__nnUNetPlans__3d_fullres/fold_0/validation/10842_1000858.nii.gz",
+            "reference_file": "/root/PycharmProjects/CAD/dataset/PI-CAI/nnUNet_preprocessed/Dataset131_ProstatePI-CAI/gt_segmentations/10842_1000858.nii.gz"
+        },
+        {
+            "metrics": {
+                "1": {
+                    "Dice": 0.9713460125046566,
+                    "FN": 2911,
+                    "FP": 2781,
+                    "IoU": 0.9442883849308499,
+                    "TN": 946407,
+                    "TP": 96477,
+                    "n_pred": 99258,
+                    "n_ref": 99388
+                }
+            },
+            "prediction_file": "/root/PycharmProjects/CAD/dataset/PI-CAI/nnUNet_results/Dataset131_ProstatePI-CAI/nnUNetTrainer__nnUNetPlans__3d_fullres/fold_0/validation/10867_1000883.nii.gz",
+            "reference_file": "/root/PycharmProjects/CAD/dataset/PI-CAI/nnUNet_preprocessed/Dataset131_ProstatePI-CAI/gt_segmentations/10867_1000883.nii.gz"
+        },
+        {
+            "metrics": {
+                "1": {
+                    "Dice": 0.9645554710594477,
+                    "FN": 4488,
+                    "FP": 1711,
+                    "IoU": 0.9315375610187088,
+                    "TN": 958030,
+                    "TP": 84347,
+                    "n_pred": 86058,
+                    "n_ref": 88835
+                }
+            },
+            "prediction_file": "/root/PycharmProjects/CAD/dataset/PI-CAI/nnUNet_results/Dataset131_ProstatePI-CAI/nnUNetTrainer__nnUNetPlans__3d_fullres/fold_0/validation/10880_1000896.nii.gz",
+            "reference_file": "/root/PycharmProjects/CAD/dataset/PI-CAI/nnUNet_preprocessed/Dataset131_ProstatePI-CAI/gt_segmentations/10880_1000896.nii.gz"
+        },
+        {
+            "metrics": {
+                "1": {
+                    "Dice": 0.964821004393433,
+                    "FN": 4449,
+                    "FP": 2245,
+                    "IoU": 0.932033018915818,
+                    "TN": 950087,
+                    "TP": 91795,
+                    "n_pred": 94040,
+                    "n_ref": 96244
+                }
+            },
+            "prediction_file": "/root/PycharmProjects/CAD/dataset/PI-CAI/nnUNet_results/Dataset131_ProstatePI-CAI/nnUNetTrainer__nnUNetPlans__3d_fullres/fold_0/validation/10888_1000904.nii.gz",
+            "reference_file": "/root/PycharmProjects/CAD/dataset/PI-CAI/nnUNet_preprocessed/Dataset131_ProstatePI-CAI/gt_segmentations/10888_1000904.nii.gz"
+        },
+        {
+            "metrics": {
+                "1": {
+                    "Dice": 0.9622561306304326,
+                    "FN": 570,
+                    "FP": 2005,
+                    "IoU": 0.927257832142151,
+                    "TN": 1013177,
+                    "TP": 32824,
+                    "n_pred": 34829,
+                    "n_ref": 33394
+                }
+            },
+            "prediction_file": "/root/PycharmProjects/CAD/dataset/PI-CAI/nnUNet_results/Dataset131_ProstatePI-CAI/nnUNetTrainer__nnUNetPlans__3d_fullres/fold_0/validation/10895_1000911.nii.gz",
+            "reference_file": "/root/PycharmProjects/CAD/dataset/PI-CAI/nnUNet_preprocessed/Dataset131_ProstatePI-CAI/gt_segmentations/10895_1000911.nii.gz"
+        },
+        {
+            "metrics": {
+                "1": {
+                    "Dice": 0.9258983248550043,
+                    "FN": 3541,
+                    "FP": 1033,
+                    "IoU": 0.8620211161387632,
+                    "TN": 1015426,
+                    "TP": 28576,
+                    "n_pred": 29609,
+                    "n_ref": 32117
+                }
+            },
+            "prediction_file": "/root/PycharmProjects/CAD/dataset/PI-CAI/nnUNet_results/Dataset131_ProstatePI-CAI/nnUNetTrainer__nnUNetPlans__3d_fullres/fold_0/validation/10911_1000928.nii.gz",
+            "reference_file": "/root/PycharmProjects/CAD/dataset/PI-CAI/nnUNet_preprocessed/Dataset131_ProstatePI-CAI/gt_segmentations/10911_1000928.nii.gz"
+        },
+        {
+            "metrics": {
+                "1": {
+                    "Dice": 0.9686614965194145,
+                    "FN": 1822,
+                    "FP": 546,
+                    "IoU": 0.9392275118696266,
+                    "TN": 1009611,
+                    "TP": 36597,
+                    "n_pred": 37143,
+                    "n_ref": 38419
+                }
+            },
+            "prediction_file": "/root/PycharmProjects/CAD/dataset/PI-CAI/nnUNet_results/Dataset131_ProstatePI-CAI/nnUNetTrainer__nnUNetPlans__3d_fullres/fold_0/validation/10920_1000937.nii.gz",
+            "reference_file": "/root/PycharmProjects/CAD/dataset/PI-CAI/nnUNet_preprocessed/Dataset131_ProstatePI-CAI/gt_segmentations/10920_1000937.nii.gz"
+        },
+        {
+            "metrics": {
+                "1": {
+                    "Dice": 0.9700861074262749,
+                    "FN": 2919,
+                    "FP": 892,
+                    "IoU": 0.9419099154027895,
+                    "TN": 982971,
+                    "TP": 61794,
+                    "n_pred": 62686,
+                    "n_ref": 64713
+                }
+            },
+            "prediction_file": "/root/PycharmProjects/CAD/dataset/PI-CAI/nnUNet_results/Dataset131_ProstatePI-CAI/nnUNetTrainer__nnUNetPlans__3d_fullres/fold_0/validation/10976_1000995.nii.gz",
+            "reference_file": "/root/PycharmProjects/CAD/dataset/PI-CAI/nnUNet_preprocessed/Dataset131_ProstatePI-CAI/gt_segmentations/10976_1000995.nii.gz"
+        },
+        {
+            "metrics": {
+                "1": {
+                    "Dice": 0.9440524422998133,
+                    "FN": 1587,
+                    "FP": 3329,
+                    "IoU": 0.8940334540438006,
+                    "TN": 1002184,
+                    "TP": 41476,
+                    "n_pred": 44805,
+                    "n_ref": 43063
+                }
+            },
+            "prediction_file": "/root/PycharmProjects/CAD/dataset/PI-CAI/nnUNet_results/Dataset131_ProstatePI-CAI/nnUNetTrainer__nnUNetPlans__3d_fullres/fold_0/validation/11067_1001089.nii.gz",
+            "reference_file": "/root/PycharmProjects/CAD/dataset/PI-CAI/nnUNet_preprocessed/Dataset131_ProstatePI-CAI/gt_segmentations/11067_1001089.nii.gz"
+        },
+        {
+            "metrics": {
+                "1": {
+                    "Dice": 0.9592156152582494,
+                    "FN": 2363,
+                    "FP": 790,
+                    "IoU": 0.9216276006064975,
+                    "TN": 1008345,
+                    "TP": 37078,
+                    "n_pred": 37868,
+                    "n_ref": 39441
+                }
+            },
+            "prediction_file": "/root/PycharmProjects/CAD/dataset/PI-CAI/nnUNet_results/Dataset131_ProstatePI-CAI/nnUNetTrainer__nnUNetPlans__3d_fullres/fold_0/validation/11076_1001098.nii.gz",
+            "reference_file": "/root/PycharmProjects/CAD/dataset/PI-CAI/nnUNet_preprocessed/Dataset131_ProstatePI-CAI/gt_segmentations/11076_1001098.nii.gz"
+        },
+        {
+            "metrics": {
+                "1": {
+                    "Dice": 0.9779557401796516,
+                    "FN": 344,
+                    "FP": 1715,
+                    "IoU": 0.9568624164589051,
+                    "TN": 1000845,
+                    "TP": 45672,
+                    "n_pred": 47387,
+                    "n_ref": 46016
+                }
+            },
+            "prediction_file": "/root/PycharmProjects/CAD/dataset/PI-CAI/nnUNet_results/Dataset131_ProstatePI-CAI/nnUNetTrainer__nnUNetPlans__3d_fullres/fold_0/validation/11133_1001156.nii.gz",
+            "reference_file": "/root/PycharmProjects/CAD/dataset/PI-CAI/nnUNet_preprocessed/Dataset131_ProstatePI-CAI/gt_segmentations/11133_1001156.nii.gz"
+        },
+        {
+            "metrics": {
+                "1": {
+                    "Dice": 0.9135875689460886,
+                    "FN": 3562,
+                    "FP": 2266,
+                    "IoU": 0.8409214979801288,
+                    "TN": 1011940,
+                    "TP": 30808,
+                    "n_pred": 33074,
+                    "n_ref": 34370
+                }
+            },
+            "prediction_file": "/root/PycharmProjects/CAD/dataset/PI-CAI/nnUNet_results/Dataset131_ProstatePI-CAI/nnUNetTrainer__nnUNetPlans__3d_fullres/fold_0/validation/11155_1001178.nii.gz",
+            "reference_file": "/root/PycharmProjects/CAD/dataset/PI-CAI/nnUNet_preprocessed/Dataset131_ProstatePI-CAI/gt_segmentations/11155_1001178.nii.gz"
+        },
+        {
+            "metrics": {
+                "1": {
+                    "Dice": 0.95696331738437,
+                    "FN": 5092,
+                    "FP": 1654,
+                    "IoU": 0.9174781034398395,
+                    "TN": 966828,
+                    "TP": 75002,
+                    "n_pred": 76656,
+                    "n_ref": 80094
+                }
+            },
+            "prediction_file": "/root/PycharmProjects/CAD/dataset/PI-CAI/nnUNet_results/Dataset131_ProstatePI-CAI/nnUNetTrainer__nnUNetPlans__3d_fullres/fold_0/validation/11162_1001185.nii.gz",
+            "reference_file": "/root/PycharmProjects/CAD/dataset/PI-CAI/nnUNet_preprocessed/Dataset131_ProstatePI-CAI/gt_segmentations/11162_1001185.nii.gz"
+        },
+        {
+            "metrics": {
+                "1": {
+                    "Dice": 0.9743320787314124,
+                    "FN": 1073,
+                    "FP": 591,
+                    "IoU": 0.949948866028996,
+                    "TN": 1015330,
+                    "TP": 31582,
+                    "n_pred": 32173,
+                    "n_ref": 32655
+                }
+            },
+            "prediction_file": "/root/PycharmProjects/CAD/dataset/PI-CAI/nnUNet_results/Dataset131_ProstatePI-CAI/nnUNetTrainer__nnUNetPlans__3d_fullres/fold_0/validation/11163_1001186.nii.gz",
+            "reference_file": "/root/PycharmProjects/CAD/dataset/PI-CAI/nnUNet_preprocessed/Dataset131_ProstatePI-CAI/gt_segmentations/11163_1001186.nii.gz"
+        },
+        {
+            "metrics": {
+                "1": {
+                    "Dice": 0.9873373569769107,
+                    "FN": 1040,
+                    "FP": 993,
+                    "IoU": 0.9749913890665748,
+                    "TN": 967284,
+                    "TP": 79259,
+                    "n_pred": 80252,
+                    "n_ref": 80299
+                }
+            },
+            "prediction_file": "/root/PycharmProjects/CAD/dataset/PI-CAI/nnUNet_results/Dataset131_ProstatePI-CAI/nnUNetTrainer__nnUNetPlans__3d_fullres/fold_0/validation/11179_1001202.nii.gz",
+            "reference_file": "/root/PycharmProjects/CAD/dataset/PI-CAI/nnUNet_preprocessed/Dataset131_ProstatePI-CAI/gt_segmentations/11179_1001202.nii.gz"
+        },
+        {
+            "metrics": {
+                "1": {
+                    "Dice": 0.9629319419135041,
+                    "FN": 649,
+                    "FP": 2626,
+                    "IoU": 0.9285137406413027,
+                    "TN": 1002763,
+                    "TP": 42538,
+                    "n_pred": 45164,
+                    "n_ref": 43187
+                }
+            },
+            "prediction_file": "/root/PycharmProjects/CAD/dataset/PI-CAI/nnUNet_results/Dataset131_ProstatePI-CAI/nnUNetTrainer__nnUNetPlans__3d_fullres/fold_0/validation/11188_1001211.nii.gz",
+            "reference_file": "/root/PycharmProjects/CAD/dataset/PI-CAI/nnUNet_preprocessed/Dataset131_ProstatePI-CAI/gt_segmentations/11188_1001211.nii.gz"
+        },
+        {
+            "metrics": {
+                "1": {
+                    "Dice": 0.931534388368684,
+                    "FN": 11128,
+                    "FP": 315,
+                    "IoU": 0.8718431161733248,
+                    "TN": 959287,
+                    "TP": 77846,
+                    "n_pred": 78161,
+                    "n_ref": 88974
+                }
+            },
+            "prediction_file": "/root/PycharmProjects/CAD/dataset/PI-CAI/nnUNet_results/Dataset131_ProstatePI-CAI/nnUNetTrainer__nnUNetPlans__3d_fullres/fold_0/validation/11198_1001221.nii.gz",
+            "reference_file": "/root/PycharmProjects/CAD/dataset/PI-CAI/nnUNet_preprocessed/Dataset131_ProstatePI-CAI/gt_segmentations/11198_1001221.nii.gz"
+        },
+        {
+            "metrics": {
+                "1": {
+                    "Dice": 0.969195195077502,
+                    "FN": 1301,
+                    "FP": 1843,
+                    "IoU": 0.940231545729331,
+                    "TN": 995973,
+                    "TP": 49459,
+                    "n_pred": 51302,
+                    "n_ref": 50760
+                }
+            },
+            "prediction_file": "/root/PycharmProjects/CAD/dataset/PI-CAI/nnUNet_results/Dataset131_ProstatePI-CAI/nnUNetTrainer__nnUNetPlans__3d_fullres/fold_0/validation/11229_1001252.nii.gz",
+            "reference_file": "/root/PycharmProjects/CAD/dataset/PI-CAI/nnUNet_preprocessed/Dataset131_ProstatePI-CAI/gt_segmentations/11229_1001252.nii.gz"
+        },
+        {
+            "metrics": {
+                "1": {
+                    "Dice": 0.9637824669634407,
+                    "FN": 7349,
+                    "FP": 917,
+                    "IoU": 0.9300966604368748,
+                    "TN": 930327,
+                    "TP": 109983,
+                    "n_pred": 110900,
+                    "n_ref": 117332
+                }
+            },
+            "prediction_file": "/root/PycharmProjects/CAD/dataset/PI-CAI/nnUNet_results/Dataset131_ProstatePI-CAI/nnUNetTrainer__nnUNetPlans__3d_fullres/fold_0/validation/11239_1001262.nii.gz",
+            "reference_file": "/root/PycharmProjects/CAD/dataset/PI-CAI/nnUNet_preprocessed/Dataset131_ProstatePI-CAI/gt_segmentations/11239_1001262.nii.gz"
+        },
+        {
+            "metrics": {
+                "1": {
+                    "Dice": 0.9650851397099692,
+                    "FN": 1822,
+                    "FP": 942,
+                    "IoU": 0.9325261204960453,
+                    "TN": 1007612,
+                    "TP": 38200,
+                    "n_pred": 39142,
+                    "n_ref": 40022
+                }
+            },
+            "prediction_file": "/root/PycharmProjects/CAD/dataset/PI-CAI/nnUNet_results/Dataset131_ProstatePI-CAI/nnUNetTrainer__nnUNetPlans__3d_fullres/fold_0/validation/11240_1001263.nii.gz",
+            "reference_file": "/root/PycharmProjects/CAD/dataset/PI-CAI/nnUNet_preprocessed/Dataset131_ProstatePI-CAI/gt_segmentations/11240_1001263.nii.gz"
+        },
+        {
+            "metrics": {
+                "1": {
+                    "Dice": 0.8968826752314377,
+                    "FN": 1458,
+                    "FP": 4000,
+                    "IoU": 0.8130437761183805,
+                    "TN": 1019382,
+                    "TP": 23736,
+                    "n_pred": 27736,
+                    "n_ref": 25194
+                }
+            },
+            "prediction_file": "/root/PycharmProjects/CAD/dataset/PI-CAI/nnUNet_results/Dataset131_ProstatePI-CAI/nnUNetTrainer__nnUNetPlans__3d_fullres/fold_0/validation/11247_1001270.nii.gz",
+            "reference_file": "/root/PycharmProjects/CAD/dataset/PI-CAI/nnUNet_preprocessed/Dataset131_ProstatePI-CAI/gt_segmentations/11247_1001270.nii.gz"
+        },
+        {
+            "metrics": {
+                "1": {
+                    "Dice": 0.9699524259658149,
+                    "FN": 1151,
+                    "FP": 788,
+                    "IoU": 0.9416578907777945,
+                    "TN": 1015341,
+                    "TP": 31296,
+                    "n_pred": 32084,
+                    "n_ref": 32447
+                }
+            },
+            "prediction_file": "/root/PycharmProjects/CAD/dataset/PI-CAI/nnUNet_results/Dataset131_ProstatePI-CAI/nnUNetTrainer__nnUNetPlans__3d_fullres/fold_0/validation/11260_1001283.nii.gz",
+            "reference_file": "/root/PycharmProjects/CAD/dataset/PI-CAI/nnUNet_preprocessed/Dataset131_ProstatePI-CAI/gt_segmentations/11260_1001283.nii.gz"
+        },
+        {
+            "metrics": {
+                "1": {
+                    "Dice": 0.98028626729432,
+                    "FN": 1283,
+                    "FP": 1192,
+                    "IoU": 0.9613347705863055,
+                    "TN": 984565,
+                    "TP": 61536,
+                    "n_pred": 62728,
+                    "n_ref": 62819
+                }
+            },
+            "prediction_file": "/root/PycharmProjects/CAD/dataset/PI-CAI/nnUNet_results/Dataset131_ProstatePI-CAI/nnUNetTrainer__nnUNetPlans__3d_fullres/fold_0/validation/11330_1001353.nii.gz",
+            "reference_file": "/root/PycharmProjects/CAD/dataset/PI-CAI/nnUNet_preprocessed/Dataset131_ProstatePI-CAI/gt_segmentations/11330_1001353.nii.gz"
+        },
+        {
+            "metrics": {
+                "1": {
+                    "Dice": 0.9646280110613817,
+                    "FN": 868,
+                    "FP": 2317,
+                    "IoU": 0.9316728879735702,
+                    "TN": 1001962,
+                    "TP": 43429,
+                    "n_pred": 45746,
+                    "n_ref": 44297
+                }
+            },
+            "prediction_file": "/root/PycharmProjects/CAD/dataset/PI-CAI/nnUNet_results/Dataset131_ProstatePI-CAI/nnUNetTrainer__nnUNetPlans__3d_fullres/fold_0/validation/11367_1001390.nii.gz",
+            "reference_file": "/root/PycharmProjects/CAD/dataset/PI-CAI/nnUNet_preprocessed/Dataset131_ProstatePI-CAI/gt_segmentations/11367_1001390.nii.gz"
+        },
+        {
+            "metrics": {
+                "1": {
+                    "Dice": 0.9324192619501174,
+                    "FN": 1095,
+                    "FP": 5007,
+                    "IoU": 0.8733946096230056,
+                    "TN": 1000379,
+                    "TP": 42095,
+                    "n_pred": 47102,
+                    "n_ref": 43190
+                }
+            },
+            "prediction_file": "/root/PycharmProjects/CAD/dataset/PI-CAI/nnUNet_results/Dataset131_ProstatePI-CAI/nnUNetTrainer__nnUNetPlans__3d_fullres/fold_0/validation/11428_1001452.nii.gz",
+            "reference_file": "/root/PycharmProjects/CAD/dataset/PI-CAI/nnUNet_preprocessed/Dataset131_ProstatePI-CAI/gt_segmentations/11428_1001452.nii.gz"
+        },
+        {
+            "metrics": {
+                "1": {
+                    "Dice": 0.9395428327280496,
+                    "FN": 671,
+                    "FP": 3574,
+                    "IoU": 0.8859790491539081,
+                    "TN": 1011346,
+                    "TP": 32985,
+                    "n_pred": 36559,
+                    "n_ref": 33656
+                }
+            },
+            "prediction_file": "/root/PycharmProjects/CAD/dataset/PI-CAI/nnUNet_results/Dataset131_ProstatePI-CAI/nnUNetTrainer__nnUNetPlans__3d_fullres/fold_0/validation/11441_1001465.nii.gz",
+            "reference_file": "/root/PycharmProjects/CAD/dataset/PI-CAI/nnUNet_preprocessed/Dataset131_ProstatePI-CAI/gt_segmentations/11441_1001465.nii.gz"
+        },
+        {
+            "metrics": {
+                "1": {
+                    "Dice": 0.9661553875849063,
+                    "FN": 1397,
+                    "FP": 900,
+                    "IoU": 0.9345266938403215,
+                    "TN": 1013493,
+                    "TP": 32786,
+                    "n_pred": 33686,
+                    "n_ref": 34183
+                }
+            },
+            "prediction_file": "/root/PycharmProjects/CAD/dataset/PI-CAI/nnUNet_results/Dataset131_ProstatePI-CAI/nnUNetTrainer__nnUNetPlans__3d_fullres/fold_0/validation/11442_1001466.nii.gz",
+            "reference_file": "/root/PycharmProjects/CAD/dataset/PI-CAI/nnUNet_preprocessed/Dataset131_ProstatePI-CAI/gt_segmentations/11442_1001466.nii.gz"
+        },
+        {
+            "metrics": {
+                "1": {
+                    "Dice": 0.9245661892854437,
+                    "FN": 2736,
+                    "FP": 1246,
+                    "IoU": 0.859714638013035,
+                    "TN": 1020191,
+                    "TP": 24403,
+                    "n_pred": 25649,
+                    "n_ref": 27139
+                }
+            },
+            "prediction_file": "/root/PycharmProjects/CAD/dataset/PI-CAI/nnUNet_results/Dataset131_ProstatePI-CAI/nnUNetTrainer__nnUNetPlans__3d_fullres/fold_0/validation/11446_1001470.nii.gz",
+            "reference_file": "/root/PycharmProjects/CAD/dataset/PI-CAI/nnUNet_preprocessed/Dataset131_ProstatePI-CAI/gt_segmentations/11446_1001470.nii.gz"
+        },
+        {
+            "metrics": {
+                "1": {
+                    "Dice": 0.9285911929796822,
+                    "FN": 4524,
+                    "FP": 2702,
+                    "IoU": 0.8667011012931432,
+                    "TN": 994367,
+                    "TP": 46983,
+                    "n_pred": 49685,
+                    "n_ref": 51507
+                }
+            },
+            "prediction_file": "/root/PycharmProjects/CAD/dataset/PI-CAI/nnUNet_results/Dataset131_ProstatePI-CAI/nnUNetTrainer__nnUNetPlans__3d_fullres/fold_0/validation/11448_1001472.nii.gz",
+            "reference_file": "/root/PycharmProjects/CAD/dataset/PI-CAI/nnUNet_preprocessed/Dataset131_ProstatePI-CAI/gt_segmentations/11448_1001472.nii.gz"
+        },
+        {
+            "metrics": {
+                "1": {
+                    "Dice": 0.9696156701353165,
+                    "FN": 1290,
+                    "FP": 1043,
+                    "IoU": 0.9410233075484099,
+                    "TN": 1009018,
+                    "TP": 37225,
+                    "n_pred": 38268,
+                    "n_ref": 38515
+                }
+            },
+            "prediction_file": "/root/PycharmProjects/CAD/dataset/PI-CAI/nnUNet_results/Dataset131_ProstatePI-CAI/nnUNetTrainer__nnUNetPlans__3d_fullres/fold_0/validation/11472_1001496.nii.gz",
+            "reference_file": "/root/PycharmProjects/CAD/dataset/PI-CAI/nnUNet_preprocessed/Dataset131_ProstatePI-CAI/gt_segmentations/11472_1001496.nii.gz"
+        }
+    ]
+}

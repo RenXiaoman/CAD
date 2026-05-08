@@ -1,0 +1,1498 @@
+{
+    "foreground_mean": {
+        "Dice": 0.9384688034931992,
+        "FN": 3801.836956521739,
+        "FP": 3620.467391304348,
+        "IoU": 0.8854400965821756,
+        "TN": 980323.1195652174,
+        "TP": 60830.57608695652,
+        "n_pred": 64451.04347826087,
+        "n_ref": 64632.413043478264
+    },
+    "mean": {
+        "1": {
+            "Dice": 0.9384688034931992,
+            "FN": 3801.836956521739,
+            "FP": 3620.467391304348,
+            "IoU": 0.8854400965821756,
+            "TN": 980323.1195652174,
+            "TP": 60830.57608695652,
+            "n_pred": 64451.04347826087,
+            "n_ref": 64632.413043478264
+        }
+    },
+    "metric_per_case": [
+        {
+            "metrics": {
+                "1": {
+                    "Dice": 0.9399001702299548,
+                    "FN": 689,
+                    "FP": 3477,
+                    "IoU": 0.8866147732839802,
+                    "TN": 1011834,
+                    "TP": 32576,
+                    "n_pred": 36053,
+                    "n_ref": 33265
+                }
+            },
+            "prediction_file": "/home/ikun_server/clib/PycharmProjects/CAD/dataset/AHCDU/\u4e8c\u5206\u7c7b\u56fe\u50cf/nnUNet_results/Dataset130_ProstateAHCDU/nnUNetTrainer__nnUNetPlans__3d_fullres/fold_3/validation/CaiXiLin.nii.gz",
+            "reference_file": "/home/ikun_server/clib/PycharmProjects/CAD/dataset/AHCDU/\u4e8c\u5206\u7c7b\u56fe\u50cf/nnUNet_preprocessed/Dataset130_ProstateAHCDU/gt_segmentations/CaiXiLin.nii.gz"
+        },
+        {
+            "metrics": {
+                "1": {
+                    "Dice": 0.959736397974765,
+                    "FN": 3938,
+                    "FP": 4078,
+                    "IoU": 0.9225896168108776,
+                    "TN": 945024,
+                    "TP": 95536,
+                    "n_pred": 99614,
+                    "n_ref": 99474
+                }
+            },
+            "prediction_file": "/home/ikun_server/clib/PycharmProjects/CAD/dataset/AHCDU/\u4e8c\u5206\u7c7b\u56fe\u50cf/nnUNet_results/Dataset130_ProstateAHCDU/nnUNetTrainer__nnUNetPlans__3d_fullres/fold_3/validation/CaoMingYang.nii.gz",
+            "reference_file": "/home/ikun_server/clib/PycharmProjects/CAD/dataset/AHCDU/\u4e8c\u5206\u7c7b\u56fe\u50cf/nnUNet_preprocessed/Dataset130_ProstateAHCDU/gt_segmentations/CaoMingYang.nii.gz"
+        },
+        {
+            "metrics": {
+                "1": {
+                    "Dice": 0.9018338415295019,
+                    "FN": 532,
+                    "FP": 6261,
+                    "IoU": 0.8212180229497842,
+                    "TN": 1010580,
+                    "TP": 31203,
+                    "n_pred": 37464,
+                    "n_ref": 31735
+                }
+            },
+            "prediction_file": "/home/ikun_server/clib/PycharmProjects/CAD/dataset/AHCDU/\u4e8c\u5206\u7c7b\u56fe\u50cf/nnUNet_results/Dataset130_ProstateAHCDU/nnUNetTrainer__nnUNetPlans__3d_fullres/fold_3/validation/ChenQianBai.nii.gz",
+            "reference_file": "/home/ikun_server/clib/PycharmProjects/CAD/dataset/AHCDU/\u4e8c\u5206\u7c7b\u56fe\u50cf/nnUNet_preprocessed/Dataset130_ProstateAHCDU/gt_segmentations/ChenQianBai.nii.gz"
+        },
+        {
+            "metrics": {
+                "1": {
+                    "Dice": 0.9301039285759386,
+                    "FN": 600,
+                    "FP": 4935,
+                    "IoU": 0.8693404466266937,
+                    "TN": 1006214,
+                    "TP": 36827,
+                    "n_pred": 41762,
+                    "n_ref": 37427
+                }
+            },
+            "prediction_file": "/home/ikun_server/clib/PycharmProjects/CAD/dataset/AHCDU/\u4e8c\u5206\u7c7b\u56fe\u50cf/nnUNet_results/Dataset130_ProstateAHCDU/nnUNetTrainer__nnUNetPlans__3d_fullres/fold_3/validation/ChenShiYing.nii.gz",
+            "reference_file": "/home/ikun_server/clib/PycharmProjects/CAD/dataset/AHCDU/\u4e8c\u5206\u7c7b\u56fe\u50cf/nnUNet_preprocessed/Dataset130_ProstateAHCDU/gt_segmentations/ChenShiYing.nii.gz"
+        },
+        {
+            "metrics": {
+                "1": {
+                    "Dice": 0.9804203858335733,
+                    "FN": 2778,
+                    "FP": 3750,
+                    "IoU": 0.9615927704038407,
+                    "TN": 878608,
+                    "TP": 163440,
+                    "n_pred": 167190,
+                    "n_ref": 166218
+                }
+            },
+            "prediction_file": "/home/ikun_server/clib/PycharmProjects/CAD/dataset/AHCDU/\u4e8c\u5206\u7c7b\u56fe\u50cf/nnUNet_results/Dataset130_ProstateAHCDU/nnUNetTrainer__nnUNetPlans__3d_fullres/fold_3/validation/ChenYueNian.nii.gz",
+            "reference_file": "/home/ikun_server/clib/PycharmProjects/CAD/dataset/AHCDU/\u4e8c\u5206\u7c7b\u56fe\u50cf/nnUNet_preprocessed/Dataset130_ProstateAHCDU/gt_segmentations/ChenYueNian.nii.gz"
+        },
+        {
+            "metrics": {
+                "1": {
+                    "Dice": 0.9054842697382921,
+                    "FN": 5574,
+                    "FP": 4289,
+                    "IoU": 0.8272921482104083,
+                    "TN": 991468,
+                    "TP": 47245,
+                    "n_pred": 51534,
+                    "n_ref": 52819
+                }
+            },
+            "prediction_file": "/home/ikun_server/clib/PycharmProjects/CAD/dataset/AHCDU/\u4e8c\u5206\u7c7b\u56fe\u50cf/nnUNet_results/Dataset130_ProstateAHCDU/nnUNetTrainer__nnUNetPlans__3d_fullres/fold_3/validation/DaiMingYuan.nii.gz",
+            "reference_file": "/home/ikun_server/clib/PycharmProjects/CAD/dataset/AHCDU/\u4e8c\u5206\u7c7b\u56fe\u50cf/nnUNet_preprocessed/Dataset130_ProstateAHCDU/gt_segmentations/DaiMingYuan.nii.gz"
+        },
+        {
+            "metrics": {
+                "1": {
+                    "Dice": 0.9540446642652002,
+                    "FN": 5365,
+                    "FP": 6844,
+                    "IoU": 0.9121275370663596,
+                    "TN": 909636,
+                    "TP": 126731,
+                    "n_pred": 133575,
+                    "n_ref": 132096
+                }
+            },
+            "prediction_file": "/home/ikun_server/clib/PycharmProjects/CAD/dataset/AHCDU/\u4e8c\u5206\u7c7b\u56fe\u50cf/nnUNet_results/Dataset130_ProstateAHCDU/nnUNetTrainer__nnUNetPlans__3d_fullres/fold_3/validation/FanDeCheng.nii.gz",
+            "reference_file": "/home/ikun_server/clib/PycharmProjects/CAD/dataset/AHCDU/\u4e8c\u5206\u7c7b\u56fe\u50cf/nnUNet_preprocessed/Dataset130_ProstateAHCDU/gt_segmentations/FanDeCheng.nii.gz"
+        },
+        {
+            "metrics": {
+                "1": {
+                    "Dice": 0.9484730989842023,
+                    "FN": 1732,
+                    "FP": 1484,
+                    "IoU": 0.9019960383970745,
+                    "TN": 1015761,
+                    "TP": 29599,
+                    "n_pred": 31083,
+                    "n_ref": 31331
+                }
+            },
+            "prediction_file": "/home/ikun_server/clib/PycharmProjects/CAD/dataset/AHCDU/\u4e8c\u5206\u7c7b\u56fe\u50cf/nnUNet_results/Dataset130_ProstateAHCDU/nnUNetTrainer__nnUNetPlans__3d_fullres/fold_3/validation/FengJinKu.nii.gz",
+            "reference_file": "/home/ikun_server/clib/PycharmProjects/CAD/dataset/AHCDU/\u4e8c\u5206\u7c7b\u56fe\u50cf/nnUNet_preprocessed/Dataset130_ProstateAHCDU/gt_segmentations/FengJinKu.nii.gz"
+        },
+        {
+            "metrics": {
+                "1": {
+                    "Dice": 0.9476527985252519,
+                    "FN": 7035,
+                    "FP": 1200,
+                    "IoU": 0.9005134400483238,
+                    "TN": 965801,
+                    "TP": 74540,
+                    "n_pred": 75740,
+                    "n_ref": 81575
+                }
+            },
+            "prediction_file": "/home/ikun_server/clib/PycharmProjects/CAD/dataset/AHCDU/\u4e8c\u5206\u7c7b\u56fe\u50cf/nnUNet_results/Dataset130_ProstateAHCDU/nnUNetTrainer__nnUNetPlans__3d_fullres/fold_3/validation/FengYongJie.nii.gz",
+            "reference_file": "/home/ikun_server/clib/PycharmProjects/CAD/dataset/AHCDU/\u4e8c\u5206\u7c7b\u56fe\u50cf/nnUNet_preprocessed/Dataset130_ProstateAHCDU/gt_segmentations/FengYongJie.nii.gz"
+        },
+        {
+            "metrics": {
+                "1": {
+                    "Dice": 0.9654722126205016,
+                    "FN": 6489,
+                    "FP": 1602,
+                    "IoU": 0.9332491832491833,
+                    "TN": 927364,
+                    "TP": 113121,
+                    "n_pred": 114723,
+                    "n_ref": 119610
+                }
+            },
+            "prediction_file": "/home/ikun_server/clib/PycharmProjects/CAD/dataset/AHCDU/\u4e8c\u5206\u7c7b\u56fe\u50cf/nnUNet_results/Dataset130_ProstateAHCDU/nnUNetTrainer__nnUNetPlans__3d_fullres/fold_3/validation/GouZhiNeng.nii.gz",
+            "reference_file": "/home/ikun_server/clib/PycharmProjects/CAD/dataset/AHCDU/\u4e8c\u5206\u7c7b\u56fe\u50cf/nnUNet_preprocessed/Dataset130_ProstateAHCDU/gt_segmentations/GouZhiNeng.nii.gz"
+        },
+        {
+            "metrics": {
+                "1": {
+                    "Dice": 0.96168367978041,
+                    "FN": 2017,
+                    "FP": 4488,
+                    "IoU": 0.9261952846672264,
+                    "TN": 960438,
+                    "TP": 81633,
+                    "n_pred": 86121,
+                    "n_ref": 83650
+                }
+            },
+            "prediction_file": "/home/ikun_server/clib/PycharmProjects/CAD/dataset/AHCDU/\u4e8c\u5206\u7c7b\u56fe\u50cf/nnUNet_results/Dataset130_ProstateAHCDU/nnUNetTrainer__nnUNetPlans__3d_fullres/fold_3/validation/GuWenHong.nii.gz",
+            "reference_file": "/home/ikun_server/clib/PycharmProjects/CAD/dataset/AHCDU/\u4e8c\u5206\u7c7b\u56fe\u50cf/nnUNet_preprocessed/Dataset130_ProstateAHCDU/gt_segmentations/GuWenHong.nii.gz"
+        },
+        {
+            "metrics": {
+                "1": {
+                    "Dice": 0.8893072046851369,
+                    "FN": 3400,
+                    "FP": 3480,
+                    "IoU": 0.8006779268186691,
+                    "TN": 1014059,
+                    "TP": 27637,
+                    "n_pred": 31117,
+                    "n_ref": 31037
+                }
+            },
+            "prediction_file": "/home/ikun_server/clib/PycharmProjects/CAD/dataset/AHCDU/\u4e8c\u5206\u7c7b\u56fe\u50cf/nnUNet_results/Dataset130_ProstateAHCDU/nnUNetTrainer__nnUNetPlans__3d_fullres/fold_3/validation/HouJianMing.nii.gz",
+            "reference_file": "/home/ikun_server/clib/PycharmProjects/CAD/dataset/AHCDU/\u4e8c\u5206\u7c7b\u56fe\u50cf/nnUNet_preprocessed/Dataset130_ProstateAHCDU/gt_segmentations/HouJianMing.nii.gz"
+        },
+        {
+            "metrics": {
+                "1": {
+                    "Dice": 0.9267810114567597,
+                    "FN": 3687,
+                    "FP": 1790,
+                    "IoU": 0.8635525660189337,
+                    "TN": 1008436,
+                    "TP": 34663,
+                    "n_pred": 36453,
+                    "n_ref": 38350
+                }
+            },
+            "prediction_file": "/home/ikun_server/clib/PycharmProjects/CAD/dataset/AHCDU/\u4e8c\u5206\u7c7b\u56fe\u50cf/nnUNet_results/Dataset130_ProstateAHCDU/nnUNetTrainer__nnUNetPlans__3d_fullres/fold_3/validation/HuYuanQing.nii.gz",
+            "reference_file": "/home/ikun_server/clib/PycharmProjects/CAD/dataset/AHCDU/\u4e8c\u5206\u7c7b\u56fe\u50cf/nnUNet_preprocessed/Dataset130_ProstateAHCDU/gt_segmentations/HuYuanQing.nii.gz"
+        },
+        {
+            "metrics": {
+                "1": {
+                    "Dice": 0.9616255572367152,
+                    "FN": 1667,
+                    "FP": 2112,
+                    "IoU": 0.9260874667501173,
+                    "TN": 997448,
+                    "TP": 47349,
+                    "n_pred": 49461,
+                    "n_ref": 49016
+                }
+            },
+            "prediction_file": "/home/ikun_server/clib/PycharmProjects/CAD/dataset/AHCDU/\u4e8c\u5206\u7c7b\u56fe\u50cf/nnUNet_results/Dataset130_ProstateAHCDU/nnUNetTrainer__nnUNetPlans__3d_fullres/fold_3/validation/HuZhiXian.nii.gz",
+            "reference_file": "/home/ikun_server/clib/PycharmProjects/CAD/dataset/AHCDU/\u4e8c\u5206\u7c7b\u56fe\u50cf/nnUNet_preprocessed/Dataset130_ProstateAHCDU/gt_segmentations/HuZhiXian.nii.gz"
+        },
+        {
+            "metrics": {
+                "1": {
+                    "Dice": 0.9435455977864033,
+                    "FN": 377,
+                    "FP": 5499,
+                    "IoU": 0.893124772644598,
+                    "TN": 993596,
+                    "TP": 49104,
+                    "n_pred": 54603,
+                    "n_ref": 49481
+                }
+            },
+            "prediction_file": "/home/ikun_server/clib/PycharmProjects/CAD/dataset/AHCDU/\u4e8c\u5206\u7c7b\u56fe\u50cf/nnUNet_results/Dataset130_ProstateAHCDU/nnUNetTrainer__nnUNetPlans__3d_fullres/fold_3/validation/HuZhiXiang.nii.gz",
+            "reference_file": "/home/ikun_server/clib/PycharmProjects/CAD/dataset/AHCDU/\u4e8c\u5206\u7c7b\u56fe\u50cf/nnUNet_preprocessed/Dataset130_ProstateAHCDU/gt_segmentations/HuZhiXiang.nii.gz"
+        },
+        {
+            "metrics": {
+                "1": {
+                    "Dice": 0.9506996933715252,
+                    "FN": 3180,
+                    "FP": 4634,
+                    "IoU": 0.9060320361729761,
+                    "TN": 965420,
+                    "TP": 75342,
+                    "n_pred": 79976,
+                    "n_ref": 78522
+                }
+            },
+            "prediction_file": "/home/ikun_server/clib/PycharmProjects/CAD/dataset/AHCDU/\u4e8c\u5206\u7c7b\u56fe\u50cf/nnUNet_results/Dataset130_ProstateAHCDU/nnUNetTrainer__nnUNetPlans__3d_fullres/fold_3/validation/HuangHaiRong.nii.gz",
+            "reference_file": "/home/ikun_server/clib/PycharmProjects/CAD/dataset/AHCDU/\u4e8c\u5206\u7c7b\u56fe\u50cf/nnUNet_preprocessed/Dataset130_ProstateAHCDU/gt_segmentations/HuangHaiRong.nii.gz"
+        },
+        {
+            "metrics": {
+                "1": {
+                    "Dice": 0.950728719115187,
+                    "FN": 3320,
+                    "FP": 4868,
+                    "IoU": 0.9060847622870907,
+                    "TN": 961391,
+                    "TP": 78997,
+                    "n_pred": 83865,
+                    "n_ref": 82317
+                }
+            },
+            "prediction_file": "/home/ikun_server/clib/PycharmProjects/CAD/dataset/AHCDU/\u4e8c\u5206\u7c7b\u56fe\u50cf/nnUNet_results/Dataset130_ProstateAHCDU/nnUNetTrainer__nnUNetPlans__3d_fullres/fold_3/validation/HuangLinZhong.nii.gz",
+            "reference_file": "/home/ikun_server/clib/PycharmProjects/CAD/dataset/AHCDU/\u4e8c\u5206\u7c7b\u56fe\u50cf/nnUNet_preprocessed/Dataset130_ProstateAHCDU/gt_segmentations/HuangLinZhong.nii.gz"
+        },
+        {
+            "metrics": {
+                "1": {
+                    "Dice": 0.9550911004407024,
+                    "FN": 3408,
+                    "FP": 2054,
+                    "IoU": 0.9140424594369168,
+                    "TN": 985033,
+                    "TP": 58081,
+                    "n_pred": 60135,
+                    "n_ref": 61489
+                }
+            },
+            "prediction_file": "/home/ikun_server/clib/PycharmProjects/CAD/dataset/AHCDU/\u4e8c\u5206\u7c7b\u56fe\u50cf/nnUNet_results/Dataset130_ProstateAHCDU/nnUNetTrainer__nnUNetPlans__3d_fullres/fold_3/validation/HuangYanPing.nii.gz",
+            "reference_file": "/home/ikun_server/clib/PycharmProjects/CAD/dataset/AHCDU/\u4e8c\u5206\u7c7b\u56fe\u50cf/nnUNet_preprocessed/Dataset130_ProstateAHCDU/gt_segmentations/HuangYanPing.nii.gz"
+        },
+        {
+            "metrics": {
+                "1": {
+                    "Dice": 0.8965849366215606,
+                    "FN": 15083,
+                    "FP": 2311,
+                    "IoU": 0.8125545557411499,
+                    "TN": 955781,
+                    "TP": 75401,
+                    "n_pred": 77712,
+                    "n_ref": 90484
+                }
+            },
+            "prediction_file": "/home/ikun_server/clib/PycharmProjects/CAD/dataset/AHCDU/\u4e8c\u5206\u7c7b\u56fe\u50cf/nnUNet_results/Dataset130_ProstateAHCDU/nnUNetTrainer__nnUNetPlans__3d_fullres/fold_3/validation/JiangBaoKun.nii.gz",
+            "reference_file": "/home/ikun_server/clib/PycharmProjects/CAD/dataset/AHCDU/\u4e8c\u5206\u7c7b\u56fe\u50cf/nnUNet_preprocessed/Dataset130_ProstateAHCDU/gt_segmentations/JiangBaoKun.nii.gz"
+        },
+        {
+            "metrics": {
+                "1": {
+                    "Dice": 0.94896048553719,
+                    "FN": 1723,
+                    "FP": 1439,
+                    "IoU": 0.9028780293024542,
+                    "TN": 1016019,
+                    "TP": 29395,
+                    "n_pred": 30834,
+                    "n_ref": 31118
+                }
+            },
+            "prediction_file": "/home/ikun_server/clib/PycharmProjects/CAD/dataset/AHCDU/\u4e8c\u5206\u7c7b\u56fe\u50cf/nnUNet_results/Dataset130_ProstateAHCDU/nnUNetTrainer__nnUNetPlans__3d_fullres/fold_3/validation/JiangBoZhong.nii.gz",
+            "reference_file": "/home/ikun_server/clib/PycharmProjects/CAD/dataset/AHCDU/\u4e8c\u5206\u7c7b\u56fe\u50cf/nnUNet_preprocessed/Dataset130_ProstateAHCDU/gt_segmentations/JiangBoZhong.nii.gz"
+        },
+        {
+            "metrics": {
+                "1": {
+                    "Dice": 0.9511554811594551,
+                    "FN": 2054,
+                    "FP": 6058,
+                    "IoU": 0.9068603249325449,
+                    "TN": 961481,
+                    "TP": 78983,
+                    "n_pred": 85041,
+                    "n_ref": 81037
+                }
+            },
+            "prediction_file": "/home/ikun_server/clib/PycharmProjects/CAD/dataset/AHCDU/\u4e8c\u5206\u7c7b\u56fe\u50cf/nnUNet_results/Dataset130_ProstateAHCDU/nnUNetTrainer__nnUNetPlans__3d_fullres/fold_3/validation/JiangYongFu.nii.gz",
+            "reference_file": "/home/ikun_server/clib/PycharmProjects/CAD/dataset/AHCDU/\u4e8c\u5206\u7c7b\u56fe\u50cf/nnUNet_preprocessed/Dataset130_ProstateAHCDU/gt_segmentations/JiangYongFu.nii.gz"
+        },
+        {
+            "metrics": {
+                "1": {
+                    "Dice": 0.9708287398744189,
+                    "FN": 1441,
+                    "FP": 1602,
+                    "IoU": 0.9433111645149872,
+                    "TN": 994897,
+                    "TP": 50636,
+                    "n_pred": 52238,
+                    "n_ref": 52077
+                }
+            },
+            "prediction_file": "/home/ikun_server/clib/PycharmProjects/CAD/dataset/AHCDU/\u4e8c\u5206\u7c7b\u56fe\u50cf/nnUNet_results/Dataset130_ProstateAHCDU/nnUNetTrainer__nnUNetPlans__3d_fullres/fold_3/validation/LaiDingGui.nii.gz",
+            "reference_file": "/home/ikun_server/clib/PycharmProjects/CAD/dataset/AHCDU/\u4e8c\u5206\u7c7b\u56fe\u50cf/nnUNet_preprocessed/Dataset130_ProstateAHCDU/gt_segmentations/LaiDingGui.nii.gz"
+        },
+        {
+            "metrics": {
+                "1": {
+                    "Dice": 0.9316833346977995,
+                    "FN": 3924,
+                    "FP": 11931,
+                    "IoU": 0.8721040913784203,
+                    "TN": 924608,
+                    "TP": 108113,
+                    "n_pred": 120044,
+                    "n_ref": 112037
+                }
+            },
+            "prediction_file": "/home/ikun_server/clib/PycharmProjects/CAD/dataset/AHCDU/\u4e8c\u5206\u7c7b\u56fe\u50cf/nnUNet_results/Dataset130_ProstateAHCDU/nnUNetTrainer__nnUNetPlans__3d_fullres/fold_3/validation/LanYunKang.nii.gz",
+            "reference_file": "/home/ikun_server/clib/PycharmProjects/CAD/dataset/AHCDU/\u4e8c\u5206\u7c7b\u56fe\u50cf/nnUNet_preprocessed/Dataset130_ProstateAHCDU/gt_segmentations/LanYunKang.nii.gz"
+        },
+        {
+            "metrics": {
+                "1": {
+                    "Dice": 0.9444300226710278,
+                    "FN": 2859,
+                    "FP": 3563,
+                    "IoU": 0.8947109551759189,
+                    "TN": 987582,
+                    "TP": 54572,
+                    "n_pred": 58135,
+                    "n_ref": 57431
+                }
+            },
+            "prediction_file": "/home/ikun_server/clib/PycharmProjects/CAD/dataset/AHCDU/\u4e8c\u5206\u7c7b\u56fe\u50cf/nnUNet_results/Dataset130_ProstateAHCDU/nnUNetTrainer__nnUNetPlans__3d_fullres/fold_3/validation/LeiGang.nii.gz",
+            "reference_file": "/home/ikun_server/clib/PycharmProjects/CAD/dataset/AHCDU/\u4e8c\u5206\u7c7b\u56fe\u50cf/nnUNet_preprocessed/Dataset130_ProstateAHCDU/gt_segmentations/LeiGang.nii.gz"
+        },
+        {
+            "metrics": {
+                "1": {
+                    "Dice": 0.9347129150608197,
+                    "FN": 4497,
+                    "FP": 1144,
+                    "IoU": 0.8774281865194907,
+                    "TN": 1002554,
+                    "TP": 40381,
+                    "n_pred": 41525,
+                    "n_ref": 44878
+                }
+            },
+            "prediction_file": "/home/ikun_server/clib/PycharmProjects/CAD/dataset/AHCDU/\u4e8c\u5206\u7c7b\u56fe\u50cf/nnUNet_results/Dataset130_ProstateAHCDU/nnUNetTrainer__nnUNetPlans__3d_fullres/fold_3/validation/LiChangMing.nii.gz",
+            "reference_file": "/home/ikun_server/clib/PycharmProjects/CAD/dataset/AHCDU/\u4e8c\u5206\u7c7b\u56fe\u50cf/nnUNet_preprocessed/Dataset130_ProstateAHCDU/gt_segmentations/LiChangMing.nii.gz"
+        },
+        {
+            "metrics": {
+                "1": {
+                    "Dice": 0.9474032966122753,
+                    "FN": 951,
+                    "FP": 2224,
+                    "IoU": 0.9000629524708845,
+                    "TN": 1016806,
+                    "TP": 28595,
+                    "n_pred": 30819,
+                    "n_ref": 29546
+                }
+            },
+            "prediction_file": "/home/ikun_server/clib/PycharmProjects/CAD/dataset/AHCDU/\u4e8c\u5206\u7c7b\u56fe\u50cf/nnUNet_results/Dataset130_ProstateAHCDU/nnUNetTrainer__nnUNetPlans__3d_fullres/fold_3/validation/LiHongKun.nii.gz",
+            "reference_file": "/home/ikun_server/clib/PycharmProjects/CAD/dataset/AHCDU/\u4e8c\u5206\u7c7b\u56fe\u50cf/nnUNet_preprocessed/Dataset130_ProstateAHCDU/gt_segmentations/LiHongKun.nii.gz"
+        },
+        {
+            "metrics": {
+                "1": {
+                    "Dice": 0.913014995771645,
+                    "FN": 5579,
+                    "FP": 1724,
+                    "IoU": 0.8399517861056323,
+                    "TN": 1002946,
+                    "TP": 38327,
+                    "n_pred": 40051,
+                    "n_ref": 43906
+                }
+            },
+            "prediction_file": "/home/ikun_server/clib/PycharmProjects/CAD/dataset/AHCDU/\u4e8c\u5206\u7c7b\u56fe\u50cf/nnUNet_results/Dataset130_ProstateAHCDU/nnUNetTrainer__nnUNetPlans__3d_fullres/fold_3/validation/LiWenXin.nii.gz",
+            "reference_file": "/home/ikun_server/clib/PycharmProjects/CAD/dataset/AHCDU/\u4e8c\u5206\u7c7b\u56fe\u50cf/nnUNet_preprocessed/Dataset130_ProstateAHCDU/gt_segmentations/LiWenXin.nii.gz"
+        },
+        {
+            "metrics": {
+                "1": {
+                    "Dice": 0.9274714356681569,
+                    "FN": 1278,
+                    "FP": 1350,
+                    "IoU": 0.8647522000926354,
+                    "TN": 1029145,
+                    "TP": 16803,
+                    "n_pred": 18153,
+                    "n_ref": 18081
+                }
+            },
+            "prediction_file": "/home/ikun_server/clib/PycharmProjects/CAD/dataset/AHCDU/\u4e8c\u5206\u7c7b\u56fe\u50cf/nnUNet_results/Dataset130_ProstateAHCDU/nnUNetTrainer__nnUNetPlans__3d_fullres/fold_3/validation/LiXiaoPing.nii.gz",
+            "reference_file": "/home/ikun_server/clib/PycharmProjects/CAD/dataset/AHCDU/\u4e8c\u5206\u7c7b\u56fe\u50cf/nnUNet_preprocessed/Dataset130_ProstateAHCDU/gt_segmentations/LiXiaoPing.nii.gz"
+        },
+        {
+            "metrics": {
+                "1": {
+                    "Dice": 0.9687493301896902,
+                    "FN": 3175,
+                    "FP": 2657,
+                    "IoU": 0.9393926797331282,
+                    "TN": 952350,
+                    "TP": 90394,
+                    "n_pred": 93051,
+                    "n_ref": 93569
+                }
+            },
+            "prediction_file": "/home/ikun_server/clib/PycharmProjects/CAD/dataset/AHCDU/\u4e8c\u5206\u7c7b\u56fe\u50cf/nnUNet_results/Dataset130_ProstateAHCDU/nnUNetTrainer__nnUNetPlans__3d_fullres/fold_3/validation/LiaoChangMing.nii.gz",
+            "reference_file": "/home/ikun_server/clib/PycharmProjects/CAD/dataset/AHCDU/\u4e8c\u5206\u7c7b\u56fe\u50cf/nnUNet_preprocessed/Dataset130_ProstateAHCDU/gt_segmentations/LiaoChangMing.nii.gz"
+        },
+        {
+            "metrics": {
+                "1": {
+                    "Dice": 0.9482655281415493,
+                    "FN": 2866,
+                    "FP": 3435,
+                    "IoU": 0.901620659505371,
+                    "TN": 984528,
+                    "TP": 57747,
+                    "n_pred": 61182,
+                    "n_ref": 60613
+                }
+            },
+            "prediction_file": "/home/ikun_server/clib/PycharmProjects/CAD/dataset/AHCDU/\u4e8c\u5206\u7c7b\u56fe\u50cf/nnUNet_results/Dataset130_ProstateAHCDU/nnUNetTrainer__nnUNetPlans__3d_fullres/fold_3/validation/LiuChangChun.nii.gz",
+            "reference_file": "/home/ikun_server/clib/PycharmProjects/CAD/dataset/AHCDU/\u4e8c\u5206\u7c7b\u56fe\u50cf/nnUNet_preprocessed/Dataset130_ProstateAHCDU/gt_segmentations/LiuChangChun.nii.gz"
+        },
+        {
+            "metrics": {
+                "1": {
+                    "Dice": 0.9593025692610755,
+                    "FN": 1745,
+                    "FP": 197,
+                    "IoU": 0.9217881594844946,
+                    "TN": 1023746,
+                    "TP": 22888,
+                    "n_pred": 23085,
+                    "n_ref": 24633
+                }
+            },
+            "prediction_file": "/home/ikun_server/clib/PycharmProjects/CAD/dataset/AHCDU/\u4e8c\u5206\u7c7b\u56fe\u50cf/nnUNet_results/Dataset130_ProstateAHCDU/nnUNetTrainer__nnUNetPlans__3d_fullres/fold_3/validation/LiuGuoJie.nii.gz",
+            "reference_file": "/home/ikun_server/clib/PycharmProjects/CAD/dataset/AHCDU/\u4e8c\u5206\u7c7b\u56fe\u50cf/nnUNet_preprocessed/Dataset130_ProstateAHCDU/gt_segmentations/LiuGuoJie.nii.gz"
+        },
+        {
+            "metrics": {
+                "1": {
+                    "Dice": 0.9597625329815304,
+                    "FN": 547,
+                    "FP": 3113,
+                    "IoU": 0.9226379201014585,
+                    "TN": 1001266,
+                    "TP": 43650,
+                    "n_pred": 46763,
+                    "n_ref": 44197
+                }
+            },
+            "prediction_file": "/home/ikun_server/clib/PycharmProjects/CAD/dataset/AHCDU/\u4e8c\u5206\u7c7b\u56fe\u50cf/nnUNet_results/Dataset130_ProstateAHCDU/nnUNetTrainer__nnUNetPlans__3d_fullres/fold_3/validation/LiuShiFu.nii.gz",
+            "reference_file": "/home/ikun_server/clib/PycharmProjects/CAD/dataset/AHCDU/\u4e8c\u5206\u7c7b\u56fe\u50cf/nnUNet_preprocessed/Dataset130_ProstateAHCDU/gt_segmentations/LiuShiFu.nii.gz"
+        },
+        {
+            "metrics": {
+                "1": {
+                    "Dice": 0.9682144993490424,
+                    "FN": 3044,
+                    "FP": 2376,
+                    "IoU": 0.9383873864656868,
+                    "TN": 960607,
+                    "TP": 82549,
+                    "n_pred": 84925,
+                    "n_ref": 85593
+                }
+            },
+            "prediction_file": "/home/ikun_server/clib/PycharmProjects/CAD/dataset/AHCDU/\u4e8c\u5206\u7c7b\u56fe\u50cf/nnUNet_results/Dataset130_ProstateAHCDU/nnUNetTrainer__nnUNetPlans__3d_fullres/fold_3/validation/LiuShu.nii.gz",
+            "reference_file": "/home/ikun_server/clib/PycharmProjects/CAD/dataset/AHCDU/\u4e8c\u5206\u7c7b\u56fe\u50cf/nnUNet_preprocessed/Dataset130_ProstateAHCDU/gt_segmentations/LiuShu.nii.gz"
+        },
+        {
+            "metrics": {
+                "1": {
+                    "Dice": 0.9716801101711587,
+                    "FN": 2151,
+                    "FP": 3607,
+                    "IoU": 0.9449200776743608,
+                    "TN": 944037,
+                    "TP": 98781,
+                    "n_pred": 102388,
+                    "n_ref": 100932
+                }
+            },
+            "prediction_file": "/home/ikun_server/clib/PycharmProjects/CAD/dataset/AHCDU/\u4e8c\u5206\u7c7b\u56fe\u50cf/nnUNet_results/Dataset130_ProstateAHCDU/nnUNetTrainer__nnUNetPlans__3d_fullres/fold_3/validation/LiuShuWen.nii.gz",
+            "reference_file": "/home/ikun_server/clib/PycharmProjects/CAD/dataset/AHCDU/\u4e8c\u5206\u7c7b\u56fe\u50cf/nnUNet_preprocessed/Dataset130_ProstateAHCDU/gt_segmentations/LiuShuWen.nii.gz"
+        },
+        {
+            "metrics": {
+                "1": {
+                    "Dice": 0.8790438839887771,
+                    "FN": 2309,
+                    "FP": 5494,
+                    "IoU": 0.7841911663025141,
+                    "TN": 1012419,
+                    "TP": 28354,
+                    "n_pred": 33848,
+                    "n_ref": 30663
+                }
+            },
+            "prediction_file": "/home/ikun_server/clib/PycharmProjects/CAD/dataset/AHCDU/\u4e8c\u5206\u7c7b\u56fe\u50cf/nnUNet_results/Dataset130_ProstateAHCDU/nnUNetTrainer__nnUNetPlans__3d_fullres/fold_3/validation/LiuXiangCai.nii.gz",
+            "reference_file": "/home/ikun_server/clib/PycharmProjects/CAD/dataset/AHCDU/\u4e8c\u5206\u7c7b\u56fe\u50cf/nnUNet_preprocessed/Dataset130_ProstateAHCDU/gt_segmentations/LiuXiangCai.nii.gz"
+        },
+        {
+            "metrics": {
+                "1": {
+                    "Dice": 0.9596256580230065,
+                    "FN": 2185,
+                    "FP": 2992,
+                    "IoU": 0.9223849717395541,
+                    "TN": 981875,
+                    "TP": 61524,
+                    "n_pred": 64516,
+                    "n_ref": 63709
+                }
+            },
+            "prediction_file": "/home/ikun_server/clib/PycharmProjects/CAD/dataset/AHCDU/\u4e8c\u5206\u7c7b\u56fe\u50cf/nnUNet_results/Dataset130_ProstateAHCDU/nnUNetTrainer__nnUNetPlans__3d_fullres/fold_3/validation/LiuXiangPing.nii.gz",
+            "reference_file": "/home/ikun_server/clib/PycharmProjects/CAD/dataset/AHCDU/\u4e8c\u5206\u7c7b\u56fe\u50cf/nnUNet_preprocessed/Dataset130_ProstateAHCDU/gt_segmentations/LiuXiangPing.nii.gz"
+        },
+        {
+            "metrics": {
+                "1": {
+                    "Dice": 0.9441636369010671,
+                    "FN": 2894,
+                    "FP": 2773,
+                    "IoU": 0.8942329227323628,
+                    "TN": 994996,
+                    "TP": 47913,
+                    "n_pred": 50686,
+                    "n_ref": 50807
+                }
+            },
+            "prediction_file": "/home/ikun_server/clib/PycharmProjects/CAD/dataset/AHCDU/\u4e8c\u5206\u7c7b\u56fe\u50cf/nnUNet_results/Dataset130_ProstateAHCDU/nnUNetTrainer__nnUNetPlans__3d_fullres/fold_3/validation/LiuYanGang.nii.gz",
+            "reference_file": "/home/ikun_server/clib/PycharmProjects/CAD/dataset/AHCDU/\u4e8c\u5206\u7c7b\u56fe\u50cf/nnUNet_preprocessed/Dataset130_ProstateAHCDU/gt_segmentations/LiuYanGang.nii.gz"
+        },
+        {
+            "metrics": {
+                "1": {
+                    "Dice": 0.8823069949089895,
+                    "FN": 15285,
+                    "FP": 1591,
+                    "IoU": 0.7894001222966818,
+                    "TN": 968443,
+                    "TP": 63257,
+                    "n_pred": 64848,
+                    "n_ref": 78542
+                }
+            },
+            "prediction_file": "/home/ikun_server/clib/PycharmProjects/CAD/dataset/AHCDU/\u4e8c\u5206\u7c7b\u56fe\u50cf/nnUNet_results/Dataset130_ProstateAHCDU/nnUNetTrainer__nnUNetPlans__3d_fullres/fold_3/validation/LiuZiGui.nii.gz",
+            "reference_file": "/home/ikun_server/clib/PycharmProjects/CAD/dataset/AHCDU/\u4e8c\u5206\u7c7b\u56fe\u50cf/nnUNet_preprocessed/Dataset130_ProstateAHCDU/gt_segmentations/LiuZiGui.nii.gz"
+        },
+        {
+            "metrics": {
+                "1": {
+                    "Dice": 0.9675007280655495,
+                    "FN": 6167,
+                    "FP": 2091,
+                    "IoU": 0.9370473707481437,
+                    "TN": 917398,
+                    "TP": 122920,
+                    "n_pred": 125011,
+                    "n_ref": 129087
+                }
+            },
+            "prediction_file": "/home/ikun_server/clib/PycharmProjects/CAD/dataset/AHCDU/\u4e8c\u5206\u7c7b\u56fe\u50cf/nnUNet_results/Dataset130_ProstateAHCDU/nnUNetTrainer__nnUNetPlans__3d_fullres/fold_3/validation/LongYouBin.nii.gz",
+            "reference_file": "/home/ikun_server/clib/PycharmProjects/CAD/dataset/AHCDU/\u4e8c\u5206\u7c7b\u56fe\u50cf/nnUNet_preprocessed/Dataset130_ProstateAHCDU/gt_segmentations/LongYouBin.nii.gz"
+        },
+        {
+            "metrics": {
+                "1": {
+                    "Dice": 0.9205918744385498,
+                    "FN": 3563,
+                    "FP": 1122,
+                    "IoU": 0.8528672822058916,
+                    "TN": 1016734,
+                    "TP": 27157,
+                    "n_pred": 28279,
+                    "n_ref": 30720
+                }
+            },
+            "prediction_file": "/home/ikun_server/clib/PycharmProjects/CAD/dataset/AHCDU/\u4e8c\u5206\u7c7b\u56fe\u50cf/nnUNet_results/Dataset130_ProstateAHCDU/nnUNetTrainer__nnUNetPlans__3d_fullres/fold_3/validation/LuMinZhong.nii.gz",
+            "reference_file": "/home/ikun_server/clib/PycharmProjects/CAD/dataset/AHCDU/\u4e8c\u5206\u7c7b\u56fe\u50cf/nnUNet_preprocessed/Dataset130_ProstateAHCDU/gt_segmentations/LuMinZhong.nii.gz"
+        },
+        {
+            "metrics": {
+                "1": {
+                    "Dice": 0.9760582678301002,
+                    "FN": 1524,
+                    "FP": 1796,
+                    "IoU": 0.9532361433903797,
+                    "TN": 977581,
+                    "TP": 67675,
+                    "n_pred": 69471,
+                    "n_ref": 69199
+                }
+            },
+            "prediction_file": "/home/ikun_server/clib/PycharmProjects/CAD/dataset/AHCDU/\u4e8c\u5206\u7c7b\u56fe\u50cf/nnUNet_results/Dataset130_ProstateAHCDU/nnUNetTrainer__nnUNetPlans__3d_fullres/fold_3/validation/LuXueRong.nii.gz",
+            "reference_file": "/home/ikun_server/clib/PycharmProjects/CAD/dataset/AHCDU/\u4e8c\u5206\u7c7b\u56fe\u50cf/nnUNet_preprocessed/Dataset130_ProstateAHCDU/gt_segmentations/LuXueRong.nii.gz"
+        },
+        {
+            "metrics": {
+                "1": {
+                    "Dice": 0.9432355469589512,
+                    "FN": 2052,
+                    "FP": 2174,
+                    "IoU": 0.892569336756743,
+                    "TN": 1009239,
+                    "TP": 35111,
+                    "n_pred": 37285,
+                    "n_ref": 37163
+                }
+            },
+            "prediction_file": "/home/ikun_server/clib/PycharmProjects/CAD/dataset/AHCDU/\u4e8c\u5206\u7c7b\u56fe\u50cf/nnUNet_results/Dataset130_ProstateAHCDU/nnUNetTrainer__nnUNetPlans__3d_fullres/fold_3/validation/LuoXianCheng.nii.gz",
+            "reference_file": "/home/ikun_server/clib/PycharmProjects/CAD/dataset/AHCDU/\u4e8c\u5206\u7c7b\u56fe\u50cf/nnUNet_preprocessed/Dataset130_ProstateAHCDU/gt_segmentations/LuoXianCheng.nii.gz"
+        },
+        {
+            "metrics": {
+                "1": {
+                    "Dice": 0.8978979783103495,
+                    "FN": 653,
+                    "FP": 3160,
+                    "IoU": 0.8147140288643763,
+                    "TN": 1027997,
+                    "TP": 16766,
+                    "n_pred": 19926,
+                    "n_ref": 17419
+                }
+            },
+            "prediction_file": "/home/ikun_server/clib/PycharmProjects/CAD/dataset/AHCDU/\u4e8c\u5206\u7c7b\u56fe\u50cf/nnUNet_results/Dataset130_ProstateAHCDU/nnUNetTrainer__nnUNetPlans__3d_fullres/fold_3/validation/LuoXianJin.nii.gz",
+            "reference_file": "/home/ikun_server/clib/PycharmProjects/CAD/dataset/AHCDU/\u4e8c\u5206\u7c7b\u56fe\u50cf/nnUNet_preprocessed/Dataset130_ProstateAHCDU/gt_segmentations/LuoXianJin.nii.gz"
+        },
+        {
+            "metrics": {
+                "1": {
+                    "Dice": 0.9408041860940994,
+                    "FN": 6472,
+                    "FP": 1628,
+                    "IoU": 0.8882249851656616,
+                    "TN": 976109,
+                    "TP": 64367,
+                    "n_pred": 65995,
+                    "n_ref": 70839
+                }
+            },
+            "prediction_file": "/home/ikun_server/clib/PycharmProjects/CAD/dataset/AHCDU/\u4e8c\u5206\u7c7b\u56fe\u50cf/nnUNet_results/Dataset130_ProstateAHCDU/nnUNetTrainer__nnUNetPlans__3d_fullres/fold_3/validation/MaGuangDou.nii.gz",
+            "reference_file": "/home/ikun_server/clib/PycharmProjects/CAD/dataset/AHCDU/\u4e8c\u5206\u7c7b\u56fe\u50cf/nnUNet_preprocessed/Dataset130_ProstateAHCDU/gt_segmentations/MaGuangDou.nii.gz"
+        },
+        {
+            "metrics": {
+                "1": {
+                    "Dice": 0.9663804989398881,
+                    "FN": 6734,
+                    "FP": 1337,
+                    "IoU": 0.9349480132183445,
+                    "TN": 924506,
+                    "TP": 115999,
+                    "n_pred": 117336,
+                    "n_ref": 122733
+                }
+            },
+            "prediction_file": "/home/ikun_server/clib/PycharmProjects/CAD/dataset/AHCDU/\u4e8c\u5206\u7c7b\u56fe\u50cf/nnUNet_results/Dataset130_ProstateAHCDU/nnUNetTrainer__nnUNetPlans__3d_fullres/fold_3/validation/MaZhiXue.nii.gz",
+            "reference_file": "/home/ikun_server/clib/PycharmProjects/CAD/dataset/AHCDU/\u4e8c\u5206\u7c7b\u56fe\u50cf/nnUNet_preprocessed/Dataset130_ProstateAHCDU/gt_segmentations/MaZhiXue.nii.gz"
+        },
+        {
+            "metrics": {
+                "1": {
+                    "Dice": 0.9478001351452812,
+                    "FN": 1235,
+                    "FP": 4327,
+                    "IoU": 0.9007795636584192,
+                    "TN": 992519,
+                    "TP": 50495,
+                    "n_pred": 54822,
+                    "n_ref": 51730
+                }
+            },
+            "prediction_file": "/home/ikun_server/clib/PycharmProjects/CAD/dataset/AHCDU/\u4e8c\u5206\u7c7b\u56fe\u50cf/nnUNet_results/Dataset130_ProstateAHCDU/nnUNetTrainer__nnUNetPlans__3d_fullres/fold_3/validation/MengPing.nii.gz",
+            "reference_file": "/home/ikun_server/clib/PycharmProjects/CAD/dataset/AHCDU/\u4e8c\u5206\u7c7b\u56fe\u50cf/nnUNet_preprocessed/Dataset130_ProstateAHCDU/gt_segmentations/MengPing.nii.gz"
+        },
+        {
+            "metrics": {
+                "1": {
+                    "Dice": 0.9338556916110525,
+                    "FN": 4006,
+                    "FP": 7154,
+                    "IoU": 0.8759186577867714,
+                    "TN": 958635,
+                    "TP": 78781,
+                    "n_pred": 85935,
+                    "n_ref": 82787
+                }
+            },
+            "prediction_file": "/home/ikun_server/clib/PycharmProjects/CAD/dataset/AHCDU/\u4e8c\u5206\u7c7b\u56fe\u50cf/nnUNet_results/Dataset130_ProstateAHCDU/nnUNetTrainer__nnUNetPlans__3d_fullres/fold_3/validation/MouChuan.nii.gz",
+            "reference_file": "/home/ikun_server/clib/PycharmProjects/CAD/dataset/AHCDU/\u4e8c\u5206\u7c7b\u56fe\u50cf/nnUNet_preprocessed/Dataset130_ProstateAHCDU/gt_segmentations/MouChuan.nii.gz"
+        },
+        {
+            "metrics": {
+                "1": {
+                    "Dice": 0.888650154182831,
+                    "FN": 12602,
+                    "FP": 15383,
+                    "IoU": 0.7996133328559665,
+                    "TN": 908921,
+                    "TP": 111670,
+                    "n_pred": 127053,
+                    "n_ref": 124272
+                }
+            },
+            "prediction_file": "/home/ikun_server/clib/PycharmProjects/CAD/dataset/AHCDU/\u4e8c\u5206\u7c7b\u56fe\u50cf/nnUNet_results/Dataset130_ProstateAHCDU/nnUNetTrainer__nnUNetPlans__3d_fullres/fold_3/validation/NiQingSheng.nii.gz",
+            "reference_file": "/home/ikun_server/clib/PycharmProjects/CAD/dataset/AHCDU/\u4e8c\u5206\u7c7b\u56fe\u50cf/nnUNet_preprocessed/Dataset130_ProstateAHCDU/gt_segmentations/NiQingSheng.nii.gz"
+        },
+        {
+            "metrics": {
+                "1": {
+                    "Dice": 0.9697965551193688,
+                    "FN": 2161,
+                    "FP": 2563,
+                    "IoU": 0.9413641159312357,
+                    "TN": 968011,
+                    "TP": 75841,
+                    "n_pred": 78404,
+                    "n_ref": 78002
+                }
+            },
+            "prediction_file": "/home/ikun_server/clib/PycharmProjects/CAD/dataset/AHCDU/\u4e8c\u5206\u7c7b\u56fe\u50cf/nnUNet_results/Dataset130_ProstateAHCDU/nnUNetTrainer__nnUNetPlans__3d_fullres/fold_3/validation/PanZhiWen.nii.gz",
+            "reference_file": "/home/ikun_server/clib/PycharmProjects/CAD/dataset/AHCDU/\u4e8c\u5206\u7c7b\u56fe\u50cf/nnUNet_preprocessed/Dataset130_ProstateAHCDU/gt_segmentations/PanZhiWen.nii.gz"
+        },
+        {
+            "metrics": {
+                "1": {
+                    "Dice": 0.9075304161245407,
+                    "FN": 12170,
+                    "FP": 4034,
+                    "IoU": 0.8307145842039281,
+                    "TN": 952856,
+                    "TP": 79516,
+                    "n_pred": 83550,
+                    "n_ref": 91686
+                }
+            },
+            "prediction_file": "/home/ikun_server/clib/PycharmProjects/CAD/dataset/AHCDU/\u4e8c\u5206\u7c7b\u56fe\u50cf/nnUNet_results/Dataset130_ProstateAHCDU/nnUNetTrainer__nnUNetPlans__3d_fullres/fold_3/validation/PengShiYou.nii.gz",
+            "reference_file": "/home/ikun_server/clib/PycharmProjects/CAD/dataset/AHCDU/\u4e8c\u5206\u7c7b\u56fe\u50cf/nnUNet_preprocessed/Dataset130_ProstateAHCDU/gt_segmentations/PengShiYou.nii.gz"
+        },
+        {
+            "metrics": {
+                "1": {
+                    "Dice": 0.9634900630150267,
+                    "FN": 1393,
+                    "FP": 2373,
+                    "IoU": 0.9295521717984212,
+                    "TN": 995118,
+                    "TP": 49692,
+                    "n_pred": 52065,
+                    "n_ref": 51085
+                }
+            },
+            "prediction_file": "/home/ikun_server/clib/PycharmProjects/CAD/dataset/AHCDU/\u4e8c\u5206\u7c7b\u56fe\u50cf/nnUNet_results/Dataset130_ProstateAHCDU/nnUNetTrainer__nnUNetPlans__3d_fullres/fold_3/validation/ShiYuanLin.nii.gz",
+            "reference_file": "/home/ikun_server/clib/PycharmProjects/CAD/dataset/AHCDU/\u4e8c\u5206\u7c7b\u56fe\u50cf/nnUNet_preprocessed/Dataset130_ProstateAHCDU/gt_segmentations/ShiYuanLin.nii.gz"
+        },
+        {
+            "metrics": {
+                "1": {
+                    "Dice": 0.9247492974519471,
+                    "FN": 5093,
+                    "FP": 5270,
+                    "IoU": 0.8600313352602718,
+                    "TN": 974538,
+                    "TP": 63675,
+                    "n_pred": 68945,
+                    "n_ref": 68768
+                }
+            },
+            "prediction_file": "/home/ikun_server/clib/PycharmProjects/CAD/dataset/AHCDU/\u4e8c\u5206\u7c7b\u56fe\u50cf/nnUNet_results/Dataset130_ProstateAHCDU/nnUNetTrainer__nnUNetPlans__3d_fullres/fold_3/validation/ShouMingFu.nii.gz",
+            "reference_file": "/home/ikun_server/clib/PycharmProjects/CAD/dataset/AHCDU/\u4e8c\u5206\u7c7b\u56fe\u50cf/nnUNet_preprocessed/Dataset130_ProstateAHCDU/gt_segmentations/ShouMingFu.nii.gz"
+        },
+        {
+            "metrics": {
+                "1": {
+                    "Dice": 0.9361664295874822,
+                    "FN": 4384,
+                    "FP": 1360,
+                    "IoU": 0.8799933143907739,
+                    "TN": 1000712,
+                    "TP": 42120,
+                    "n_pred": 43480,
+                    "n_ref": 46504
+                }
+            },
+            "prediction_file": "/home/ikun_server/clib/PycharmProjects/CAD/dataset/AHCDU/\u4e8c\u5206\u7c7b\u56fe\u50cf/nnUNet_results/Dataset130_ProstateAHCDU/nnUNetTrainer__nnUNetPlans__3d_fullres/fold_3/validation/SuChengGang.nii.gz",
+            "reference_file": "/home/ikun_server/clib/PycharmProjects/CAD/dataset/AHCDU/\u4e8c\u5206\u7c7b\u56fe\u50cf/nnUNet_preprocessed/Dataset130_ProstateAHCDU/gt_segmentations/SuChengGang.nii.gz"
+        },
+        {
+            "metrics": {
+                "1": {
+                    "Dice": 0.9716478703326173,
+                    "FN": 4248,
+                    "FP": 2497,
+                    "IoU": 0.9448591025399966,
+                    "TN": 926253,
+                    "TP": 115578,
+                    "n_pred": 118075,
+                    "n_ref": 119826
+                }
+            },
+            "prediction_file": "/home/ikun_server/clib/PycharmProjects/CAD/dataset/AHCDU/\u4e8c\u5206\u7c7b\u56fe\u50cf/nnUNet_results/Dataset130_ProstateAHCDU/nnUNetTrainer__nnUNetPlans__3d_fullres/fold_3/validation/TangGuiWen.nii.gz",
+            "reference_file": "/home/ikun_server/clib/PycharmProjects/CAD/dataset/AHCDU/\u4e8c\u5206\u7c7b\u56fe\u50cf/nnUNet_preprocessed/Dataset130_ProstateAHCDU/gt_segmentations/TangGuiWen.nii.gz"
+        },
+        {
+            "metrics": {
+                "1": {
+                    "Dice": 0.889772799592694,
+                    "FN": 405,
+                    "FP": 3059,
+                    "IoU": 0.8014330753797649,
+                    "TN": 1031131,
+                    "TP": 13981,
+                    "n_pred": 17040,
+                    "n_ref": 14386
+                }
+            },
+            "prediction_file": "/home/ikun_server/clib/PycharmProjects/CAD/dataset/AHCDU/\u4e8c\u5206\u7c7b\u56fe\u50cf/nnUNet_results/Dataset130_ProstateAHCDU/nnUNetTrainer__nnUNetPlans__3d_fullres/fold_3/validation/TangGuoFu.nii.gz",
+            "reference_file": "/home/ikun_server/clib/PycharmProjects/CAD/dataset/AHCDU/\u4e8c\u5206\u7c7b\u56fe\u50cf/nnUNet_preprocessed/Dataset130_ProstateAHCDU/gt_segmentations/TangGuoFu.nii.gz"
+        },
+        {
+            "metrics": {
+                "1": {
+                    "Dice": 0.9298661251504212,
+                    "FN": 1938,
+                    "FP": 1792,
+                    "IoU": 0.8689250448044418,
+                    "TN": 1020119,
+                    "TP": 24727,
+                    "n_pred": 26519,
+                    "n_ref": 26665
+                }
+            },
+            "prediction_file": "/home/ikun_server/clib/PycharmProjects/CAD/dataset/AHCDU/\u4e8c\u5206\u7c7b\u56fe\u50cf/nnUNet_results/Dataset130_ProstateAHCDU/nnUNetTrainer__nnUNetPlans__3d_fullres/fold_3/validation/TengYaoZu.nii.gz",
+            "reference_file": "/home/ikun_server/clib/PycharmProjects/CAD/dataset/AHCDU/\u4e8c\u5206\u7c7b\u56fe\u50cf/nnUNet_preprocessed/Dataset130_ProstateAHCDU/gt_segmentations/TengYaoZu.nii.gz"
+        },
+        {
+            "metrics": {
+                "1": {
+                    "Dice": 0.9183727070402676,
+                    "FN": 1935,
+                    "FP": 3970,
+                    "IoU": 0.8490657669401631,
+                    "TN": 1009453,
+                    "TP": 33218,
+                    "n_pred": 37188,
+                    "n_ref": 35153
+                }
+            },
+            "prediction_file": "/home/ikun_server/clib/PycharmProjects/CAD/dataset/AHCDU/\u4e8c\u5206\u7c7b\u56fe\u50cf/nnUNet_results/Dataset130_ProstateAHCDU/nnUNetTrainer__nnUNetPlans__3d_fullres/fold_3/validation/WanMinNing.nii.gz",
+            "reference_file": "/home/ikun_server/clib/PycharmProjects/CAD/dataset/AHCDU/\u4e8c\u5206\u7c7b\u56fe\u50cf/nnUNet_preprocessed/Dataset130_ProstateAHCDU/gt_segmentations/WanMinNing.nii.gz"
+        },
+        {
+            "metrics": {
+                "1": {
+                    "Dice": 0.9590713652724746,
+                    "FN": 6930,
+                    "FP": 4293,
+                    "IoU": 0.9213613049693097,
+                    "TN": 905860,
+                    "TP": 131493,
+                    "n_pred": 135786,
+                    "n_ref": 138423
+                }
+            },
+            "prediction_file": "/home/ikun_server/clib/PycharmProjects/CAD/dataset/AHCDU/\u4e8c\u5206\u7c7b\u56fe\u50cf/nnUNet_results/Dataset130_ProstateAHCDU/nnUNetTrainer__nnUNetPlans__3d_fullres/fold_3/validation/WangDaoDe.nii.gz",
+            "reference_file": "/home/ikun_server/clib/PycharmProjects/CAD/dataset/AHCDU/\u4e8c\u5206\u7c7b\u56fe\u50cf/nnUNet_preprocessed/Dataset130_ProstateAHCDU/gt_segmentations/WangDaoDe.nii.gz"
+        },
+        {
+            "metrics": {
+                "1": {
+                    "Dice": 0.8426161776208909,
+                    "FN": 4955,
+                    "FP": 10739,
+                    "IoU": 0.7280352129761203,
+                    "TN": 990870,
+                    "TP": 42012,
+                    "n_pred": 52751,
+                    "n_ref": 46967
+                }
+            },
+            "prediction_file": "/home/ikun_server/clib/PycharmProjects/CAD/dataset/AHCDU/\u4e8c\u5206\u7c7b\u56fe\u50cf/nnUNet_results/Dataset130_ProstateAHCDU/nnUNetTrainer__nnUNetPlans__3d_fullres/fold_3/validation/WangHuiGuo.nii.gz",
+            "reference_file": "/home/ikun_server/clib/PycharmProjects/CAD/dataset/AHCDU/\u4e8c\u5206\u7c7b\u56fe\u50cf/nnUNet_preprocessed/Dataset130_ProstateAHCDU/gt_segmentations/WangHuiGuo.nii.gz"
+        },
+        {
+            "metrics": {
+                "1": {
+                    "Dice": 0.9376999203205654,
+                    "FN": 1190,
+                    "FP": 4205,
+                    "IoU": 0.882707191929733,
+                    "TN": 1002580,
+                    "TP": 40601,
+                    "n_pred": 44806,
+                    "n_ref": 41791
+                }
+            },
+            "prediction_file": "/home/ikun_server/clib/PycharmProjects/CAD/dataset/AHCDU/\u4e8c\u5206\u7c7b\u56fe\u50cf/nnUNet_results/Dataset130_ProstateAHCDU/nnUNetTrainer__nnUNetPlans__3d_fullres/fold_3/validation/WangShaoGang.nii.gz",
+            "reference_file": "/home/ikun_server/clib/PycharmProjects/CAD/dataset/AHCDU/\u4e8c\u5206\u7c7b\u56fe\u50cf/nnUNet_preprocessed/Dataset130_ProstateAHCDU/gt_segmentations/WangShaoGang.nii.gz"
+        },
+        {
+            "metrics": {
+                "1": {
+                    "Dice": 0.9433584962255661,
+                    "FN": 946,
+                    "FP": 2453,
+                    "IoU": 0.8927895533686601,
+                    "TN": 1016872,
+                    "TP": 28305,
+                    "n_pred": 30758,
+                    "n_ref": 29251
+                }
+            },
+            "prediction_file": "/home/ikun_server/clib/PycharmProjects/CAD/dataset/AHCDU/\u4e8c\u5206\u7c7b\u56fe\u50cf/nnUNet_results/Dataset130_ProstateAHCDU/nnUNetTrainer__nnUNetPlans__3d_fullres/fold_3/validation/WangXinXin.nii.gz",
+            "reference_file": "/home/ikun_server/clib/PycharmProjects/CAD/dataset/AHCDU/\u4e8c\u5206\u7c7b\u56fe\u50cf/nnUNet_preprocessed/Dataset130_ProstateAHCDU/gt_segmentations/WangXinXin.nii.gz"
+        },
+        {
+            "metrics": {
+                "1": {
+                    "Dice": 0.9530696404716269,
+                    "FN": 4691,
+                    "FP": 1773,
+                    "IoU": 0.9103467406380028,
+                    "TN": 976476,
+                    "TP": 65636,
+                    "n_pred": 67409,
+                    "n_ref": 70327
+                }
+            },
+            "prediction_file": "/home/ikun_server/clib/PycharmProjects/CAD/dataset/AHCDU/\u4e8c\u5206\u7c7b\u56fe\u50cf/nnUNet_results/Dataset130_ProstateAHCDU/nnUNetTrainer__nnUNetPlans__3d_fullres/fold_3/validation/WangZhiMing.nii.gz",
+            "reference_file": "/home/ikun_server/clib/PycharmProjects/CAD/dataset/AHCDU/\u4e8c\u5206\u7c7b\u56fe\u50cf/nnUNet_preprocessed/Dataset130_ProstateAHCDU/gt_segmentations/WangZhiMing.nii.gz"
+        },
+        {
+            "metrics": {
+                "1": {
+                    "Dice": 0.9345426356589147,
+                    "FN": 2365,
+                    "FP": 6079,
+                    "IoU": 0.8771281394604348,
+                    "TN": 979854,
+                    "TP": 60278,
+                    "n_pred": 66357,
+                    "n_ref": 62643
+                }
+            },
+            "prediction_file": "/home/ikun_server/clib/PycharmProjects/CAD/dataset/AHCDU/\u4e8c\u5206\u7c7b\u56fe\u50cf/nnUNet_results/Dataset130_ProstateAHCDU/nnUNetTrainer__nnUNetPlans__3d_fullres/fold_3/validation/WeiMingGao.nii.gz",
+            "reference_file": "/home/ikun_server/clib/PycharmProjects/CAD/dataset/AHCDU/\u4e8c\u5206\u7c7b\u56fe\u50cf/nnUNet_preprocessed/Dataset130_ProstateAHCDU/gt_segmentations/WeiMingGao.nii.gz"
+        },
+        {
+            "metrics": {
+                "1": {
+                    "Dice": 0.9792877686696349,
+                    "FN": 1789,
+                    "FP": 1286,
+                    "IoU": 0.9594161200490966,
+                    "TN": 972807,
+                    "TP": 72694,
+                    "n_pred": 73980,
+                    "n_ref": 74483
+                }
+            },
+            "prediction_file": "/home/ikun_server/clib/PycharmProjects/CAD/dataset/AHCDU/\u4e8c\u5206\u7c7b\u56fe\u50cf/nnUNet_results/Dataset130_ProstateAHCDU/nnUNetTrainer__nnUNetPlans__3d_fullres/fold_3/validation/WeiWenHua.nii.gz",
+            "reference_file": "/home/ikun_server/clib/PycharmProjects/CAD/dataset/AHCDU/\u4e8c\u5206\u7c7b\u56fe\u50cf/nnUNet_preprocessed/Dataset130_ProstateAHCDU/gt_segmentations/WeiWenHua.nii.gz"
+        },
+        {
+            "metrics": {
+                "1": {
+                    "Dice": 0.94692218663365,
+                    "FN": 1695,
+                    "FP": 2249,
+                    "IoU": 0.8991948881789137,
+                    "TN": 1009451,
+                    "TP": 35181,
+                    "n_pred": 37430,
+                    "n_ref": 36876
+                }
+            },
+            "prediction_file": "/home/ikun_server/clib/PycharmProjects/CAD/dataset/AHCDU/\u4e8c\u5206\u7c7b\u56fe\u50cf/nnUNet_results/Dataset130_ProstateAHCDU/nnUNetTrainer__nnUNetPlans__3d_fullres/fold_3/validation/WengHuaGui.nii.gz",
+            "reference_file": "/home/ikun_server/clib/PycharmProjects/CAD/dataset/AHCDU/\u4e8c\u5206\u7c7b\u56fe\u50cf/nnUNet_preprocessed/Dataset130_ProstateAHCDU/gt_segmentations/WengHuaGui.nii.gz"
+        },
+        {
+            "metrics": {
+                "1": {
+                    "Dice": 0.9296148738379814,
+                    "FN": 2578,
+                    "FP": 2404,
+                    "IoU": 0.8684863523573201,
+                    "TN": 1010694,
+                    "TP": 32900,
+                    "n_pred": 35304,
+                    "n_ref": 35478
+                }
+            },
+            "prediction_file": "/home/ikun_server/clib/PycharmProjects/CAD/dataset/AHCDU/\u4e8c\u5206\u7c7b\u56fe\u50cf/nnUNet_results/Dataset130_ProstateAHCDU/nnUNetTrainer__nnUNetPlans__3d_fullres/fold_3/validation/WuGuangShou.nii.gz",
+            "reference_file": "/home/ikun_server/clib/PycharmProjects/CAD/dataset/AHCDU/\u4e8c\u5206\u7c7b\u56fe\u50cf/nnUNet_preprocessed/Dataset130_ProstateAHCDU/gt_segmentations/WuGuangShou.nii.gz"
+        },
+        {
+            "metrics": {
+                "1": {
+                    "Dice": 0.9592484259580586,
+                    "FN": 2472,
+                    "FP": 4104,
+                    "IoU": 0.9216881817748773,
+                    "TN": 964604,
+                    "TP": 77396,
+                    "n_pred": 81500,
+                    "n_ref": 79868
+                }
+            },
+            "prediction_file": "/home/ikun_server/clib/PycharmProjects/CAD/dataset/AHCDU/\u4e8c\u5206\u7c7b\u56fe\u50cf/nnUNet_results/Dataset130_ProstateAHCDU/nnUNetTrainer__nnUNetPlans__3d_fullres/fold_3/validation/WuLongSheng.nii.gz",
+            "reference_file": "/home/ikun_server/clib/PycharmProjects/CAD/dataset/AHCDU/\u4e8c\u5206\u7c7b\u56fe\u50cf/nnUNet_preprocessed/Dataset130_ProstateAHCDU/gt_segmentations/WuLongSheng.nii.gz"
+        },
+        {
+            "metrics": {
+                "1": {
+                    "Dice": 0.9296107563850687,
+                    "FN": 2242,
+                    "FP": 2344,
+                    "IoU": 0.8684791648742436,
+                    "TN": 1013707,
+                    "TP": 30283,
+                    "n_pred": 32627,
+                    "n_ref": 32525
+                }
+            },
+            "prediction_file": "/home/ikun_server/clib/PycharmProjects/CAD/dataset/AHCDU/\u4e8c\u5206\u7c7b\u56fe\u50cf/nnUNet_results/Dataset130_ProstateAHCDU/nnUNetTrainer__nnUNetPlans__3d_fullres/fold_3/validation/WuTaiLiang.nii.gz",
+            "reference_file": "/home/ikun_server/clib/PycharmProjects/CAD/dataset/AHCDU/\u4e8c\u5206\u7c7b\u56fe\u50cf/nnUNet_preprocessed/Dataset130_ProstateAHCDU/gt_segmentations/WuTaiLiang.nii.gz"
+        },
+        {
+            "metrics": {
+                "1": {
+                    "Dice": 0.9379550614577624,
+                    "FN": 1597,
+                    "FP": 1573,
+                    "IoU": 0.8831594854594376,
+                    "TN": 1021445,
+                    "TP": 23961,
+                    "n_pred": 25534,
+                    "n_ref": 25558
+                }
+            },
+            "prediction_file": "/home/ikun_server/clib/PycharmProjects/CAD/dataset/AHCDU/\u4e8c\u5206\u7c7b\u56fe\u50cf/nnUNet_results/Dataset130_ProstateAHCDU/nnUNetTrainer__nnUNetPlans__3d_fullres/fold_3/validation/XieRongGuang.nii.gz",
+            "reference_file": "/home/ikun_server/clib/PycharmProjects/CAD/dataset/AHCDU/\u4e8c\u5206\u7c7b\u56fe\u50cf/nnUNet_preprocessed/Dataset130_ProstateAHCDU/gt_segmentations/XieRongGuang.nii.gz"
+        },
+        {
+            "metrics": {
+                "1": {
+                    "Dice": 0.8966952264381884,
+                    "FN": 3631,
+                    "FP": 5653,
+                    "IoU": 0.8127357443976038,
+                    "TN": 998999,
+                    "TP": 40293,
+                    "n_pred": 45946,
+                    "n_ref": 43924
+                }
+            },
+            "prediction_file": "/home/ikun_server/clib/PycharmProjects/CAD/dataset/AHCDU/\u4e8c\u5206\u7c7b\u56fe\u50cf/nnUNet_results/Dataset130_ProstateAHCDU/nnUNetTrainer__nnUNetPlans__3d_fullres/fold_3/validation/XiongZhiYan.nii.gz",
+            "reference_file": "/home/ikun_server/clib/PycharmProjects/CAD/dataset/AHCDU/\u4e8c\u5206\u7c7b\u56fe\u50cf/nnUNet_preprocessed/Dataset130_ProstateAHCDU/gt_segmentations/XiongZhiYan.nii.gz"
+        },
+        {
+            "metrics": {
+                "1": {
+                    "Dice": 0.9633157508407163,
+                    "FN": 2530,
+                    "FP": 1768,
+                    "IoU": 0.9292277292935947,
+                    "TN": 987846,
+                    "TP": 56432,
+                    "n_pred": 58200,
+                    "n_ref": 58962
+                }
+            },
+            "prediction_file": "/home/ikun_server/clib/PycharmProjects/CAD/dataset/AHCDU/\u4e8c\u5206\u7c7b\u56fe\u50cf/nnUNet_results/Dataset130_ProstateAHCDU/nnUNetTrainer__nnUNetPlans__3d_fullres/fold_3/validation/XuJiaLong.nii.gz",
+            "reference_file": "/home/ikun_server/clib/PycharmProjects/CAD/dataset/AHCDU/\u4e8c\u5206\u7c7b\u56fe\u50cf/nnUNet_preprocessed/Dataset130_ProstateAHCDU/gt_segmentations/XuJiaLong.nii.gz"
+        },
+        {
+            "metrics": {
+                "1": {
+                    "Dice": 0.9098895188579881,
+                    "FN": 1870,
+                    "FP": 6172,
+                    "IoU": 0.8346764246361319,
+                    "TN": 999932,
+                    "TP": 40602,
+                    "n_pred": 46774,
+                    "n_ref": 42472
+                }
+            },
+            "prediction_file": "/home/ikun_server/clib/PycharmProjects/CAD/dataset/AHCDU/\u4e8c\u5206\u7c7b\u56fe\u50cf/nnUNet_results/Dataset130_ProstateAHCDU/nnUNetTrainer__nnUNetPlans__3d_fullres/fold_3/validation/YanAnMing.nii.gz",
+            "reference_file": "/home/ikun_server/clib/PycharmProjects/CAD/dataset/AHCDU/\u4e8c\u5206\u7c7b\u56fe\u50cf/nnUNet_preprocessed/Dataset130_ProstateAHCDU/gt_segmentations/YanAnMing.nii.gz"
+        },
+        {
+            "metrics": {
+                "1": {
+                    "Dice": 0.8887858261283954,
+                    "FN": 23789,
+                    "FP": 2349,
+                    "IoU": 0.7998330538133419,
+                    "TN": 917995,
+                    "TP": 104443,
+                    "n_pred": 106792,
+                    "n_ref": 128232
+                }
+            },
+            "prediction_file": "/home/ikun_server/clib/PycharmProjects/CAD/dataset/AHCDU/\u4e8c\u5206\u7c7b\u56fe\u50cf/nnUNet_results/Dataset130_ProstateAHCDU/nnUNetTrainer__nnUNetPlans__3d_fullres/fold_3/validation/YanHong.nii.gz",
+            "reference_file": "/home/ikun_server/clib/PycharmProjects/CAD/dataset/AHCDU/\u4e8c\u5206\u7c7b\u56fe\u50cf/nnUNet_preprocessed/Dataset130_ProstateAHCDU/gt_segmentations/YanHong.nii.gz"
+        },
+        {
+            "metrics": {
+                "1": {
+                    "Dice": 0.9779861973981646,
+                    "FN": 2826,
+                    "FP": 3056,
+                    "IoU": 0.9569207332703477,
+                    "TN": 912037,
+                    "TP": 130657,
+                    "n_pred": 133713,
+                    "n_ref": 133483
+                }
+            },
+            "prediction_file": "/home/ikun_server/clib/PycharmProjects/CAD/dataset/AHCDU/\u4e8c\u5206\u7c7b\u56fe\u50cf/nnUNet_results/Dataset130_ProstateAHCDU/nnUNetTrainer__nnUNetPlans__3d_fullres/fold_3/validation/YanZhongHua.nii.gz",
+            "reference_file": "/home/ikun_server/clib/PycharmProjects/CAD/dataset/AHCDU/\u4e8c\u5206\u7c7b\u56fe\u50cf/nnUNet_preprocessed/Dataset130_ProstateAHCDU/gt_segmentations/YanZhongHua.nii.gz"
+        },
+        {
+            "metrics": {
+                "1": {
+                    "Dice": 0.9730783791742034,
+                    "FN": 4558,
+                    "FP": 4402,
+                    "IoU": 0.9475683045719736,
+                    "TN": 877687,
+                    "TP": 161929,
+                    "n_pred": 166331,
+                    "n_ref": 166487
+                }
+            },
+            "prediction_file": "/home/ikun_server/clib/PycharmProjects/CAD/dataset/AHCDU/\u4e8c\u5206\u7c7b\u56fe\u50cf/nnUNet_results/Dataset130_ProstateAHCDU/nnUNetTrainer__nnUNetPlans__3d_fullres/fold_3/validation/YangHengBin.nii.gz",
+            "reference_file": "/home/ikun_server/clib/PycharmProjects/CAD/dataset/AHCDU/\u4e8c\u5206\u7c7b\u56fe\u50cf/nnUNet_preprocessed/Dataset130_ProstateAHCDU/gt_segmentations/YangHengBin.nii.gz"
+        },
+        {
+            "metrics": {
+                "1": {
+                    "Dice": 0.9564340354186315,
+                    "FN": 2887,
+                    "FP": 3765,
+                    "IoU": 0.916505585540354,
+                    "TN": 968906,
+                    "TP": 73018,
+                    "n_pred": 76783,
+                    "n_ref": 75905
+                }
+            },
+            "prediction_file": "/home/ikun_server/clib/PycharmProjects/CAD/dataset/AHCDU/\u4e8c\u5206\u7c7b\u56fe\u50cf/nnUNet_results/Dataset130_ProstateAHCDU/nnUNetTrainer__nnUNetPlans__3d_fullres/fold_3/validation/YangJun.nii.gz",
+            "reference_file": "/home/ikun_server/clib/PycharmProjects/CAD/dataset/AHCDU/\u4e8c\u5206\u7c7b\u56fe\u50cf/nnUNet_preprocessed/Dataset130_ProstateAHCDU/gt_segmentations/YangJun.nii.gz"
+        },
+        {
+            "metrics": {
+                "1": {
+                    "Dice": 0.9414043276023559,
+                    "FN": 1657,
+                    "FP": 2034,
+                    "IoU": 0.8892954620437299,
+                    "TN": 1015235,
+                    "TP": 29650,
+                    "n_pred": 31684,
+                    "n_ref": 31307
+                }
+            },
+            "prediction_file": "/home/ikun_server/clib/PycharmProjects/CAD/dataset/AHCDU/\u4e8c\u5206\u7c7b\u56fe\u50cf/nnUNet_results/Dataset130_ProstateAHCDU/nnUNetTrainer__nnUNetPlans__3d_fullres/fold_3/validation/ZengBingDa.nii.gz",
+            "reference_file": "/home/ikun_server/clib/PycharmProjects/CAD/dataset/AHCDU/\u4e8c\u5206\u7c7b\u56fe\u50cf/nnUNet_preprocessed/Dataset130_ProstateAHCDU/gt_segmentations/ZengBingDa.nii.gz"
+        },
+        {
+            "metrics": {
+                "1": {
+                    "Dice": 0.9536969745238782,
+                    "FN": 1488,
+                    "FP": 3163,
+                    "IoU": 0.9114921311537802,
+                    "TN": 996027,
+                    "TP": 47898,
+                    "n_pred": 51061,
+                    "n_ref": 49386
+                }
+            },
+            "prediction_file": "/home/ikun_server/clib/PycharmProjects/CAD/dataset/AHCDU/\u4e8c\u5206\u7c7b\u56fe\u50cf/nnUNet_results/Dataset130_ProstateAHCDU/nnUNetTrainer__nnUNetPlans__3d_fullres/fold_3/validation/ZengGuangMing.nii.gz",
+            "reference_file": "/home/ikun_server/clib/PycharmProjects/CAD/dataset/AHCDU/\u4e8c\u5206\u7c7b\u56fe\u50cf/nnUNet_preprocessed/Dataset130_ProstateAHCDU/gt_segmentations/ZengGuangMing.nii.gz"
+        },
+        {
+            "metrics": {
+                "1": {
+                    "Dice": 0.9251226760660723,
+                    "FN": 1278,
+                    "FP": 4139,
+                    "IoU": 0.8606774517116329,
+                    "TN": 1009695,
+                    "TP": 33464,
+                    "n_pred": 37603,
+                    "n_ref": 34742
+                }
+            },
+            "prediction_file": "/home/ikun_server/clib/PycharmProjects/CAD/dataset/AHCDU/\u4e8c\u5206\u7c7b\u56fe\u50cf/nnUNet_results/Dataset130_ProstateAHCDU/nnUNetTrainer__nnUNetPlans__3d_fullres/fold_3/validation/ZhangFuJiang.nii.gz",
+            "reference_file": "/home/ikun_server/clib/PycharmProjects/CAD/dataset/AHCDU/\u4e8c\u5206\u7c7b\u56fe\u50cf/nnUNet_preprocessed/Dataset130_ProstateAHCDU/gt_segmentations/ZhangFuJiang.nii.gz"
+        },
+        {
+            "metrics": {
+                "1": {
+                    "Dice": 0.9444731824832622,
+                    "FN": 4292,
+                    "FP": 3222,
+                    "IoU": 0.8947884286874458,
+                    "TN": 977158,
+                    "TP": 63904,
+                    "n_pred": 67126,
+                    "n_ref": 68196
+                }
+            },
+            "prediction_file": "/home/ikun_server/clib/PycharmProjects/CAD/dataset/AHCDU/\u4e8c\u5206\u7c7b\u56fe\u50cf/nnUNet_results/Dataset130_ProstateAHCDU/nnUNetTrainer__nnUNetPlans__3d_fullres/fold_3/validation/ZhangHe.nii.gz",
+            "reference_file": "/home/ikun_server/clib/PycharmProjects/CAD/dataset/AHCDU/\u4e8c\u5206\u7c7b\u56fe\u50cf/nnUNet_preprocessed/Dataset130_ProstateAHCDU/gt_segmentations/ZhangHe.nii.gz"
+        },
+        {
+            "metrics": {
+                "1": {
+                    "Dice": 0.9472893212372937,
+                    "FN": 2677,
+                    "FP": 1181,
+                    "IoU": 0.8998572355613238,
+                    "TN": 1010051,
+                    "TP": 34667,
+                    "n_pred": 35848,
+                    "n_ref": 37344
+                }
+            },
+            "prediction_file": "/home/ikun_server/clib/PycharmProjects/CAD/dataset/AHCDU/\u4e8c\u5206\u7c7b\u56fe\u50cf/nnUNet_results/Dataset130_ProstateAHCDU/nnUNetTrainer__nnUNetPlans__3d_fullres/fold_3/validation/ZhangJingLiang.nii.gz",
+            "reference_file": "/home/ikun_server/clib/PycharmProjects/CAD/dataset/AHCDU/\u4e8c\u5206\u7c7b\u56fe\u50cf/nnUNet_preprocessed/Dataset130_ProstateAHCDU/gt_segmentations/ZhangJingLiang.nii.gz"
+        },
+        {
+            "metrics": {
+                "1": {
+                    "Dice": 0.9605203233519298,
+                    "FN": 3618,
+                    "FP": 1930,
+                    "IoU": 0.9240395410608176,
+                    "TN": 975538,
+                    "TP": 67490,
+                    "n_pred": 69420,
+                    "n_ref": 71108
+                }
+            },
+            "prediction_file": "/home/ikun_server/clib/PycharmProjects/CAD/dataset/AHCDU/\u4e8c\u5206\u7c7b\u56fe\u50cf/nnUNet_results/Dataset130_ProstateAHCDU/nnUNetTrainer__nnUNetPlans__3d_fullres/fold_3/validation/ZhangNaiYu.nii.gz",
+            "reference_file": "/home/ikun_server/clib/PycharmProjects/CAD/dataset/AHCDU/\u4e8c\u5206\u7c7b\u56fe\u50cf/nnUNet_preprocessed/Dataset130_ProstateAHCDU/gt_segmentations/ZhangNaiYu.nii.gz"
+        },
+        {
+            "metrics": {
+                "1": {
+                    "Dice": 0.9375915616759449,
+                    "FN": 1040,
+                    "FP": 2794,
+                    "IoU": 0.882515168229454,
+                    "TN": 1015942,
+                    "TP": 28800,
+                    "n_pred": 31594,
+                    "n_ref": 29840
+                }
+            },
+            "prediction_file": "/home/ikun_server/clib/PycharmProjects/CAD/dataset/AHCDU/\u4e8c\u5206\u7c7b\u56fe\u50cf/nnUNet_results/Dataset130_ProstateAHCDU/nnUNetTrainer__nnUNetPlans__3d_fullres/fold_3/validation/ZhangRenYong.nii.gz",
+            "reference_file": "/home/ikun_server/clib/PycharmProjects/CAD/dataset/AHCDU/\u4e8c\u5206\u7c7b\u56fe\u50cf/nnUNet_preprocessed/Dataset130_ProstateAHCDU/gt_segmentations/ZhangRenYong.nii.gz"
+        },
+        {
+            "metrics": {
+                "1": {
+                    "Dice": 0.9277274153200183,
+                    "FN": 2897,
+                    "FP": 6088,
+                    "IoU": 0.8651973654599193,
+                    "TN": 981923,
+                    "TP": 57668,
+                    "n_pred": 63756,
+                    "n_ref": 60565
+                }
+            },
+            "prediction_file": "/home/ikun_server/clib/PycharmProjects/CAD/dataset/AHCDU/\u4e8c\u5206\u7c7b\u56fe\u50cf/nnUNet_results/Dataset130_ProstateAHCDU/nnUNetTrainer__nnUNetPlans__3d_fullres/fold_3/validation/ZhangShaoQuan.nii.gz",
+            "reference_file": "/home/ikun_server/clib/PycharmProjects/CAD/dataset/AHCDU/\u4e8c\u5206\u7c7b\u56fe\u50cf/nnUNet_preprocessed/Dataset130_ProstateAHCDU/gt_segmentations/ZhangShaoQuan.nii.gz"
+        },
+        {
+            "metrics": {
+                "1": {
+                    "Dice": 0.8657037472039485,
+                    "FN": 19717,
+                    "FP": 636,
+                    "IoU": 0.7632077996114155,
+                    "TN": 962623,
+                    "TP": 65600,
+                    "n_pred": 66236,
+                    "n_ref": 85317
+                }
+            },
+            "prediction_file": "/home/ikun_server/clib/PycharmProjects/CAD/dataset/AHCDU/\u4e8c\u5206\u7c7b\u56fe\u50cf/nnUNet_results/Dataset130_ProstateAHCDU/nnUNetTrainer__nnUNetPlans__3d_fullres/fold_3/validation/ZhangWenHua.nii.gz",
+            "reference_file": "/home/ikun_server/clib/PycharmProjects/CAD/dataset/AHCDU/\u4e8c\u5206\u7c7b\u56fe\u50cf/nnUNet_preprocessed/Dataset130_ProstateAHCDU/gt_segmentations/ZhangWenHua.nii.gz"
+        },
+        {
+            "metrics": {
+                "1": {
+                    "Dice": 0.9459636238453153,
+                    "FN": 1139,
+                    "FP": 3570,
+                    "IoU": 0.897467720512988,
+                    "TN": 1002649,
+                    "TP": 41218,
+                    "n_pred": 44788,
+                    "n_ref": 42357
+                }
+            },
+            "prediction_file": "/home/ikun_server/clib/PycharmProjects/CAD/dataset/AHCDU/\u4e8c\u5206\u7c7b\u56fe\u50cf/nnUNet_results/Dataset130_ProstateAHCDU/nnUNetTrainer__nnUNetPlans__3d_fullres/fold_3/validation/ZhaoJiaFu.nii.gz",
+            "reference_file": "/home/ikun_server/clib/PycharmProjects/CAD/dataset/AHCDU/\u4e8c\u5206\u7c7b\u56fe\u50cf/nnUNet_preprocessed/Dataset130_ProstateAHCDU/gt_segmentations/ZhaoJiaFu.nii.gz"
+        },
+        {
+            "metrics": {
+                "1": {
+                    "Dice": 0.9515304888860233,
+                    "FN": 1666,
+                    "FP": 1341,
+                    "IoU": 0.9075423546413307,
+                    "TN": 1016053,
+                    "TP": 29516,
+                    "n_pred": 30857,
+                    "n_ref": 31182
+                }
+            },
+            "prediction_file": "/home/ikun_server/clib/PycharmProjects/CAD/dataset/AHCDU/\u4e8c\u5206\u7c7b\u56fe\u50cf/nnUNet_results/Dataset130_ProstateAHCDU/nnUNetTrainer__nnUNetPlans__3d_fullres/fold_3/validation/ZhongShouFang.nii.gz",
+            "reference_file": "/home/ikun_server/clib/PycharmProjects/CAD/dataset/AHCDU/\u4e8c\u5206\u7c7b\u56fe\u50cf/nnUNet_preprocessed/Dataset130_ProstateAHCDU/gt_segmentations/ZhongShouFang.nii.gz"
+        },
+        {
+            "metrics": {
+                "1": {
+                    "Dice": 0.8983904004511191,
+                    "FN": 6999,
+                    "FP": 5254,
+                    "IoU": 0.8155252104003252,
+                    "TN": 982155,
+                    "TP": 54168,
+                    "n_pred": 59422,
+                    "n_ref": 61167
+                }
+            },
+            "prediction_file": "/home/ikun_server/clib/PycharmProjects/CAD/dataset/AHCDU/\u4e8c\u5206\u7c7b\u56fe\u50cf/nnUNet_results/Dataset130_ProstateAHCDU/nnUNetTrainer__nnUNetPlans__3d_fullres/fold_3/validation/ZhouCongAn.nii.gz",
+            "reference_file": "/home/ikun_server/clib/PycharmProjects/CAD/dataset/AHCDU/\u4e8c\u5206\u7c7b\u56fe\u50cf/nnUNet_preprocessed/Dataset130_ProstateAHCDU/gt_segmentations/ZhouCongAn.nii.gz"
+        },
+        {
+            "metrics": {
+                "1": {
+                    "Dice": 0.964242962962963,
+                    "FN": 1550,
+                    "FP": 1467,
+                    "IoU": 0.9309547784694251,
+                    "TN": 1004880,
+                    "TP": 40679,
+                    "n_pred": 42146,
+                    "n_ref": 42229
+                }
+            },
+            "prediction_file": "/home/ikun_server/clib/PycharmProjects/CAD/dataset/AHCDU/\u4e8c\u5206\u7c7b\u56fe\u50cf/nnUNet_results/Dataset130_ProstateAHCDU/nnUNetTrainer__nnUNetPlans__3d_fullres/fold_3/validation/ZhouXinSheng.nii.gz",
+            "reference_file": "/home/ikun_server/clib/PycharmProjects/CAD/dataset/AHCDU/\u4e8c\u5206\u7c7b\u56fe\u50cf/nnUNet_preprocessed/Dataset130_ProstateAHCDU/gt_segmentations/ZhouXinSheng.nii.gz"
+        },
+        {
+            "metrics": {
+                "1": {
+                    "Dice": 0.9537120468819874,
+                    "FN": 3190,
+                    "FP": 3745,
+                    "IoU": 0.9115196672578114,
+                    "TN": 970197,
+                    "TP": 71444,
+                    "n_pred": 75189,
+                    "n_ref": 74634
+                }
+            },
+            "prediction_file": "/home/ikun_server/clib/PycharmProjects/CAD/dataset/AHCDU/\u4e8c\u5206\u7c7b\u56fe\u50cf/nnUNet_results/Dataset130_ProstateAHCDU/nnUNetTrainer__nnUNetPlans__3d_fullres/fold_3/validation/ZhuJingKang.nii.gz",
+            "reference_file": "/home/ikun_server/clib/PycharmProjects/CAD/dataset/AHCDU/\u4e8c\u5206\u7c7b\u56fe\u50cf/nnUNet_preprocessed/Dataset130_ProstateAHCDU/gt_segmentations/ZhuJingKang.nii.gz"
+        },
+        {
+            "metrics": {
+                "1": {
+                    "Dice": 0.8567440086012555,
+                    "FN": 7487,
+                    "FP": 25557,
+                    "IoU": 0.7493894762388703,
+                    "TN": 916722,
+                    "TP": 98810,
+                    "n_pred": 124367,
+                    "n_ref": 106297
+                }
+            },
+            "prediction_file": "/home/ikun_server/clib/PycharmProjects/CAD/dataset/AHCDU/\u4e8c\u5206\u7c7b\u56fe\u50cf/nnUNet_results/Dataset130_ProstateAHCDU/nnUNetTrainer__nnUNetPlans__3d_fullres/fold_3/validation/ZhuangHuaMing.nii.gz",
+            "reference_file": "/home/ikun_server/clib/PycharmProjects/CAD/dataset/AHCDU/\u4e8c\u5206\u7c7b\u56fe\u50cf/nnUNet_preprocessed/Dataset130_ProstateAHCDU/gt_segmentations/ZhuangHuaMing.nii.gz"
+        },
+        {
+            "metrics": {
+                "1": {
+                    "Dice": 0.9717225727812085,
+                    "FN": 3420,
+                    "FP": 779,
+                    "IoU": 0.9450003929478951,
+                    "TN": 972230,
+                    "TP": 72147,
+                    "n_pred": 72926,
+                    "n_ref": 75567
+                }
+            },
+            "prediction_file": "/home/ikun_server/clib/PycharmProjects/CAD/dataset/AHCDU/\u4e8c\u5206\u7c7b\u56fe\u50cf/nnUNet_results/Dataset130_ProstateAHCDU/nnUNetTrainer__nnUNetPlans__3d_fullres/fold_3/validation/ZouPaiJiang.nii.gz",
+            "reference_file": "/home/ikun_server/clib/PycharmProjects/CAD/dataset/AHCDU/\u4e8c\u5206\u7c7b\u56fe\u50cf/nnUNet_preprocessed/Dataset130_ProstateAHCDU/gt_segmentations/ZouPaiJiang.nii.gz"
+        }
+    ]
+}

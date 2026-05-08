@@ -1,0 +1,267 @@
+{
+    "prediction_root": "checkpoints/SegGland_nnUNet_PICAI",
+    "fold": "fold1",
+    "data_dir": "dataset/PI-CAI/nnUNet_raw/Dataset131_ProstatePI-CAI",
+    "image_dir": "dataset/PI-CAI/nnUNet_raw/Dataset131_ProstatePI-CAI/imagesTs",
+    "gt_dir": "dataset/PI-CAI/nnUNet_raw/Dataset131_ProstatePI-CAI/labelsTs",
+    "keep_largest_cc": false,
+    "num_cases": 40,
+    "cases": [
+        {
+            "patient_name": "10005_1000005",
+            "dice_score": 0.9373,
+            "miou_score": 0.882,
+            "hd95_score": 1.4142
+        },
+        {
+            "patient_name": "10012_1000012",
+            "dice_score": 0.9282,
+            "miou_score": 0.866,
+            "hd95_score": 2.0
+        },
+        {
+            "patient_name": "10013_1000013",
+            "dice_score": 0.9645,
+            "miou_score": 0.9315,
+            "hd95_score": 1.0
+        },
+        {
+            "patient_name": "10040_1000040",
+            "dice_score": 0.9346,
+            "miou_score": 0.8773,
+            "hd95_score": 1.0
+        },
+        {
+            "patient_name": "10059_1000059",
+            "dice_score": 0.9226,
+            "miou_score": 0.8563,
+            "hd95_score": 2.0
+        },
+        {
+            "patient_name": "10078_1000078",
+            "dice_score": 0.9545,
+            "miou_score": 0.913,
+            "hd95_score": 1.0
+        },
+        {
+            "patient_name": "10220_1000224",
+            "dice_score": 0.9268,
+            "miou_score": 0.8636,
+            "hd95_score": 1.0
+        },
+        {
+            "patient_name": "10262_1000266",
+            "dice_score": 0.946,
+            "miou_score": 0.8976,
+            "hd95_score": 1.0
+        },
+        {
+            "patient_name": "10271_1000275",
+            "dice_score": 0.9634,
+            "miou_score": 0.9295,
+            "hd95_score": 1.0
+        },
+        {
+            "patient_name": "10274_1000279",
+            "dice_score": 0.9445,
+            "miou_score": 0.8949,
+            "hd95_score": 1.0
+        },
+        {
+            "patient_name": "10334_1000340",
+            "dice_score": 0.9745,
+            "miou_score": 0.9502,
+            "hd95_score": 1.0
+        },
+        {
+            "patient_name": "10355_1000361",
+            "dice_score": 0.9558,
+            "miou_score": 0.9153,
+            "hd95_score": 1.0
+        },
+        {
+            "patient_name": "10372_1000378",
+            "dice_score": 0.9683,
+            "miou_score": 0.9385,
+            "hd95_score": 1.0
+        },
+        {
+            "patient_name": "10377_1000383",
+            "dice_score": 0.9721,
+            "miou_score": 0.9457,
+            "hd95_score": 1.0
+        },
+        {
+            "patient_name": "10393_1000399",
+            "dice_score": 0.9484,
+            "miou_score": 0.9019,
+            "hd95_score": 1.0
+        },
+        {
+            "patient_name": "10399_1000405",
+            "dice_score": 0.9638,
+            "miou_score": 0.9301,
+            "hd95_score": 1.0
+        },
+        {
+            "patient_name": "10402_1000408",
+            "dice_score": 0.9436,
+            "miou_score": 0.8933,
+            "hd95_score": 1.0
+        },
+        {
+            "patient_name": "10451_1000459",
+            "dice_score": 0.9555,
+            "miou_score": 0.9148,
+            "hd95_score": 1.0
+        },
+        {
+            "patient_name": "10458_1000466",
+            "dice_score": 0.9578,
+            "miou_score": 0.9191,
+            "hd95_score": 1.0
+        },
+        {
+            "patient_name": "10484_1000492",
+            "dice_score": 0.949,
+            "miou_score": 0.903,
+            "hd95_score": 1.0
+        },
+        {
+            "patient_name": "10558_1000570",
+            "dice_score": 0.9579,
+            "miou_score": 0.9192,
+            "hd95_score": 1.0
+        },
+        {
+            "patient_name": "10607_1000621",
+            "dice_score": 0.9761,
+            "miou_score": 0.9533,
+            "hd95_score": 1.0
+        },
+        {
+            "patient_name": "10707_1000723",
+            "dice_score": 0.9621,
+            "miou_score": 0.9269,
+            "hd95_score": 1.0
+        },
+        {
+            "patient_name": "10710_1000726",
+            "dice_score": 0.9719,
+            "miou_score": 0.9454,
+            "hd95_score": 1.0
+        },
+        {
+            "patient_name": "10760_1000776",
+            "dice_score": 0.966,
+            "miou_score": 0.9342,
+            "hd95_score": 1.0
+        },
+        {
+            "patient_name": "10845_1000861",
+            "dice_score": 0.9559,
+            "miou_score": 0.9156,
+            "hd95_score": 1.0
+        },
+        {
+            "patient_name": "10868_1000884",
+            "dice_score": 0.9728,
+            "miou_score": 0.947,
+            "hd95_score": 1.0
+        },
+        {
+            "patient_name": "10873_1000889",
+            "dice_score": 0.9627,
+            "miou_score": 0.928,
+            "hd95_score": 1.0
+        },
+        {
+            "patient_name": "10961_1000980",
+            "dice_score": 0.9636,
+            "miou_score": 0.9297,
+            "hd95_score": 1.0
+        },
+        {
+            "patient_name": "10970_1000989",
+            "dice_score": 0.9703,
+            "miou_score": 0.9423,
+            "hd95_score": 1.0
+        },
+        {
+            "patient_name": "10975_1000994",
+            "dice_score": 0.9647,
+            "miou_score": 0.9318,
+            "hd95_score": 1.4142
+        },
+        {
+            "patient_name": "11041_1001061",
+            "dice_score": 0.9516,
+            "miou_score": 0.9076,
+            "hd95_score": 1.0
+        },
+        {
+            "patient_name": "11063_1001085",
+            "dice_score": 0.9592,
+            "miou_score": 0.9215,
+            "hd95_score": 1.0
+        },
+        {
+            "patient_name": "11111_1001134",
+            "dice_score": 0.9801,
+            "miou_score": 0.961,
+            "hd95_score": 1.0
+        },
+        {
+            "patient_name": "11169_1001192",
+            "dice_score": 0.9595,
+            "miou_score": 0.9221,
+            "hd95_score": 1.0
+        },
+        {
+            "patient_name": "11190_1001213",
+            "dice_score": 0.9428,
+            "miou_score": 0.8918,
+            "hd95_score": 1.0
+        },
+        {
+            "patient_name": "11306_1001329",
+            "dice_score": 0.9655,
+            "miou_score": 0.9332,
+            "hd95_score": 1.0
+        },
+        {
+            "patient_name": "11341_1001364",
+            "dice_score": 0.968,
+            "miou_score": 0.938,
+            "hd95_score": 1.0
+        },
+        {
+            "patient_name": "11345_1001368",
+            "dice_score": 0.9519,
+            "miou_score": 0.9083,
+            "hd95_score": 1.0
+        },
+        {
+            "patient_name": "11400_1001424",
+            "dice_score": 0.9794,
+            "miou_score": 0.9597,
+            "hd95_score": 1.0
+        }
+    ],
+    "overall_metrics": {
+        "average_dice": 0.9573,
+        "average_miou": 0.9185,
+        "average_hd95": 1.0707,
+        "std_dice": 0.0141,
+        "std_miou": 0.0258,
+        "std_hd95": 0.2315
+    },
+    "dice_interval_statistics": {
+        "0.0-0.1": 0,
+        "0.1-0.2": 0,
+        "0.2-0.3": 0,
+        "0.3-0.4": 0,
+        "0.4-0.5": 0,
+        "0.5-1.0": 40
+    }
+}

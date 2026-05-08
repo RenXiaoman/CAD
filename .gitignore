@@ -1,0 +1,14 @@
+./vscode
+checkpoints/*
+dataset/AHCDU/*.nii.gz
+dataset/PI-CAI/*.nii.gz
+dataset/*.nii.gz
+infer/*.nii.gz
+*.nii.gz
+dataset/**/*.nii.gz
+dataset/**/*.pkl
+dataset/**/*.b2nd
+dataset/**/*.npz
+dataset/**/*.DS_Store
+*.pth
+*.png

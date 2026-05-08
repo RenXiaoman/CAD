@@ -1,0 +1,529 @@
+#!/usr/bin/env python3
+
+import os
+import torch
+import numpy as np
+import nibabel as nib
+from pathlib import Path
+from torch.utils.data import DataLoader
+from tqdm import tqdm
+import argparse
+import json
+import matplotlib.pyplot as plt
+from skimage import measure
+from scipy.ndimage import binary_erosion, generate_binary_structure
+from scipy.spatial import cKDTree
+
+#### Model Lists ####
+from picai_baseline.unet.training_setup.neural_networks.unets import UNet
+from monai.networks.nets import UNETR
+from monai.networks.nets import AttentionUnet
+
+
+# Model
+# from picai_baseline.unet.training_setup.neural_networks.unets import UNet
+
+# Local imports
+from gland_dataset_nnunet import Lits_DataSet
+
+parser = argparse.ArgumentParser(description='Test prostate validation set')
+parser.add_argument('--model_path', type=str,default='checkpoints/SegGland_Attention_UNet_AHCDU/best_dice_model.pth', required=False, help='Path to trained model checkpoint')
+
+# parser.add_argument('--data_path', type=str, default='dataset/PI-CAI/nnUNet_raw/Dataset131_ProstatePI-CAI', help='Path to dataset')
+parser.add_argument('--data_path', type=str, default='dataset/AHCDU/二分类图像/nnUNet_raw/Dataset130_ProstateAHCDU', help='Path to dataset')
+
+parser.add_argument('--output_dir', type=str, default='val_results', help='Output directory for predictions')
+parser.add_argument('--slices_dir', type=str, default='slice_contours', help='Directory for slice images with contours')
+parser.add_argument('--gpu_ids', type=str, default='3', help='GPU IDs')
+parser.add_argument('--keep_largest_cc', action='store_true',default=True, help='Keep only the largest connected component in predictions')
+parser.add_argument('--mode', type=str, default='val', choices=['val', 'test'], help='Mode: val for validation, test for testing')
+
+args = parser.parse_args()
+    
+    
+def calculate_dice(preds, targets):
+    """Calculate Dice coefficient"""
+    smooth = 1e-6
+    preds_flat = preds.view(-1)
+    targets_flat = targets.view(-1)
+    
+    intersection = (preds_flat * targets_flat).sum()
+    pred_sum = preds_flat.sum()
+    target_sum = targets_flat.sum()
+    
+    dice = (2. * intersection + smooth) / (pred_sum + target_sum + smooth)
+    return dice.item()
+
+def calculate_miou(preds, targets):
+    """Calculate mean Intersection over Union"""
+    smooth = 1e-6
+    preds_flat = preds.view(-1)
+    targets_flat = targets.view(-1)
+
+    intersection = (preds_flat * targets_flat).sum()
+    union = preds_flat.sum() + targets_flat.sum() - intersection
+
+    iou = (intersection + smooth) / (union + smooth)
+    return iou.item()
+
+def get_surface_points(binary_mask):
+    """
+    Get surface points of a binary mask
+
+    Args:
+        binary_mask: Binary mask (numpy array)
+
+    Returns:
+        Array of surface point coordinates
+    """
+    # Create a structuring element for erosion (26-connectivity for 3D)
+    struct = generate_binary_structure(3, 3)
+
+    # Erode the mask
+    eroded = binary_erosion(binary_mask, struct)
+
+    # Surface = original mask - eroded mask
+    surface = binary_mask.astype(np.uint8) - eroded.astype(np.uint8)
+
+    # Get coordinates of surface points
+    surface_points = np.argwhere(surface > 0)
+
+    return surface_points
+
+def calculate_hd95(pred, target, percentile=95):
+    """
+    Calculate 95th percentile Hausdorff Distance (HD95)
+
+    HD95 is calculated as:
+    1. Get surface points of both prediction and ground truth
+    2. For each surface point in pred, find the minimum distance to target surface
+    3. For each surface point in target, find the minimum distance to pred surface
+    4. Take the 95th percentile of all these distances
+
+    Args:
+        pred: Binary prediction mask (numpy array)
+        target: Binary ground truth mask (numpy array)
+        percentile: Percentile for Hausdorff distance (default: 95)
+
+    Returns:
+        HD95 value (float)
+    """
+    # Convert to binary if not already
+    pred = (pred > 0).astype(np.uint8)
+    target = (target > 0).astype(np.uint8)
+
+    # Check if both pred and target are empty
+    if pred.sum() == 0 and target.sum() == 0:
+        return 0.0
+
+    # If one is empty and the other is not, return a large distance
+    if pred.sum() == 0 or target.sum() == 0:
+        # Return a large but finite value (e.g., image diagonal)
+        max_distance = np.sqrt(sum(dim**2 for dim in pred.shape))
+        return float(max_distance)
+
+    try:
+        # Get surface points
+        pred_surface = get_surface_points(pred)
+        target_surface = get_surface_points(target)
+
+        if len(pred_surface) == 0 or len(target_surface) == 0:
+            # If no surface points, return 0
+            return 0.0
+
+        # Use KDTree for efficient distance calculation
+        # Calculate distances from pred surface to target surface
+        target_tree = cKDTree(target_surface)
+        distances_pred_to_target, _ = target_tree.query(pred_surface, k=1)
+
+        # Calculate distances from target surface to pred surface
+        pred_tree = cKDTree(pred_surface)
+        distances_target_to_pred, _ = pred_tree.query(target_surface, k=1)
+
+        # Combine all distances (cKDTree.query returns numpy array)
+        all_distances = np.concatenate([distances_pred_to_target, distances_target_to_pred])
+
+        # Calculate 95th percentile
+        hd95 = np.percentile(all_distances, percentile)
+
+        # Handle NaN or Inf values
+        if np.isnan(hd95) or np.isinf(hd95):
+            return 0.0
+
+        return float(hd95)
+
+    except Exception as e:
+        print(f"Warning: Error calculating HD95: {e}")
+        # Return a default value if calculation fails
+        max_distance = np.sqrt(sum(dim**2 for dim in pred.shape))
+        return float(max_distance)
+
+def calculate_dice_intervals(dice_scores):
+    """Calculate distribution of Dice scores across intervals"""
+    intervals = [
+        (0.0, 0.1),   # 0~0.1
+        (0.1, 0.2),   # 0.1~0.2
+        (0.2, 0.3),   # 0.2~0.3
+        (0.3, 0.4),   # 0.3~0.4
+        (0.4, 0.5),   # 0.4~0.5
+        (0.5, 1.0)    # 0.5~1.0
+    ]
+    
+    interval_counts = {}
+    for i, (lower, upper) in enumerate(intervals):
+        if i == len(intervals) - 1:  # Last interval includes upper bound
+            count = sum(lower <= score <= upper for score in dice_scores)
+        else:
+            count = sum(lower <= score < upper for score in dice_scores)
+        interval_name = f"{lower:.1f}-{upper:.1f}"
+        interval_counts[interval_name] = count
+    
+    return interval_counts
+
+def save_slice_contours(mri_slice, gt_slice, pred_slice, output_path):
+    """Save single slice with GT and prediction contours"""
+    plt.figure(figsize=(8, 8))
+    plt.imshow(mri_slice, cmap="gray")
+    
+    # Draw GT contours (red)
+    contours = measure.find_contours(gt_slice, 0.5)
+    for contour in contours:
+        plt.plot(contour[:, 1], contour[:, 0], 'r-', linewidth=2, label='GT' if 'GT' not in plt.gca().get_legend_handles_labels()[1] else "")
+    
+    # Draw prediction contours (yellow)
+    contours = measure.find_contours(pred_slice, 0.5)
+    for contour in contours:
+        plt.plot(contour[:, 1], contour[:, 0], 'y-', linewidth=2, label='Pred' if 'Pred' not in plt.gca().get_legend_handles_labels()[1] else "")
+    
+    plt.axis("off")
+    plt.legend()
+    plt.savefig(output_path, bbox_inches="tight", pad_inches=0, dpi=100)
+    plt.close()
+
+def keep_largest_connected_component_3d(pred_data):
+    """Keep only the largest connected component in 3D prediction volume"""
+    import SimpleITK as sitk
+    mask_img = sitk.GetImageFromArray(pred_data)
+    cc = sitk.ConnectedComponent(mask_img, True)  
+    cc_sorted = sitk.RelabelComponent(cc, sortByObjectSize=True)  # 按体积排序，最大区域编号=1
+    largest_cc = sitk.Equal(cc_sorted, 1)                         # 保留最大连通域
+    return sitk.GetArrayFromImage(largest_cc).astype(np.uint8)
+
+def save_t2w_slices_with_contours(t2w_data, gt_data, pred_data, patient_name, output_dir):
+    """Save up to 16 T2W slices with GT and prediction contours overlaid."""
+    patient_dir = output_dir / patient_name
+    patient_dir.mkdir(parents=True, exist_ok=True)
+    
+    num_slices = t2w_data.shape[0]
+    for z in range(num_slices):
+        if z < 16:  # Only save first 16 slices
+            t2w_slice = t2w_data[z]
+            gt_slice = gt_data[z].astype(bool)
+            pred_slice = pred_data[z].astype(bool)
+
+            plt.figure(figsize=(6, 6))
+            plt.imshow(t2w_slice, cmap="gray")
+
+            contours = measure.find_contours(gt_slice, 0.5)
+            for contour in contours:
+                plt.plot(
+                    contour[:, 1],
+                    contour[:, 0],
+                    "r-",
+                    linewidth=2,
+                    label="GT" if "GT" not in plt.gca().get_legend_handles_labels()[1] else "",
+                )
+
+            contours = measure.find_contours(pred_slice, 0.5)
+            for contour in contours:
+                plt.plot(
+                    contour[:, 1],
+                    contour[:, 0],
+                    "y-",
+                    linewidth=2,
+                    label="Pred" if "Pred" not in plt.gca().get_legend_handles_labels()[1] else "",
+                )
+
+            plt.title(f"T2W - Slice {z}")
+            plt.axis("off")
+            handles, labels = plt.gca().get_legend_handles_labels()
+            if labels:
+                plt.legend(handles, ["GT", "Pred"], loc="lower right", fontsize=10)
+
+            output_path = patient_dir / f"slice_{z:02d}.png"
+            plt.savefig(output_path, bbox_inches="tight", pad_inches=0.1, dpi=100)
+            plt.close()
+    
+    print(f"Saved up to 16 T2W slices for {patient_name} to {patient_dir}")
+
+
+def fix_cdsa_net_checkpoint(state_dict):
+    new_state_dict = {}
+    for key, value in state_dict.items():
+        if 'gre_dcgf_' in key:
+            # Replace 'gre_dcgf_X' with 'BiCR_X'
+            new_key = key.replace('gre_dcgf_', 'BiCR_')
+            new_state_dict[new_key] = value
+        else:
+            new_state_dict[key] = value
+    return new_state_dict
+
+
+def main():
+    
+    
+    # Set device
+    if args.gpu_ids != '-1':
+        os.environ["CUDA_VISIBLE_DEVICES"] = args.gpu_ids
+        device = torch.device('cuda' if torch.cuda.is_available() else 'cpu')
+    else:
+        device = torch.device('cpu')
+    
+    print(f"Using device: {device}")
+    
+    # Load model
+    # model = UNet(
+    #     spatial_dims=3,
+    #     in_channels=1,
+    #     out_channels=2,
+    #     strides=[(2, 2, 2), (1, 2, 2), (1, 2, 2), (1, 2, 2), (2, 2, 2)],
+    #     channels=[32, 64, 128, 256, 512, 1024],
+    #     ).to(device)
+    
+    # model = UNETR(in_channels=1, 
+    #               out_channels=2, 
+    #               img_size=(16, 256, 256), 
+    #               spatial_dims=3).to(device)
+    
+    model = AttentionUnet(
+        spatial_dims=3,
+        in_channels=1,
+        out_channels=2,  # 背景和腺体两个类别
+        channels=[16, 32, 64, 128, 256],  # 编码器通道数，从浅到深
+        strides=[2, 2, 2, 2],  # 下采样步长，对应4次下采样
+        kernel_size=3,
+        up_kernel_size=3,
+        dropout=0.1
+    ).to(device)
+    
+    
+    # Load checkpoint
+    checkpoint = torch.load(args.model_path, map_location=device, weights_only=True)
+    
+    checkpoint = checkpoint["model_state_dict"]
+    
+    checkpoint = fix_cdsa_net_checkpoint(checkpoint)  # 注释即可
+    
+    model.load_state_dict(checkpoint)
+    model.eval()
+    print(f"Loaded model from: {args.model_path}")
+    
+    # Create parent directory based on model_path experiment name and mode
+    model_path_parts = Path(args.model_path).parts
+    if len(model_path_parts) >= 2:
+        experiment_name = model_path_parts[-2]  # Get the experiment name from model path
+    else:
+        experiment_name = Path(args.model_path).stem  # Fallback to model file name
+    
+
+    suffix = "_infer" if args.mode == "val" else "_test"
+    parent_dir = Path(f"infer/{experiment_name}{suffix}")
+    parent_dir.mkdir(parents=True, exist_ok=True)
+
+    # Create output directories as subdirectories of parent directory
+    output_dir = parent_dir / args.output_dir
+    output_dir.mkdir(parents=True, exist_ok=True)
+
+    slices_dir = parent_dir / args.slices_dir
+    slices_dir.mkdir(parents=True, exist_ok=True)
+    
+    # Load dataset based on mode # nnUNet_val
+    if args.mode == "val":
+        if args.data_path.endswith('PI-CAI'):
+            images_dir = 'imagesTs'
+            labels_dir = 'labelsTs'
+        elif args.data_path.endswith('ChengdaOnlyCSPca'):
+            images_dir = 'nnUNet_val/imagesTs'
+            labels_dir = 'nnUNet_val/labelsTs'
+        else:
+            images_dir = 'imagesTs'
+            labels_dir = 'labelsTs'
+    else:  # test mode
+        images_dir = 'imagesTs'
+        labels_dir = 'labelsTs'
+    
+    val_dataset = Lits_DataSet(
+        Path(args.data_path), 
+        images_dir, 
+        labels_dir,
+        enable_augmentation=False
+    )
+    
+    val_dataloader = DataLoader(
+        dataset=val_dataset, 
+        batch_size=1,  # Batch size 1 for individual patient inference
+        num_workers=4, 
+        shuffle=False
+    )
+    
+    print(f"Validation dataset: {len(val_dataset)} samples")
+    
+    # Test loop
+    all_dice_scores = []
+    all_miou_scores = []
+    all_hd95_scores = []
+    case_metrics = []  # Store metrics for each individual case
+    
+    with torch.no_grad():
+        for batch_idx, batch_data in enumerate(tqdm(val_dataloader, desc='Testing')):
+            inputs, labels, patient_names = batch_data
+            inputs = inputs.to(device)         
+            labels = labels.to(device)
+            
+            # Forward pass
+            outputs = model(inputs)
+            
+            # Apply softmax and get predictions
+            outputs_softmax = torch.softmax(outputs, dim=1)
+            preds = torch.argmax(outputs_softmax, dim=1, keepdim=True)
+            
+            # Save prediction as NIfTI file
+            patient_name = patient_names[0]
+            pred_numpy = preds.squeeze().cpu().numpy().astype(np.uint8)
+            
+            # Conditionally keep only largest connected component
+            if args.keep_largest_cc:
+                pred_numpy_cleaned = keep_largest_connected_component_3d(pred_numpy)
+                # Calculate metrics AFTER cleaning (using cleaned predictions)
+                preds_cleaned = torch.from_numpy(pred_numpy_cleaned).unsqueeze(0).unsqueeze(0).to(device)
+                dice_score = calculate_dice(preds_cleaned, labels)
+                miou_score = calculate_miou(preds_cleaned, labels)
+                # Calculate HD95 using cleaned predictions
+                gt_data = labels.squeeze().cpu().numpy().astype(np.uint8)
+                hd95_score = calculate_hd95(pred_numpy_cleaned, gt_data, percentile=95)
+                # Use cleaned predictions for saving
+                pred_numpy_to_save = pred_numpy_cleaned
+            else:
+                # Calculate metrics using original predictions
+                dice_score = calculate_dice(preds, labels)
+                miou_score = calculate_miou(preds, labels)
+                # Calculate HD95 using original predictions
+                gt_data = labels.squeeze().cpu().numpy().astype(np.uint8)
+                hd95_score = calculate_hd95(pred_numpy, gt_data, percentile=95)
+                # Use original predictions for saving
+                pred_numpy_to_save = pred_numpy
+            
+            all_dice_scores.append(dice_score)
+            all_miou_scores.append(miou_score)
+            all_hd95_scores.append(hd95_score)
+
+            # Store individual case metrics (rounded to 4 decimal places)
+            case_metrics.append({
+                'patient_name': patient_name,
+                'dice_score': round(dice_score, 4),
+                'miou_score': round(miou_score, 4),
+                'hd95_score': round(hd95_score, 4)
+            })
+            
+            # Create NIfTI image (save predictions)
+            # 获取原始图像的方向矩阵和形状
+            try:
+                # 构建原始图像路径（使用T2W图像获取方向矩阵）
+                original_img_path = Path(args.data_path) / images_dir / f"{patient_name}_0000.nii.gz"
+                if original_img_path.exists():
+                    original_img = nib.load(original_img_path)
+                    affine_matrix = original_img.affine
+                    original_shape = original_img.shape
+                    # print(f"原始图像形状: {original_shape}, 方向矩阵: {affine_matrix}")
+                else:
+                    print(f"警告: 原始图像不存在: {original_img_path}")
+                    # 尝试其他可能的路径
+                    alt_path = Path(args.data_path) / "imagesTr" / f"{patient_name}_0000.nii.gz"
+                    if alt_path.exists():
+                        original_img = nib.load(alt_path)
+                        affine_matrix = original_img.affine
+                        original_shape = original_img.shape
+                        # print(f"使用备用路径方向矩阵: {affine_matrix}")
+                    else:
+                        print(f"警告: 备用图像也不存在: {alt_path}")
+                        affine_matrix = np.eye(4)
+                        original_shape = None
+            except Exception as e:
+                print(f"警告: 获取方向矩阵失败: {e}")
+                affine_matrix = np.eye(4)
+                original_shape = None
+
+            # 检查预测数据的形状并转置为原始顺序
+            # SimpleITK的sitk.GetArrayFromImage()返回[z, y, x] (D, H, W)
+            # 但原始NIfTI文件的数据顺序是[x, y, z] (W, H, D)
+            # 需要将预测从[D, H, W]转置为[W, H, D]
+            if pred_numpy_to_save.ndim == 3:
+                # 转置: [D, H, W] -> [W, H, D]
+                pred_data_to_save = np.transpose(pred_numpy_to_save, (2, 1, 0))
+                if original_shape is not None and pred_data_to_save.shape != original_shape:
+                    print(f"警告: 转置后预测形状 {pred_data_to_save.shape} 与原始形状 {original_shape} 不匹配")
+            else:
+                print(f"警告: 预测数据维度不是3D: {pred_numpy_to_save.shape}")
+                pred_data_to_save = pred_numpy_to_save
+
+            pred_img = nib.Nifti1Image(pred_data_to_save, affine_matrix)
+            pred_filename = output_dir / f"{patient_name}_pred.nii.gz"
+            nib.save(pred_img, pred_filename)
+            
+            # Save T2W slice images with contours
+            mri_data = inputs.squeeze().cpu().numpy()
+            gt_data = labels.squeeze().cpu().numpy().astype(bool)
+            pred_data = pred_numpy.astype(bool)
+
+            t2w_data = mri_data if mri_data.ndim == 3 else mri_data[0]
+
+            save_t2w_slices_with_contours(t2w_data, gt_data, pred_data, patient_name, slices_dir)
+            
+            print(f"Patient: {patient_name}, Dice: {dice_score*100:.2f}, mIoU: {miou_score*100:.2f}, HD95: {hd95_score:.4f}")
+    
+    # Calculate overall metrics (rounded to 4 decimal places)
+    avg_dice = round(np.mean(all_dice_scores), 4)
+    avg_miou = round(np.mean(all_miou_scores), 4)
+    avg_hd95 = round(np.mean(all_hd95_scores), 4)
+    std_dice = round(np.std(all_dice_scores), 4)
+    std_miou = round(np.std(all_miou_scores), 4)
+    std_hd95 = round(np.std(all_hd95_scores), 4)
+
+    print(f"\n=== Overall Results ===")
+    print(f"Connected component filtering: {'Enabled' if args.keep_largest_cc else 'Disabled'}")
+    print(f"Average Dice: {avg_dice*100:.2f} ± {std_dice*100:.2f}")
+    print(f"Average mIoU: {avg_miou*100:.2f} ± {std_miou*100:.2f}")
+    print(f"Average HD95: {avg_hd95:.4f} ± {std_hd95:.4f}")
+    print(f"All results saved to parent directory: {parent_dir}")
+    print(f"- Predictions saved to: {output_dir}")
+    print(f"- Slice images saved to: {slices_dir}")
+    
+    # Calculate Dice score intervals
+    dice_interval_stats = calculate_dice_intervals([case['dice_score'] for case in case_metrics])
+    
+    # Save individual case metrics to separate A_Summary.json file
+    summary_data = {
+        'model_path': args.model_path,
+        'data_path': args.data_path,
+        'keep_largest_cc': args.keep_largest_cc,
+        'num_cases': len(case_metrics),
+        'cases': case_metrics,
+        'overall_metrics': {
+            'average_dice': avg_dice,
+            'average_miou': avg_miou,
+            'average_hd95': avg_hd95,
+            'std_dice': std_dice,
+            'std_miou': std_miou,
+            'std_hd95': std_hd95
+        },
+        'dice_interval_statistics': dice_interval_stats
+    }
+    
+    summary_file = output_dir / 'A_Summary.json'
+    with open(summary_file, 'w') as f:
+        json.dump(summary_data, f, indent=4)
+    
+    print(f"Case summary saved to: {summary_file}")
+
+if __name__ == "__main__":
+    main()

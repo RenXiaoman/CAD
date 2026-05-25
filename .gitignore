@@ -13,3 +13,9 @@ dataset/**/*.DS_Store
 *.png
 .codex
 .vscode
+bmanet/network_architecture/__pycache__/__init__.cpython-310.pyc
+bmanet/network_architecture/__pycache__/__init__.cpython-311.pyc
+bmanet/network_architecture/__pycache__/neural_network.cpython-310.pyc
+bmanet/network_architecture/__pycache__/neural_network.cpython-311.pyc
+bmanet/__pycache__/__init__.cpython-310.pyc
+bmanet/__pycache__/__init__.cpython-311.pyc

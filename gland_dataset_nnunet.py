@@ -3,12 +3,21 @@ import random
 from typing import Union
 
 import numpy as np
-import SimpleITK as sitk
+try:
+    import SimpleITK as sitk
+except ModuleNotFoundError:
+    sitk = None
 from monai.transforms import ClipIntensityPercentiles
+from monai.transforms import LoadImage
 from torch.utils.data import Dataset
 
-from batchgenerators.transforms.abstract_transforms import Compose
-from batchgenerators.transforms.spatial_transforms import SpatialTransform, MirrorTransform
+try:
+    from batchgenerators.transforms.abstract_transforms import Compose
+    from batchgenerators.transforms.spatial_transforms import SpatialTransform, MirrorTransform
+except ModuleNotFoundError:
+    Compose = None
+    SpatialTransform = None
+    MirrorTransform = None
 
 try:
     import scipy.ndimage as ndi
@@ -70,6 +79,7 @@ class GlandDataset(Dataset):
 
         self.labels_list = sorted(self.labels_dir.glob("*.nii.gz"))
         self.clip = ClipIntensityPercentiles(lower=0.5, upper=99.5, channel_wise=False)
+        self.image_loader = LoadImage(image_only=True)
 
         if augmentation_params is None:
             self.augmentation_params = default_3D_augmentation_params
@@ -82,6 +92,10 @@ class GlandDataset(Dataset):
         return len(self.labels_list)
 
     def _create_augmentation_transforms(self):
+        if Compose is None or SpatialTransform is None or MirrorTransform is None:
+            print("batchgenerators is not installed; spatial augmentation is disabled.")
+            return None
+
         tr_transforms = []
 
         tr_transforms.append(
@@ -188,8 +202,19 @@ class GlandDataset(Dataset):
         return t2w, gt, str(patient_name)
 
     def load(self, file: Union[Path, str]) -> np.ndarray:
-        itkimage = sitk.ReadImage(file)
-        image = sitk.GetArrayFromImage(itkimage)
+        if sitk is not None:
+            itkimage = sitk.ReadImage(file)
+            return sitk.GetArrayFromImage(itkimage)
+
+        try:
+            image = self.image_loader(str(file))
+        except RuntimeError as exc:
+            raise RuntimeError(
+                f"Cannot read NIfTI file {file}. Please install SimpleITK or nibabel in this environment."
+            ) from exc
+        image = np.asarray(image)
+        if image.ndim == 4 and image.shape[0] == 1:
+            image = image[0]
         return image
 
     def z_score_normalization(self, img):

@@ -35,6 +35,25 @@ def poly_lr(epoch, max_epochs, initial_lr, exponent=0.9):
     return initial_lr * (1 - epoch / max_epochs)**exponent
 
 
+def resolve_resume_checkpoint(opt):
+    """Resolve --resume to a checkpoint path, supporting True as task latest."""
+    if isinstance(opt.resume, bool):
+        if not opt.resume:
+            return None
+        return Path(opt.checkpoints_dir) / opt.task_name / 'model_latest.pth'
+
+    if opt.resume is None:
+        return None
+
+    resume = str(opt.resume).strip()
+    if resume.lower() in ('', 'false', '0', 'none', 'no'):
+        return None
+    if resume.lower() in ('true', '1', 'yes'):
+        return Path(opt.checkpoints_dir) / opt.task_name / 'model_latest.pth'
+
+    return Path(resume)
+
+
 def main():
     # Parse options
     opt_parser = Options_A_UNet()
@@ -73,10 +92,11 @@ def main():
     # Define optimizer (nnUNet style: SGD with momentum 0.99)
     optimizer = optim.SGD(model.parameters(), lr=opt.lr, momentum=0.99, nesterov=True, weight_decay=3e-5)
     
-    if opt.resume:
-        if Path(opt.resume).exists():
-            print(f"Resuming training from: {opt.resume}")
-            checkpoint = torch.load(opt.resume)
+    resume_path = resolve_resume_checkpoint(opt)
+    if resume_path is not None:
+        if resume_path.exists():
+            print(f"Resuming training from: {resume_path}")
+            checkpoint = torch.load(resume_path, map_location=device, weights_only=True)
             model.load_state_dict(checkpoint['model_state_dict'])
             optimizer.load_state_dict(checkpoint['optimizer_state_dict'])
             start_epoch = checkpoint['epoch'] + 1
@@ -95,7 +115,7 @@ def main():
             
             print(f"Resumed from epoch {start_epoch}, best val loss: {best_val_loss:.4f}")
         else:
-            print(f"Warning: Checkpoint {opt.resume} not found, starting from scratch")
+            print(f"Warning: Checkpoint {resume_path} not found, starting from scratch")
     
     # Print model parameters
     total_params = sum(p.numel() for p in model.parameters())
@@ -207,7 +227,7 @@ def main():
     train_dataset = Lits_DataSet(Path(opt.datapath),
                                  'imagesTr', 
                                  'labelsTr', 
-                                 enable_augmentation=True)
+                                 enable_augmentation=False)
     val_dataset = Lits_DataSet(Path(opt.datapath), 
                                'imagesTs', 
                                'labelsTs',

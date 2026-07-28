@@ -40,6 +40,18 @@ def poly_lr(epoch, max_epochs, initial_lr, exponent=0.9):
     return initial_lr * (1 - epoch / max_epochs)**exponent
 
 
+def resolve_resume_path(resume, results_dir):
+    if resume is None:
+        return None
+
+    resume_text = str(resume).strip()
+    if resume_text.lower() in ("", "false", "none", "no", "0"):
+        return None
+    if resume_text.lower() in ("true", "yes", "1"):
+        return results_dir / "model_latest.pth"
+    return Path(resume_text)
+
+
 def main():
     # Parse options
     opt_parser = Options_UNet_AHCDU()
@@ -71,30 +83,6 @@ def main():
     
     # Define optimizer (nnUNet style: SGD with momentum 0.99)
     optimizer = optim.SGD(model.parameters(), lr=opt.lr, momentum=0.99, nesterov=True, weight_decay=3e-5)
-    
-    if opt.resume:
-        if Path(opt.resume).exists():
-            print(f"Resuming training from: {opt.resume}")
-            checkpoint = torch.load(opt.resume)
-            model.load_state_dict(checkpoint['model_state_dict'])
-            optimizer.load_state_dict(checkpoint['optimizer_state_dict'])
-            start_epoch = checkpoint['epoch'] + 1
-            best_val_loss = checkpoint['best_val_loss']
-            best_val_dice = checkpoint['best_val_dice']
-            best_val_miou = checkpoint['best_val_miou']
-            best_loss_epoch = checkpoint['best_loss_epoch']
-            best_dice_epoch = checkpoint['best_dice_epoch']
-            best_miou_epoch = checkpoint['best_miou_epoch']
-            
-            # Restore learning rate from checkpoint
-            if 'current_lr' in checkpoint:
-                for param_group in optimizer.param_groups:
-                    param_group['lr'] = checkpoint['current_lr']
-                print(f"Resumed learning rate: {checkpoint['current_lr']:.6f}")
-            
-            print(f"Resumed from epoch {start_epoch}, best val loss: {best_val_loss:.4f}")
-        else:
-            print(f"Warning: Checkpoint {opt.resume} not found, starting from scratch")
     
     # Print model parameters
     total_params = sum(p.numel() for p in model.parameters())
@@ -182,6 +170,30 @@ def main():
     # Create results directory
     results_dir = Path(opt.checkpoints_dir) / opt.task_name
     results_dir.mkdir(parents=True, exist_ok=True)
+
+    resume_path = resolve_resume_path(opt.resume, results_dir)
+    if resume_path is not None:
+        if resume_path.exists():
+            print(f"Resuming training from: {resume_path}")
+            checkpoint = torch.load(resume_path, map_location=device)
+            model.load_state_dict(checkpoint['model_state_dict'])
+            optimizer.load_state_dict(checkpoint['optimizer_state_dict'])
+            start_epoch = checkpoint['epoch'] + 1
+            best_val_loss = checkpoint['best_val_loss']
+            best_val_dice = checkpoint['best_val_dice']
+            best_val_miou = checkpoint['best_val_miou']
+            best_loss_epoch = checkpoint['best_loss_epoch']
+            best_dice_epoch = checkpoint['best_dice_epoch']
+            best_miou_epoch = checkpoint['best_miou_epoch']
+
+            if 'current_lr' in checkpoint:
+                for param_group in optimizer.param_groups:
+                    param_group['lr'] = checkpoint['current_lr']
+                print(f"Resumed learning rate: {checkpoint['current_lr']:.6f}")
+
+            print(f"Resumed from epoch {start_epoch}, best val dice: {best_val_dice:.4f}")
+        else:
+            print(f"Warning: Checkpoint {resume_path} not found, starting from scratch")
     
     # Initialize lists to store metrics
     train_losses = []
@@ -190,12 +202,6 @@ def main():
     val_dices = []
     train_mious = []
     val_mious = []
-    best_val_loss = float('inf')
-    best_val_dice = 0.0
-    best_val_miou = 0.0
-    best_loss_epoch = 0
-    best_dice_epoch = 0
-    best_miou_epoch = 0
     
     # Save training configuration
     config_file = results_dir / 'training_config.json'

@@ -35,9 +35,14 @@ def poly_lr(epoch, max_epochs, initial_lr, exponent=0.9):
     return initial_lr * (1 - epoch / max_epochs)**exponent
 
 
-def main():
+def main(
+    options_class=Options_UNETR,
+    train_labels_dir='GlandLabelsTr',
+    val_labels_dir='GlandLabelsTs',
+    train_augmentation=True,
+):
     # Parse options
-    opt_parser = Options_UNETR()
+    opt_parser = options_class()
     opt = opt_parser.parse()
     
     # Set device
@@ -200,11 +205,11 @@ def main():
     # Load dataset with augmentation for training, no augmentation for validation
     train_dataset = Lits_DataSet(Path(opt.datapath),
                                  'imagesTr', 
-                                 'GlandLabelsTr', 
-                                 enable_augmentation=True)
+                                 train_labels_dir,
+                                 enable_augmentation=train_augmentation)
     val_dataset = Lits_DataSet(Path(opt.datapath), 
                                'imagesTs', 
-                               'GlandLabelsTs',
+                               val_labels_dir,
                                enable_augmentation=False)
     
     train_dataloader = DataLoader(dataset=train_dataset, batch_size=opt.batch_size, num_workers=opt.num_threads, shuffle=True)

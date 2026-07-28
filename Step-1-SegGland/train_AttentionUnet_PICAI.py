@@ -22,7 +22,7 @@ from monai.losses import DiceFocalLoss # type: ignore
 from monai.networks.nets import AttentionUnet
 
 # Local imports
-from Options.Options_Attention_UNet import Options_A_UNet
+from Options.Options_Attention_UNet import Options_A_UNet_PICAI
 from gland_dataset_nnunet import Lits_DataSet
 
 
@@ -37,7 +37,7 @@ def poly_lr(epoch, max_epochs, initial_lr, exponent=0.9):
 
 def main():
     # Parse options
-    opt_parser = Options_A_UNet()
+    opt_parser = Options_A_UNet_PICAI()
     opt = opt_parser.parse()
     
     # Set device
@@ -206,11 +206,11 @@ def main():
     # Load dataset with augmentation for training, no augmentation for validation
     train_dataset = Lits_DataSet(Path(opt.datapath),
                                  'imagesTr', 
-                                 'GlandLabelsTr', 
+                                 'labelsTr', 
                                  enable_augmentation=True)
     val_dataset = Lits_DataSet(Path(opt.datapath), 
                                'imagesTs', 
-                               'GlandLabelsTs',
+                               'labelsTs',
                                enable_augmentation=False)
     
     train_dataloader = DataLoader(dataset=train_dataset, batch_size=opt.batch_size, num_workers=opt.num_threads, shuffle=True)

@@ -21,7 +21,7 @@ class BaseOptions():
         parser.add_argument('--epoch', type=int, default=1000, help='number of epochs with the initial learning rate')
         parser.add_argument('--step', type=int, default=10, help='number of epochs to adjust learning rate')
         parser.add_argument('--lr', type=float, default=5e-4, help='initial learning rate of net for adam')
-        parser.add_argument('--model_save_fre', type=int, default=30, help='frequency of saving model')
+        parser.add_argument('--model_save_fre', type=int, default=50, help='frequency of saving model')
         parser.add_argument('--gpu_ids', type=str, default='1', help='gpu ids: e.g. 0  0,1,2, 0,2. use -1 for CPU')
         # parser.add_argument('--task_name', type=str, default='Step1_SegTumor', help='the current task name')
         self.initialized = True

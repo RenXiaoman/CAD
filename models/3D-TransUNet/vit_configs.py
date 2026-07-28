@@ -1,5 +1,44 @@
 import ml_collections
 
+
+def get_3d_r50_b16_config():
+    """Returns the 3D TransUNet configuration for [1, 1, 16, 256, 256] inputs."""
+    config = ml_collections.ConfigDict()
+
+    config.input_channels = 1
+    config.base_num_features = 32
+    config.num_classes = 2
+    config.num_pool = 4
+    config.num_conv_per_stage = 2
+    config.deep_supervision = True
+    config.dropout_in_localization = False
+    config.convolutional_pooling = True
+    config.convolutional_upsampling = True
+    config.max_num_features = 320
+    config.patch_size = (16, 256, 256)
+
+    config.pool_op_kernel_sizes = [
+        (1, 2, 2),
+        (1, 2, 2),
+        (2, 2, 2),
+        (2, 2, 2),
+    ]
+    config.conv_kernel_sizes = [
+        (1, 3, 3),
+        (1, 3, 3),
+        (3, 3, 3),
+        (3, 3, 3),
+        (3, 3, 3),
+    ]
+
+    config.is_max = False
+    config.is_max_bottleneck_transformer = True
+    config.vit_depth = 12
+    config.vit_hidden_size = 768
+    config.vit_mlp_dim = 3072
+    config.vit_num_heads = 12
+    return config
+
 def get_b16_config():
     """Returns the ViT-B/16 configuration."""
     config = ml_collections.ConfigDict()
@@ -128,3 +167,19 @@ def get_h14_config():
     config.representation_size = None
 
     return config
+
+
+CONFIGS = {
+    "ViT-B_16": get_b16_config,
+    "R50-ViT-B_16": get_r50_b16_config,
+    "ViT-B_32": get_b32_config,
+    "ViT-L_16": get_l16_config,
+    "R50-ViT-L_16": get_r50_l16_config,
+    "ViT-L_32": get_l32_config,
+    "ViT-H_14": get_h14_config,
+    "testing": get_testing,
+}
+
+CONFIGS_3D = {
+    "R50-ViT-B_16": get_3d_r50_b16_config,
+}
